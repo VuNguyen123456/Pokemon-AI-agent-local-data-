@@ -1,0 +1,58 @@
+[
+  {
+    "name": "3A Twave Pyogre + Offensive Ho-Oh",
+    "data": [
+      {"species": "Groudon", "item": "Red Orb", "ability": "Drought", "teraType": "Ground", "evs": {"hp": 240, "atk": 28, "def": 88, "spe": 152}, "nature": "Adamant", "moves": ["Precipice Blades", "Rock Tomb", "Stealth Rock", "Swords Dance"]},
+      {"species": "Arceus-Dark", "item": "Dread Plate", "ability": "Multitype", "teraType": "Poison", "evs": {"hp": 248, "def": 108, "spd": 28, "spe": 124}, "nature": "Bold", "ivs": {"atk": 0}, "moves": ["Foul Play", "Perish Song", "Recover", "Whirlpool"]},
+      {"species": "Giratina-Origin", "item": "Griseous Core", "ability": "Levitate", "teraType": "Steel", "evs": {"hp": 248, "atk": 136, "def": 60, "spd": 52, "spe": 12}, "nature": "Adamant", "moves": ["Defog", "Dragon Tail", "Poltergeist", "Thunder Wave"]},
+      {"species": "Ho-Oh", "item": "Heavy-Duty Boots", "ability": "Regenerator", "teraType": "Ground", "evs": {"hp": 248, "atk": 156, "def": 16, "spd": 76, "spe": 12}, "nature": "Adamant", "moves": ["Brave Bird", "Earthquake", "Flare Blitz", "Whirlwind"]},
+      {"species": "Kyogre", "item": "Blue Orb", "ability": "Drizzle", "teraType": "Water", "evs": {"spa": 252, "spd": 4, "spe": 252}, "nature": "Modest", "ivs": {"atk": 0}, "moves": ["Ice Beam", "Origin Pulse", "Thunder", "Thunder Wave"]},
+      {"species": "Zacian", "item": "Rusted Sword", "ability": "Intrepid Sword", "teraType": "Fighting", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Jolly", "moves": ["Close Combat", "Iron Head", "Swords Dance", "Wild Charge"]}
+    ]
+  },
+  {
+    "name": "Trapper Zygod",
+    "data": [
+      {"species": "Groudon", "item": "Red Orb", "ability": "Drought", "teraType": "Ground", "evs": {"hp": 252, "def": 56, "spd": 200}, "nature": "Relaxed", "moves": ["Precipice Blades", "Stealth Rock", "Stone Edge", "Toxic"]},
+      {"species": "Ho-Oh", "item": "Heavy-Duty Boots", "ability": "Regenerator", "teraType": "Grass", "evs": {"hp": 248, "def": 204, "spd": 56}, "nature": "Impish", "moves": ["Defog", "Sacred Fire", "Toxic", "Whirlwind"]},
+      {"species": "Kyogre", "item": "Blue Orb", "ability": "Drizzle", "teraType": "Water", "evs": {"hp": 244, "def": 252, "spe": 12}, "nature": "Bold", "moves": ["Calm Mind", "Ice Beam", "Rest", "Scald"]},
+      {"species": "Yveltal", "item": "Heavy-Duty Boots", "ability": "Dark Aura", "teraType": "Ghost", "evs": {"hp": 248, "def": 76, "spe": 184}, "nature": "Timid", "ivs": {"atk": 0}, "moves": ["Foul Play", "Roost", "Taunt", "Toxic"]},
+      {"species": "Zacian", "item": "Rusted Sword", "ability": "Intrepid Sword", "teraType": "Ground", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Jolly", "moves": ["Iron Head", "Swords Dance", "Tera Blast", "Wild Charge"]},
+      {"species": "Zygarde", "item": "Leftovers", "ability": "Power Construct", "teraType": "Water", "evs": {"hp": 200, "def": 252, "spe": 56}, "nature": "Impish", "moves": ["Dragon Dance", "Rest", "Thousand Arrows", "Thousand Waves"]}
+    ]
+  },
+  {
+    "name": "Sp. Def Zygarde+ z Arc. Ground",
+    "data": [
+      {"species": "Groudon", "item": "Red Orb", "ability": "Drought", "teraType": "Flying", "evs": {"hp": 240, "atk": 20, "spd": 224, "spe": 24}, "nature": "Adamant", "moves": ["Heat Crash", "Precipice Blades", "Spikes", "Stone Edge"]},
+      {"species": "Arceus-Ground", "item": "Groundium Z", "ability": "Multitype", "teraType": "Ghost", "evs": {"hp": 248, "def": 92, "spd": 40, "spe": 128}, "nature": "Jolly", "moves": ["Dragon Dance", "Earthquake", "Recover", "Stone Edge"]},
+      {"species": "Ho-Oh", "item": "Heavy-Duty Boots", "ability": "Regenerator", "teraType": "Grass", "evs": {"hp": 248, "def": 208, "spd": 52}, "nature": "Impish", "moves": ["Defog", "Sacred Fire", "Toxic", "Whirlwind"]},
+      {"species": "Kyogre", "item": "Blue Orb", "ability": "Drizzle", "teraType": "Water", "evs": {"hp": 244, "def": 252, "spe": 12}, "nature": "Bold", "ivs": {"atk": 0}, "moves": ["Calm Mind", "Ice Beam", "Rest", "Scald"]},
+      {"species": "Yveltal", "item": "Heavy-Duty Boots", "ability": "Dark Aura", "teraType": "Ghost", "evs": {"hp": 252, "def": 172, "spe": 84}, "nature": "Jolly", "moves": ["Foul Play", "Roost", "Sucker Punch", "Taunt"]},
+      {"species": "Zygarde", "item": "Leftovers", "ability": "Power Construct", "teraType": "Water", "evs": {"hp": 248, "spd": 204, "spe": 56}, "nature": "Careful", "moves": ["Coil", "Rest", "Thousand Arrows", "Toxic"]}
+    ]
+  },
+  {
+    "name": "Deo-Speed Hyper Offense",
+    "author": "Entrocefalo",
+    "data": [
+      {"species": "Deoxys-Speed", "item": "Rocky Helmet", "ability": "Pressure", "teraType": "Steel", "evs": {"hp": 248, "def": 240, "spe": 16}, "nature": "Timid", "ivs": {"atk": 0}, "moves": ["Magic Coat", "Spikes", "Stealth Rock", "Taunt"]},
+      {"species": "Arceus", "item": "Silk Scarf", "ability": "Multitype", "teraType": "Ghost", "evs": {"hp": 240, "atk": 252, "spe": 16}, "nature": "Adamant", "moves": ["Earthquake", "Extreme Speed", "Recover", "Swords Dance"]},
+      {"species": "Groudon", "item": "Red Orb", "ability": "Drought", "teraType": "Ground", "evs": {"hp": 136, "atk": 252, "spd": 4, "spe": 116}, "nature": "Adamant", "moves": ["Precipice Blades", "Rock Polish", "Stone Edge", "Swords Dance"]},
+      {"species": "Necrozma-Dusk-Mane", "item": "Colbur Berry", "ability": "Prism Armor", "teraType": "Fairy", "evs": {"atk": 252, "def": 4, "spe": 252}, "nature": "Adamant", "moves": ["Dragon Dance", "Earthquake", "Stone Edge", "Sunsteel Strike"]},
+      {"species": "Yveltal", "item": "Life Orb", "ability": "Dark Aura", "teraType": "Dark", "evs": {"atk": 4, "spa": 252, "spe": 252}, "nature": "Naive", "moves": ["Dark Pulse", "Oblivion Wing", "Sucker Punch", "Taunt"]},
+      {"species": "Zacian", "item": "Rusted Sword", "ability": "Intrepid Sword", "teraType": "Electric", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Jolly", "moves": ["Close Combat", "Play Rough", "Swords Dance", "Wild Charge"]}
+    ]
+  },
+  {
+    "name": "eternatus full stall",
+    "data": [
+      {"species": "Dondozo", "gender": "M", "item": "Leftovers", "ability": "Unaware", "teraType": "Fairy", "evs": {"hp": 252, "def": 252, "spd": 4}, "nature": "Impish", "ivs": {"spe": 0}, "moves": ["Avalanche", "Body Press", "Curse", "Rest"]},
+      {"species": "Arceus-Dark", "item": "Dread Plate", "ability": "Multitype", "teraType": "Fire", "evs": {"hp": 248, "def": 172, "spe": 88}, "nature": "Timid", "ivs": {"atk": 0}, "moves": ["Foul Play", "Recover", "Refresh", "Stealth Rock"]},
+      {"species": "Chansey", "item": "Eviolite", "ability": "Natural Cure", "teraType": "Grass", "evs": {"hp": 8, "def": 252, "spd": 248}, "nature": "Calm", "ivs": {"atk": 0}, "moves": ["Confide", "Heal Bell", "Seismic Toss", "Soft-Boiled"]},
+      {"species": "Eternatus", "item": "Leftovers", "ability": "Pressure", "teraType": "Fairy", "evs": {"hp": 248, "spd": 40, "spe": 220}, "nature": "Timid", "ivs": {"atk": 0}, "moves": ["Dynamax Cannon", "Recover", "Sludge Bomb", "Toxic Spikes"]},
+      {"species": "Giratina-Origin", "item": "Griseous Core", "ability": "Levitate", "teraType": "Steel", "evs": {"hp": 248, "def": 252, "spd": 8}, "nature": "Bold", "ivs": {"atk": 0, "spe": 0}, "moves": ["Defog", "Hex", "Rest", "Toxic"]},
+      {"species": "Ho-Oh", "item": "Heavy-Duty Boots", "ability": "Regenerator", "teraType": "Grass", "evs": {"hp": 248, "def": 204, "spd": 56}, "nature": "Impish", "moves": ["Defog", "Sacred Fire", "Toxic", "Whirlwind"]}
+    ]
+  }
+]

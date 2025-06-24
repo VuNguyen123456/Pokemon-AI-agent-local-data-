@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Standard Abra-Gast",
+    "data": [
+      {"species": "Mienfoo", "gender": "M", "item": "Eviolite", "ability": "Regenerator", "evs": {"hp": 76, "def": 196, "spd": 196}, "nature": "Impish", "moves": ["Fake Out", "High Jump Kick", "Knock Off", "U-turn"]},
+      {"species": "Abra", "gender": "F", "item": "Focus Sash", "ability": "Magic Guard", "evs": {"spa": 240, "spe": 200}, "nature": "Timid", "ivs": {"atk": 3, "def": 30, "spa": 30, "spd": 30, "spe": 30}, "moves": ["Hidden Power Fighting", "Protect", "Psychic", "Shadow Ball"]},
+      {"species": "Diglett", "gender": "M", "item": "Life Orb", "ability": "Arena Trap", "evs": {"hp": 36, "atk": 236, "spe": 236}, "nature": "Jolly", "moves": ["Beat Up", "Earthquake", "Stealth Rock", "Sucker Punch"]},
+      {"species": "Gastly", "gender": "F", "item": "Life Orb", "ability": "Levitate", "evs": {"spa": 200, "spd": 80, "spe": 200}, "nature": "Timid", "ivs": {"atk": 3, "def": 30, "spa": 30, "spd": 30, "spe": 30}, "moves": ["Hidden Power Fighting", "Shadow Ball", "Sludge Bomb", "Thunderbolt"]},
+      {"species": "Porygon", "item": "Eviolite", "ability": "Trace", "evs": {"hp": 236, "def": 196, "spd": 76}, "nature": "Calm", "ivs": {"atk": 0}, "moves": ["Ice Beam", "Recover", "Thunderbolt", "Thunder Wave"]},
+      {"species": "Staryu", "item": "Eviolite", "ability": "Natural Cure", "evs": {"hp": 116, "def": 156, "spe": 236}, "nature": "Timid", "ivs": {"atk": 0}, "moves": ["Rapid Spin", "Recover", "Scald", "Thunderbolt"]}
+    ]
+  },
+  {
+    "name": "Scarf Snover + CM Natu",
+    "data": [
+      {"species": "Snover", "gender": "M", "item": "Choice Scarf", "ability": "Snow Warning", "evs": {"atk": 100, "spa": 184, "spe": 196}, "nature": "Naive", "moves": ["Blizzard", "Giga Drain", "Hidden Power Ground", "Ice Shard"], "ivs": {"spa": 30, "spd": 30}},
+      {"species": "Drilbur", "gender": "M", "item": "Eviolite", "ability": "Mold Breaker", "evs": {"hp": 36, "atk": 236, "spe": 212}, "nature": "Jolly", "moves": ["Earthquake", "Rapid Spin", "Rock Slide", "Stealth Rock"]},
+      {"species": "Mienfoo", "gender": "M", "item": "Eviolite", "ability": "Regenerator", "evs": {"hp": 76, "def": 196, "spd": 196}, "nature": "Impish", "moves": ["Fake Out", "High Jump Kick", "Knock Off", "U-turn"]},
+      {"species": "Natu", "gender": "M", "item": "Eviolite", "ability": "Magic Bounce", "evs": {"hp": 36, "def": 76, "spa": 116, "spd": 76, "spe": 196}, "nature": "Timid", "moves": ["Calm Mind", "Psychic", "Roost", "U-turn"]},
+      {"species": "Porygon", "item": "Eviolite", "ability": "Trace", "evs": {"hp": 236, "def": 36, "spd": 236}, "nature": "Calm", "ivs": {"atk": 0}, "moves": ["Psychic", "Recover", "Thunder Wave", "Tri Attack"]},
+      {"species": "Staryu", "item": "Eviolite", "ability": "Natural Cure", "evs": {"hp": 116, "def": 156, "spe": 236}, "nature": "Timid", "ivs": {"atk": 0}, "moves": ["Recover", "Scald", "Thunderbolt", "Toxic"]}
+    ]
+  },
+  {
+    "name": "CM Bronzor",
+    "author": "Fille and LilyAC",
+    "data": [
+      {"species": "Frillish", "gender": "M", "item": "Eviolite", "ability": "Cursed Body", "evs": {"hp": 236, "def": 116, "spd": 76, "spe": 36}, "nature": "Bold", "ivs": {"atk": 0}, "moves": ["Psych Up", "Recover", "Shadow Ball", "Will-O-Wisp"]},
+      {"species": "Bronzor", "item": "Eviolite", "ability": "Levitate", "evs": {"hp": 220, "def": 68, "spa": 4, "spd": 148, "spe": 12}, "nature": "Calm", "ivs": {"atk": 0}, "moves": ["Calm Mind", "Flash Cannon", "Rest", "Sleep Talk"]},
+      {"species": "Hippopotas", "gender": "M", "item": "Eviolite", "ability": "Sand Stream", "evs": {"hp": 132, "atk": 20, "def": 132, "spd": 180, "spe": 20}, "nature": "Careful", "moves": ["Earthquake", "Slack Off", "Stealth Rock", "Whirlwind"]},
+      {"species": "Lileep", "gender": "F", "item": "Eviolite", "ability": "Storm Drain", "evs": {"hp": 148, "def": 224, "spa": 28, "spd": 64, "spe": 16}, "nature": "Bold", "ivs": {"atk": 3, "def": 30, "spd": 30, "spe": 30}, "moves": ["Giga Drain", "Hidden Power Rock", "Recover", "Toxic"]},
+      {"species": "Natu", "gender": "M", "item": "Eviolite", "ability": "Magic Bounce", "evs": {"hp": 196, "def": 156, "spa": 36, "spd": 76, "spe": 36}, "nature": "Bold", "ivs": {"atk": 0}, "moves": ["Heat Wave", "Psychic", "Roost", "Thunder Wave"]},
+      {"species": "Timburr", "gender": "M", "item": "Eviolite", "ability": "Iron Fist", "evs": {"atk": 116, "def": 156, "spd": 156, "spe": 76}, "nature": "Adamant", "moves": ["Bulk Up", "Drain Punch", "Ice Punch", "Mach Punch"]}
+    ]
+  },
+  {
+    "name": "Diglett Sand",
+    "data": [
+      {"species": "Mienfoo", "gender": "M", "item": "Eviolite", "ability": "Regenerator", "evs": {"hp": 76, "atk": 76, "def": 36, "spd": 36, "spe": 236}, "nature": "Jolly", "moves": ["High Jump Kick", "Knock Off", "Stone Edge", "U-turn"]},
+      {"species": "Diglett", "gender": "M", "item": "Life Orb", "ability": "Sand Force", "evs": {"hp": 36, "atk": 236, "spe": 236}, "nature": "Jolly", "moves": ["Beat Up", "Earthquake", "Protect", "Rock Slide"]},
+      {"species": "Ferroseed", "gender": "M", "item": "Eviolite", "ability": "Iron Barbs", "evs": {"hp": 84, "def": 108, "spa": 4, "spd": 228, "spe": 36}, "nature": "Bold", "ivs": {"atk": 0}, "moves": ["Endeavor", "Giga Drain", "Spikes", "Thunder Wave"]},
+      {"species": "Gastly", "gender": "M", "item": "Eviolite", "ability": "Levitate", "evs": {"hp": 116, "spa": 120, "spe": 200}, "nature": "Timid", "moves": ["Hidden Power Fighting", "Knock Off", "Shadow Ball", "Will-O-Wisp"], "ivs": {"def": 30, "spa": 30, "spd": 30, "spe": 30}},
+      {"species": "Hippopotas", "gender": "M", "item": "Eviolite", "ability": "Sand Stream", "evs": {"hp": 132, "atk": 20, "def": 212, "spd": 100, "spe": 20}, "nature": "Impish", "moves": ["Earthquake", "Slack Off", "Stealth Rock", "Whirlwind"]},
+      {"species": "Staryu", "item": "Eviolite", "ability": "Natural Cure", "evs": {"hp": 116, "spd": 156, "spe": 236}, "nature": "Timid", "ivs": {"atk": 0}, "moves": ["Rapid Spin", "Recover", "Scald", "Thunderbolt"]}
+    ]
+  },
+  {
+    "name": "Diglett + Clamperl",
+    "data": [
+      {"species": "Mienfoo", "gender": "M", "item": "Eviolite", "ability": "Regenerator", "evs": {"hp": 76, "def": 196, "spd": 196}, "nature": "Impish", "moves": ["Fake Out", "High Jump Kick", "Knock Off", "U-turn"]},
+      {"species": "Clamperl", "gender": "F", "item": "Deep Sea Tooth", "ability": "Rattled", "evs": {"spa": 248, "spd": 76, "spe": 180}, "nature": "Timid", "ivs": {"atk": 3, "spa": 30}, "moves": ["Hidden Power Electric", "Shell Smash", "Substitute", "Surf"]},
+      {"species": "Diglett", "gender": "M", "item": "Life Orb", "ability": "Arena Trap", "evs": {"hp": 36, "atk": 236, "spe": 236}, "nature": "Jolly", "moves": ["Beat Up", "Earthquake", "Memento", "Sucker Punch"]},
+      {"species": "Gastly", "gender": "F", "item": "Eviolite", "ability": "Levitate", "evs": {"hp": 116, "def": 40, "spa": 120, "spe": 200}, "nature": "Timid", "ivs": {"atk": 3, "def": 30, "spa": 30, "spd": 30, "spe": 30}, "moves": ["Hidden Power Fighting", "Shadow Ball", "Substitute", "Will-O-Wisp"]},
+      {"species": "Natu", "gender": "M", "item": "Eviolite", "ability": "Magic Bounce", "evs": {"hp": 196, "def": 236, "spa": 36, "spe": 36}, "nature": "Calm", "moves": ["Giga Drain", "Psychic", "Roost", "U-turn"]},
+      {"species": "Porygon", "item": "Eviolite", "ability": "Trace", "evs": {"hp": 236, "def": 196, "spd": 76}, "nature": "Calm", "ivs": {"atk": 2, "spa": 30, "spe": 30}, "moves": ["Hidden Power Fire", "Recover", "Thunderbolt", "Thunder Wave"]}
+    ]
+  },
+  {
+    "name": "Hail Birdspam",
+    "data": [
+      {"species": "Snover", "gender": "M", "item": "Eviolite", "ability": "Snow Warning", "evs": {"hp": 36, "atk": 20, "def": 36, "spa": 180, "spd": 36, "spe": 196}, "nature": "Timid", "moves": ["Blizzard", "Giga Drain", "Ice Shard", "Protect"]},
+      {"species": "Diglett", "gender": "M", "item": "Choice Scarf", "ability": "Arena Trap", "evs": {"hp": 36, "atk": 156, "spd": 156, "spe": 156}, "nature": "Careful", "moves": ["Beat Up", "Earthquake", "Pursuit", "Rock Slide"]},
+      {"species": "Mienfoo", "gender": "M", "item": "Eviolite", "ability": "Regenerator", "evs": {"atk": 236, "def": 36, "spd": 196}, "nature": "Adamant", "moves": ["High Jump Kick", "Knock Off", "Taunt", "U-turn"]},
+      {"species": "Natu", "gender": "M", "item": "Eviolite", "ability": "Magic Bounce", "evs": {"hp": 196, "def": 156, "spa": 36, "spd": 76, "spe": 36}, "nature": "Bold", "ivs": {"atk": 0}, "moves": ["Calm Mind", "Heat Wave", "Psychic", "Roost"]},
+      {"species": "Porygon", "item": "Eviolite", "ability": "Trace", "evs": {"hp": 156, "def": 36, "spd": 236}, "nature": "Calm", "ivs": {"atk": 0}, "moves": ["Psychic", "Recover", "Toxic", "Tri Attack"]},
+      {"species": "Vullaby", "item": "Eviolite", "ability": "Weak Armor", "evs": {"def": 76, "spa": 236, "spe": 196}, "nature": "Modest", "ivs": {"atk": 0}, "moves": ["Air Slash", "Dark Pulse", "Heat Wave", "Nasty Plot"]}
+    ]
+  },
+  {
+    "name": "Tirtouga Birdspam",
+    "data": [
+      {"species": "Vullaby", "item": "Eviolite", "ability": "Weak Armor", "evs": {"def": 76, "spa": 236, "spe": 196}, "nature": "Modest", "ivs": {"atk": 0}, "moves": ["Air Slash", "Dark Pulse", "Heat Wave", "Nasty Plot"]},
+      {"species": "Diglett", "gender": "M", "item": "Eviolite", "ability": "Arena Trap", "evs": {"hp": 36, "atk": 156, "spd": 76, "spe": 236}, "nature": "Jolly", "moves": ["Beat Up", "Earthquake", "Memento", "Toxic"]},
+      {"species": "Natu", "gender": "M", "item": "Eviolite", "ability": "Magic Bounce", "evs": {"hp": 196, "def": 156, "spa": 36, "spd": 76, "spe": 36}, "nature": "Bold", "moves": ["Calm Mind", "Psychic", "Roost", "U-turn"]},
+      {"species": "Porygon", "item": "Eviolite", "ability": "Trace", "evs": {"hp": 236, "def": 36, "spd": 236}, "nature": "Calm", "ivs": {"atk": 0}, "moves": ["Psychic", "Recover", "Toxic", "Tri Attack"]},
+      {"species": "Timburr", "gender": "M", "item": "Eviolite", "ability": "Guts", "evs": {"atk": 116, "def": 156, "spd": 236}, "nature": "Careful", "moves": ["Bulk Up", "Drain Punch", "Mach Punch", "Payback"]},
+      {"species": "Tirtouga", "gender": "M", "item": "Eviolite", "ability": "Solid Rock", "evs": {"hp": 4, "atk": 212, "def": 92, "spe": 180}, "nature": "Adamant", "moves": ["Shell Smash", "Stealth Rock", "Stone Edge", "Waterfall"]}
+    ]
+  }
+]

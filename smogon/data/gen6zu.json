@@ -1,0 +1,156 @@
+[
+  {
+    "name": "stunky",
+    "data": [
+      {"species": "Stunky", "gender": "M", "item": "Eviolite", "ability": "Aftermath", "evs": {"hp": 252, "spd": 232, "spe": 24}, "nature": "Careful", "moves": ["Crunch", "Defog", "Taunt", "Toxic"]},
+      {"species": "Krokorok", "gender": "M", "item": "Choice Band", "ability": "Intimidate", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Adamant", "moves": ["Earthquake", "Knock Off", "Pursuit", "Stone Edge"]},
+      {"species": "Magmar", "gender": "M", "item": "Eviolite", "ability": "Vital Spirit", "evs": {"spa": 252, "spd": 4, "spe": 252}, "nature": "Timid", "ivs": {"atk": 0, "def": 30}, "moves": ["Fire Blast", "Focus Blast", "Hidden Power Ice", "Toxic"]},
+      {"species": "Politoed", "gender": "M", "item": "Leftovers", "ability": "Water Absorb", "evs": {"hp": 96, "spa": 252, "spe": 160}, "nature": "Modest", "ivs": {"atk": 0}, "moves": ["Ice Beam", "Scald", "Substitute", "Toxic"]},
+      {"species": "Sawsbuck", "gender": "M", "item": "Choice Scarf", "ability": "Sap Sipper", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Jolly", "moves": ["Horn Leech", "Jump Kick", "Return", "Toxic"], "happiness": 255},
+      {"species": "Wigglytuff", "gender": "M", "item": "Leftovers", "ability": "Frisk", "evs": {"hp": 172, "def": 252, "spd": 84}, "nature": "Bold", "ivs": {"atk": 0}, "moves": ["Dazzling Gleam", "Protect", "Stealth Rock", "Wish"]}
+    ]
+  },
+  {
+    "name": "Taunt Simipour+Buzz+SD Meganium",
+    "data": [
+      {"species": "Simipour", "gender": "M", "item": "Life Orb", "ability": "Torrent", "evs": {"atk": 4, "spa": 252, "spe": 252}, "nature": "Naive", "moves": ["Ice Beam", "Scald", "Superpower", "Taunt"]},
+      {"species": "Bronzor", "item": "Eviolite", "ability": "Levitate", "evs": {"hp": 252, "def": 120, "spd": 136}, "nature": "Calm", "ivs": {"atk": 0}, "moves": ["Psywave", "Rest", "Stealth Rock", "Toxic"]},
+      {"species": "Electabuzz", "gender": "M", "item": "Eviolite", "ability": "Vital Spirit", "evs": {"spa": 252, "spd": 4, "spe": 252}, "nature": "Timid", "ivs": {"atk": 0, "def": 30}, "moves": ["Hidden Power Ice", "Thunderbolt", "Toxic", "Volt Switch"]},
+      {"species": "Fearow", "gender": "M", "item": "Choice Scarf", "ability": "Sniper", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Jolly", "moves": ["Drill Peck", "Drill Run", "Return", "U-turn"], "happiness": 255},
+      {"species": "Meganium", "gender": "M", "item": "Leftovers", "ability": "Overgrow", "evs": {"hp": 252, "atk": 4, "spe": 252}, "nature": "Jolly", "moves": ["Petal Blizzard", "Substitute", "Swords Dance", "Synthesis"]},
+      {"species": "Vibrava", "gender": "M", "item": "Eviolite", "ability": "Levitate", "evs": {"hp": 248, "atk": 8, "def": 252}, "nature": "Impish", "moves": ["Defog", "Earthquake", "Roost", "U-turn"]}
+    ]
+  },
+  {
+    "name": "NP Pour+Buzz",
+    "data": [
+      {"species": "Simipour", "gender": "M", "item": "Life Orb", "ability": "Torrent", "evs": {"spa": 252, "spd": 4, "spe": 252}, "nature": "Timid", "ivs": {"atk": 0, "spa": 30}, "moves": ["Hidden Power Grass", "Ice Beam", "Nasty Plot", "Scald"]},
+      {"species": "Electabuzz", "gender": "M", "item": "Eviolite", "ability": "Vital Spirit", "evs": {"spa": 252, "spd": 4, "spe": 252}, "nature": "Timid", "ivs": {"atk": 0, "def": 30}, "moves": ["Hidden Power Ice", "Thunderbolt", "Toxic", "Volt Switch"]},
+      {"species": "Fearow", "gender": "M", "item": "Choice Scarf", "ability": "Sniper", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Jolly", "moves": ["Drill Peck", "Drill Run", "Return", "U-turn"], "happiness": 255},
+      {"species": "Gourgeist-Large", "gender": "M", "item": "Colbur Berry", "ability": "Frisk", "evs": {"hp": 252, "def": 232, "spe": 24}, "nature": "Bold", "ivs": {"atk": 0}, "moves": ["Foul Play", "Leech Seed", "Synthesis", "Will-O-Wisp"]},
+      {"species": "Lairon", "gender": "M", "item": "Eviolite", "ability": "Rock Head", "evs": {"hp": 248, "atk": 216, "spe": 44}, "nature": "Adamant", "moves": ["Earthquake", "Head Smash", "Heavy Slam", "Stealth Rock"]},
+      {"species": "Vibrava", "gender": "M", "item": "Eviolite", "ability": "Levitate", "evs": {"hp": 248, "atk": 8, "def": 252}, "nature": "Impish", "moves": ["Defog", "Earthquake", "Roost", "U-turn"]}
+    ]
+  },
+  {
+    "name": "wacky toxic spam",
+    "data": [
+      {"species": "Walrein", "gender": "M", "item": "Leftovers", "ability": "Thick Fat", "evs": {"spa": 252, "spd": 4, "spe": 252}, "nature": "Modest", "ivs": {"atk": 0}, "moves": ["Ice Beam", "Substitute", "Surf", "Toxic"]},
+      {"species": "Bronzor", "item": "Eviolite", "ability": "Levitate", "evs": {"hp": 252, "def": 4, "spd": 252}, "nature": "Calm", "ivs": {"atk": 0}, "moves": ["Psywave", "Rest", "Stealth Rock", "Toxic"]},
+      {"species": "Krokorok", "gender": "M", "item": "Choice Scarf", "ability": "Intimidate", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Jolly", "moves": ["Earthquake", "Knock Off", "Pursuit", "Stone Edge"]},
+      {"species": "Meganium", "gender": "M", "item": "Leftovers", "ability": "Overgrow", "evs": {"hp": 248, "def": 44, "spe": 216}, "nature": "Timid", "ivs": {"atk": 0}, "moves": ["Aromatherapy", "Giga Drain", "Protect", "Synthesis"]},
+      {"species": "Shelgon", "gender": "M", "item": "Eviolite", "ability": "Rock Head", "evs": {"hp": 252, "atk": 4, "def": 252}, "nature": "Impish", "moves": ["Dragon Claw", "Protect", "Toxic", "Wish"]},
+      {"species": "Volbeat", "item": "Leftovers", "ability": "Prankster", "evs": {"hp": 252, "spd": 240, "spe": 16}, "nature": "Serious", "moves": ["Encore", "Roost", "Seismic Toss", "U-turn"]}
+    ]
+  },
+  {
+    "name": "Sliggoo",
+    "data": [
+      {"species": "Sliggoo", "gender": "M", "item": "Eviolite", "ability": "Sap Sipper", "evs": {"hp": 248, "def": 152, "spd": 108}, "nature": "Calm", "ivs": {"atk": 0}, "moves": ["Dragon Pulse", "Rest", "Sleep Talk", "Toxic"]},
+      {"species": "Carbink", "item": "Leftovers", "ability": "Clear Body", "evs": {"hp": 248, "def": 252, "spe": 8}, "nature": "Bold", "ivs": {"atk": 0}, "moves": ["Calm Mind", "Moonblast", "Rest", "Sleep Talk"]},
+      {"species": "Palpitoad", "gender": "M", "item": "Eviolite", "ability": "Water Absorb", "evs": {"hp": 252, "def": 232, "spe": 24}, "nature": "Bold", "ivs": {"atk": 0}, "moves": ["Earth Power", "Scald", "Stealth Rock", "Toxic"]},
+      {"species": "Pidgeot", "gender": "M", "item": "Leftovers", "ability": "Tangled Feet", "evs": {"hp": 252, "def": 4, "spe": 252}, "nature": "Jolly", "moves": ["Defog", "Return", "Roost", "U-turn"], "happiness": 255},
+      {"species": "Pignite", "gender": "M", "item": "Eviolite", "ability": "Thick Fat", "evs": {"hp": 228, "atk": 252, "spe": 28}, "nature": "Adamant", "moves": ["Flare Blitz", "Superpower", "Toxic", "Wild Charge"]},
+      {"species": "Simisage", "gender": "M", "item": "Choice Scarf", "ability": "Overgrow", "evs": {"atk": 252, "spa": 4, "spe": 252}, "nature": "Naive", "moves": ["Knock Off", "Leaf Storm", "Rock Slide", "Seed Bomb"]}
+    ]
+  },
+  {
+    "name": "Taunt SpD Gothitelle",
+    "data": [
+      {"species": "Gothitelle", "gender": "F", "item": "Leftovers", "ability": "Frisk", "evs": {"hp": 248, "spd": 200, "spe": 60}, "nature": "Calm", "ivs": {"atk": 1, "def": 30, "spa": 30, "spd": 30, "spe": 30}, "moves": ["Heal Bell", "Hidden Power Fighting", "Psychic", "Taunt"]},
+      {"species": "Electabuzz", "gender": "M", "item": "Eviolite", "ability": "Vital Spirit", "evs": {"spa": 252, "spd": 4, "spe": 252}, "nature": "Timid", "ivs": {"atk": 0, "def": 30}, "moves": ["Hidden Power Ice", "Thunderbolt", "Toxic", "Volt Switch"]},
+      {"species": "Hippopotas", "gender": "M", "item": "Eviolite", "ability": "Sand Force", "evs": {"hp": 248, "def": 236, "spd": 24}, "nature": "Impish", "moves": ["Curse", "Earthquake", "Slack Off", "Stealth Rock"]},
+      {"species": "Servine", "gender": "M", "item": "Eviolite", "ability": "Contrary", "evs": {"hp": 248, "spa": 8, "spe": 252}, "nature": "Timid", "moves": ["Hidden Power Ice", "Knock Off", "Leaf Storm", "Synthesis"], "ivs": {"atk": 30, "def": 30}},
+      {"species": "Wartortle", "gender": "M", "item": "Eviolite", "ability": "Torrent", "evs": {"hp": 252, "def": 252, "spd": 4}, "nature": "Bold", "ivs": {"atk": 0}, "moves": ["Foresight", "Rapid Spin", "Scald", "Toxic"]},
+      {"species": "Wigglytuff", "gender": "M", "item": "Leftovers", "ability": "Frisk", "evs": {"hp": 252, "def": 252, "spe": 4}, "nature": "Bold", "ivs": {"atk": 0}, "moves": ["Dazzling Gleam", "Protect", "Toxic", "Wish"]}
+    ]
+  },
+  {
+    "name": "Whirlwind Munchlax",
+    "data": [
+      {"species": "Munchlax", "gender": "M", "item": "Eviolite", "ability": "Thick Fat", "evs": {"atk": 4, "def": 252, "spd": 252}, "nature": "Careful", "moves": ["Earthquake", "Rest", "Sleep Talk", "Whirlwind"]},
+      {"species": "Gourgeist-Large", "gender": "M", "item": "Colbur Berry", "ability": "Frisk", "evs": {"hp": 252, "def": 232, "spe": 24}, "nature": "Bold", "ivs": {"atk": 0}, "moves": ["Foul Play", "Leech Seed", "Synthesis", "Will-O-Wisp"]},
+      {"species": "Krokorok", "gender": "M", "item": "Choice Scarf", "ability": "Intimidate", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Jolly", "moves": ["Earthquake", "Knock Off", "Pursuit", "Stone Edge"]},
+      {"species": "Lairon", "gender": "M", "item": "Eviolite", "ability": "Rock Head", "evs": {"hp": 212, "atk": 252, "spe": 44}, "nature": "Adamant", "moves": ["Earthquake", "Head Smash", "Heavy Slam", "Stealth Rock"]},
+      {"species": "Wartortle", "gender": "M", "item": "Eviolite", "ability": "Torrent", "evs": {"hp": 252, "def": 252, "spd": 4}, "nature": "Bold", "ivs": {"atk": 0}, "moves": ["Foresight", "Rapid Spin", "Scald", "Toxic"]},
+      {"species": "Whirlipede", "gender": "M", "item": "Eviolite", "ability": "Speed Boost", "evs": {"hp": 248, "spd": 8, "spe": 252}, "nature": "Timid", "ivs": {"atk": 0}, "moves": ["Endeavor", "Protect", "Spikes", "Toxic"]}
+    ]
+  },
+  {
+    "name": "CB Gigalith",
+    "data": [
+      {"species": "Gigalith", "gender": "M", "item": "Choice Band", "ability": "Sturdy", "evs": {"hp": 92, "atk": 252, "spe": 164}, "nature": "Adamant", "moves": ["Earthquake", "Heavy Slam", "Stone Edge", "Superpower"]},
+      {"species": "Electabuzz", "gender": "M", "item": "Eviolite", "ability": "Vital Spirit", "evs": {"spa": 252, "spd": 4, "spe": 252}, "nature": "Timid", "ivs": {"atk": 0, "spa": 30}, "moves": ["Focus Blast", "Hidden Power Grass", "Thunderbolt", "Volt Switch"]},
+      {"species": "Gourgeist-Large", "gender": "M", "item": "Colbur Berry", "ability": "Frisk", "evs": {"hp": 252, "def": 232, "spe": 24}, "nature": "Bold", "ivs": {"atk": 0}, "moves": ["Foul Play", "Leech Seed", "Synthesis", "Will-O-Wisp"]},
+      {"species": "Krokorok", "gender": "M", "item": "Eviolite", "ability": "Intimidate", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Adamant", "moves": ["Earthquake", "Knock Off", "Stealth Rock", "Taunt"]},
+      {"species": "Vanilluxe", "gender": "M", "item": "Icicle Plate", "ability": "Ice Body", "evs": {"spa": 252, "spd": 4, "spe": 252}, "nature": "Timid", "ivs": {"atk": 0}, "moves": ["Freeze-Dry", "Ice Beam", "Protect", "Toxic"]},
+      {"species": "Wartortle", "gender": "M", "item": "Eviolite", "ability": "Torrent", "evs": {"hp": 252, "def": 252, "spd": 4}, "nature": "Bold", "ivs": {"atk": 0}, "moves": ["Foresight", "Rapid Spin", "Scald", "Toxic"]}
+    ]
+  },
+  {
+    "name": "Specs Simisage+Electabuzz",
+    "data": [
+      {"species": "Simisage", "gender": "M", "item": "Choice Specs", "ability": "Overgrow", "evs": {"spa": 252, "spd": 4, "spe": 252}, "nature": "Timid", "ivs": {"atk": 0, "def": 30}, "moves": ["Focus Blast", "Giga Drain", "Hidden Power Ice", "Leaf Storm"]},
+      {"species": "Electabuzz", "gender": "M", "item": "Eviolite", "ability": "Vital Spirit", "evs": {"spa": 252, "spd": 4, "spe": 252}, "nature": "Timid", "ivs": {"atk": 0, "def": 30}, "moves": ["Hidden Power Ice", "Thunderbolt", "Toxic", "Volt Switch"]},
+      {"species": "Glalie", "gender": "M", "item": "Focus Sash", "ability": "Inner Focus", "evs": {"atk": 4, "spa": 252, "spe": 252}, "nature": "Naive", "moves": ["Earthquake", "Ice Beam", "Spikes", "Taunt"]},
+      {"species": "Krokorok", "gender": "M", "item": "Eviolite", "ability": "Intimidate", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Adamant", "moves": ["Earthquake", "Knock Off", "Stealth Rock", "Taunt"]},
+      {"species": "Simipour", "gender": "M", "item": "Choice Scarf", "ability": "Torrent", "evs": {"spa": 252, "spd": 4, "spe": 252}, "nature": "Timid", "ivs": {"atk": 0, "spa": 30}, "moves": ["Hidden Power Grass", "Hydro Pump", "Ice Beam", "Scald"]},
+      {"species": "Swoobat", "gender": "M", "item": "Life Orb", "ability": "Simple", "evs": {"spa": 252, "spd": 4, "spe": 252}, "nature": "Timid", "ivs": {"atk": 0}, "moves": ["Air Slash", "Calm Mind", "Heat Wave", "Stored Power"]}
+    ]
+  },
+  {
+    "name": "Meganium Politoed Balance",
+    "data": [
+      {"species": "Meganium", "gender": "M", "item": "Leftovers", "ability": "Overgrow", "evs": {"hp": 248, "spd": 228, "spe": 32}, "nature": "Calm", "ivs": {"atk": 0}, "moves": ["Aromatherapy", "Giga Drain", "Synthesis", "Toxic"]},
+      {"species": "Hippopotas", "gender": "M", "item": "Eviolite", "ability": "Sand Force", "evs": {"hp": 248, "def": 240, "spd": 20}, "nature": "Impish", "moves": ["Earthquake", "Slack Off", "Stealth Rock", "Toxic"]},
+      {"species": "Magmar", "gender": "M", "item": "Eviolite", "ability": "Vital Spirit", "evs": {"spa": 252, "spd": 4, "spe": 252}, "nature": "Timid", "moves": ["Fire Blast", "Flame Charge", "Focus Blast", "Hidden Power Ice"], "ivs": {"atk": 30, "def": 30}},
+      {"species": "Pidgeot", "gender": "M", "item": "Choice Scarf", "ability": "Tangled Feet", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Jolly", "moves": ["Brave Bird", "Defog", "Return", "U-turn"], "happiness": 255},
+      {"species": "Politoed", "gender": "M", "item": "Leftovers", "ability": "Water Absorb", "evs": {"hp": 96, "spa": 252, "spe": 160}, "nature": "Modest", "ivs": {"atk": 0, "spa": 30}, "moves": ["Hidden Power Grass", "Ice Beam", "Scald", "Toxic"]},
+      {"species": "Swalot", "gender": "M", "item": "Assault Vest", "ability": "Sticky Hold", "evs": {"hp": 252, "spa": 252, "spe": 4}, "nature": "Modest", "ivs": {"atk": 0}, "moves": ["Acid Spray", "Giga Drain", "Ice Beam", "Sludge Bomb"]}
+    ]
+  },
+  {
+    "name": "AOA Simipour",
+    "data": [
+      {"species": "Simipour", "gender": "M", "item": "Life Orb", "ability": "Torrent", "evs": {"atk": 252, "spa": 4, "spe": 252}, "nature": "Naive", "moves": ["Gunk Shot", "Hydro Pump", "Ice Beam", "Knock Off"]},
+      {"species": "Electabuzz", "gender": "M", "item": "Eviolite", "ability": "Vital Spirit", "evs": {"spa": 252, "spd": 4, "spe": 252}, "nature": "Timid", "ivs": {"atk": 0, "spa": 30}, "moves": ["Focus Blast", "Hidden Power Grass", "Thunderbolt", "Volt Switch"]},
+      {"species": "Krokorok", "gender": "M", "item": "Eviolite", "ability": "Intimidate", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Adamant", "moves": ["Earthquake", "Knock Off", "Stealth Rock", "Taunt"]},
+      {"species": "Magmar", "gender": "M", "item": "Choice Scarf", "ability": "Vital Spirit", "evs": {"spa": 252, "spd": 4, "spe": 252}, "nature": "Timid", "ivs": {"atk": 0, "def": 30}, "moves": ["Fire Blast", "Focus Blast", "Hidden Power Ice", "Toxic"]},
+      {"species": "Servine", "gender": "M", "item": "Eviolite", "ability": "Contrary", "evs": {"hp": 252, "spa": 4, "spe": 252}, "nature": "Timid", "ivs": {"atk": 0, "def": 30}, "moves": ["Hidden Power Ice", "Leaf Storm", "Synthesis", "Taunt"]},
+      {"species": "Whirlipede", "gender": "M", "item": "Eviolite", "ability": "Speed Boost", "evs": {"hp": 248, "spa": 8, "spe": 252}, "nature": "Timid", "ivs": {"atk": 0}, "moves": ["Infestation", "Protect", "Spikes", "Toxic"]}
+    ]
+  },
+  {
+    "name": "Huntail+Simisage",
+    "data": [
+      {"species": "Huntail", "gender": "M", "item": "White Herb", "ability": "Water Veil", "evs": {"atk": 252, "spa": 4, "spe": 252}, "nature": "Naughty", "moves": ["Ice Beam", "Shell Smash", "Sucker Punch", "Waterfall"]},
+      {"species": "Lairon", "gender": "M", "item": "Eviolite", "ability": "Rock Head", "evs": {"hp": 212, "atk": 252, "spe": 44}, "nature": "Adamant", "moves": ["Earthquake", "Head Smash", "Heavy Slam", "Stealth Rock"]},
+      {"species": "Magmar", "gender": "M", "item": "Eviolite", "ability": "Flame Body", "evs": {"spa": 252, "spd": 4, "spe": 252}, "nature": "Timid", "ivs": {"atk": 0, "def": 30}, "moves": ["Fire Blast", "Focus Blast", "Hidden Power Ice", "Toxic"]},
+      {"species": "Sawsbuck", "gender": "M", "item": "Choice Scarf", "ability": "Sap Sipper", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Jolly", "moves": ["Double-Edge", "Horn Leech", "Jump Kick", "Toxic"]},
+      {"species": "Simisage", "gender": "M", "item": "Life Orb", "ability": "Overgrow", "evs": {"atk": 252, "spa": 4, "spe": 252}, "nature": "Naive", "moves": ["Gunk Shot", "Knock Off", "Leaf Storm", "Superpower"]},
+      {"species": "Swoobat", "gender": "M", "item": "Choice Specs", "ability": "Unaware", "evs": {"spa": 252, "spd": 4, "spe": 252}, "nature": "Timid", "moves": ["Air Slash", "Heat Wave", "Psychic", "U-turn"]}
+    ]
+  },
+  {
+    "name": "Mienfoo",
+    "data": [
+      {"species": "Mienfoo", "gender": "M", "item": "Eviolite", "ability": "Regenerator", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Jolly", "moves": ["Drain Punch", "Knock Off", "Taunt", "U-turn"]},
+      {"species": "Frogadier", "gender": "M", "item": "Choice Scarf", "ability": "Protean", "evs": {"spa": 252, "spd": 4, "spe": 252}, "nature": "Timid", "moves": ["Hidden Power Ground", "Hydro Pump", "Ice Beam", "U-turn"], "ivs": {"spa": 30, "spd": 30}},
+      {"species": "Jumpluff", "gender": "M", "ability": "Infiltrator", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Jolly", "moves": ["Acrobatics", "Seed Bomb", "Sleep Powder", "Swords Dance"]},
+      {"species": "Krokorok", "gender": "M", "item": "Choice Band", "ability": "Intimidate", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Adamant", "moves": ["Earthquake", "Knock Off", "Pursuit", "Stone Edge"]},
+      {"species": "Lairon", "gender": "M", "item": "Eviolite", "ability": "Rock Head", "evs": {"hp": 212, "atk": 252, "spe": 44}, "nature": "Adamant", "moves": ["Earthquake", "Head Smash", "Heavy Slam", "Stealth Rock"]},
+      {"species": "Vanilluxe", "gender": "F", "item": "Choice Specs", "ability": "Weak Armor", "evs": {"spa": 252, "spd": 4, "spe": 252}, "nature": "Timid", "ivs": {"atk": 1, "spa": 30, "spd": 30}, "moves": ["Flash Cannon", "Freeze-Dry", "Hidden Power Ground", "Ice Beam"]}
+    ]
+  },
+  {
+    "name": "Stall feat. Maractus and Lickilicky",
+    "data": [
+      {"species": "Bronzor", "item": "Eviolite", "ability": "Levitate", "evs": {"hp": 252, "def": 144, "spd": 112}, "nature": "Bold", "moves": ["Psywave", "Rest", "Stealth Rock", "Toxic"]},
+      {"species": "Lickitung", "gender": "M", "item": "Eviolite", "ability": "Oblivious", "evs": {"hp": 252, "def": 168, "spd": 88}, "nature": "Careful", "moves": ["Heal Bell", "Knock Off", "Protect", "Wish"]},
+      {"species": "Maractus", "gender": "M", "item": "Leftovers", "ability": "Water Absorb", "evs": {"hp": 252, "def": 120, "spe": 136}, "nature": "Bold", "ivs": {"atk": 0}, "moves": ["Giga Drain", "Leech Seed", "Spikes", "Synthesis"]},
+      {"species": "Swalot", "gender": "M", "item": "Black Sludge", "ability": "Sticky Hold", "evs": {"hp": 252, "spd": 252}, "nature": "Careful", "moves": ["Curse", "Fire Punch", "Rest", "Sleep Talk"]},
+      {"species": "Wartortle", "gender": "M", "item": "Eviolite", "ability": "Torrent", "evs": {"hp": 252, "def": 252, "spd": 4}, "nature": "Bold", "moves": ["Foresight", "Rapid Spin", "Scald", "Toxic"]},
+      {"species": "Zweilous", "gender": "M", "item": "Eviolite", "ability": "Hustle", "evs": {"hp": 252, "atk": 4, "spd": 252}, "nature": "Careful", "moves": ["Dragon Tail", "Rest", "Roar", "Sleep Talk"]}
+    ]
+  }
+]
