@@ -1,6 +1,7 @@
 from dotenv import load_dotenv
 from pydantic import BaseModel
 from langchain_openai import ChatOpenAI
+from langchain.prompts import ChatPromptTemplate
 from langchain_anthropic import ChatAnthropic
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import PydanticOutputParser # define a simple pythonclass that wil specify type of content that we want our LLM to generate
@@ -53,8 +54,7 @@ strat_prompt_team = ChatPromptTemplate.from_messages([
         you must use the `team_search_tool` to retrieve full team data.
 
         Return the result as structured output, using markdown format.
-        Do not summarize unless instructed to.
-
+        List *all* Pokémon on each team in detail. Do not summarize or skip any entries.
         {format_instructions}
     """
     ),
@@ -63,29 +63,46 @@ strat_prompt_team = ChatPromptTemplate.from_messages([
     ("placeholder", "{agent_scratchpad}"),
 ]).partial(format_instructions=strat_format_team)
 
-strat_format_single = (
-    "Use bullet points, markdown, and emoji where helpful.\n"
+# strat_format_single = (
+#     "Use bullet points, markdown, and emoji where helpful.\n"
 
-    "Summarize, expand the data given into a clear readable format for user.\n"
+#     "Summarize, expand the data given into a clear readable format for user.\n"
 
-    "Avoid JSON formatting unless explicitly asked."
-)
+#     "Avoid JSON formatting unless explicitly asked."
+# )
+# strat_prompt_single = ChatPromptTemplate.from_messages([
+#     ("system", 
+#     """
+#         You are a Pokémon research assistant that helps generate competitive strategies.
+
+#         Summarize key team roles, highlight synergy, explain strengths/weaknesses, and use natural language formatting.
+
+#         Avoid raw JSON. Use readable formatting like bullet points, emoji, or markdown if appropriate.
+
+#         Correct any typos in Pokémon names, tier labels, or generation numbers where possible.\n{format_instructions}
+#     """
+#     ),
+#     ("placeholder", "{chat_history}"),
+#     ("human", "{query} {name}"),
+#     ("placeholder", "{agent_scratchpad}"),
+# ])
+
 strat_prompt_single = ChatPromptTemplate.from_messages([
     ("system", 
-    """
-        You are a Pokémon research assistant that helps generate competitive strategies.
+    """You are a Pokémon research assistant that generates competitive strategy writeups for Pokémon teams or individual builds.
 
-        Summarize key team roles, highlight synergy, explain strengths/weaknesses, and use natural language formatting.
+Respond with:
+- Clear markdown formatting
+- Bullet points and emojis where helpful
+- **No raw JSON or code unless explicitly asked**
+- Sections like: Moveset, Role, Teammates, Threats, Tips
 
-        Avoid raw JSON. Use readable formatting like bullet points, emoji, or markdown if appropriate.
-
-        Correct any typos in Pokémon names, tier labels, or generation numbers where possible.\n{format_instructions}
-    """
-    ),
+Correct typos in Pokémon names, tiers, or generations when needed.
+"""),
     ("placeholder", "{chat_history}"),
     ("human", "{query} {name}"),
-    ("placeholder", "{agent_scratchpad}"),
-]).partial(format_instructions=strat_format_single)
+    ("placeholder", "{agent_scratchpad}")
+])
 
 tools = [ddgo_tool, save_tool, smogon_tool, team_search_tool] # list of tools that we want to use in the agent, in this case we are using the search tool
 
