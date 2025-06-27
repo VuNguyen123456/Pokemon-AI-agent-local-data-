@@ -2,9 +2,10 @@ import os
 import pprint
 import ast
 from tools import TeamSearchInput, AllTeamSearchResult, TeamSearchResult
+import re
 
 from tools import (
-    smogon_tool,
+    clean_smogon_tool,
     team_search_tool,
     save_tool,
     ddgo_tool
@@ -13,7 +14,7 @@ from tools import (
 def test_smogon_tool():
     print("Testing Smogon Strategy Lookup:")
     query = "Give me some info on Charizard in zero used"
-    result = smogon_tool.func(query)
+    result = clean_smogon_tool.func(query)
     print(result)
     print("-" * 50)
 
@@ -87,9 +88,28 @@ def test_ddgo_tool():
 #         print(f"Error in Wikipedia tool: {e}")
 #     print("-" * 50)
 
+def fix_markdown_headers_spacing(text: str) -> str:
+    """
+    Ensure that markdown headers like #, ##, ### are preceded by two newlines
+    so they render properly after paragraphs.
+    """
+    return re.sub(r"(?<!\n)\s*(?=#+\s)", r"\n\n", text)
+
+
 if __name__ == "__main__":
     # test_smogon_tool()
-    test_team_search_tool()
+    # test_team_search_tool()
     # test_save_tool()
     # test_ddgo_tool()
     # test_wiki_tool()
+    sample_text = (
+        "Charizard is a powerful Fire-type sweeper.### Moveset\n"
+        "- Flare Blitz\n"
+        "- Dragon Dance\n"
+        "Use Charizard late-game.### Role\n"
+        "Acts as a physical wallbreaker."
+    )
+
+    cleaned = fix_markdown_headers_spacing(sample_text)
+    print(cleaned)
+

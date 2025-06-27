@@ -7,11 +7,12 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import PydanticOutputParser # define a simple pythonclass that wil specify type of content that we want our LLM to generate
 from typing import List, Optional, Dict
 from langchain.agents import create_tool_calling_agent, AgentExecutor # to create and run test the agent
-from tools import ddgo_tool, save_tool, smogon_tool, team_search_tool # import the tools that we will use in the agent
+from tools import ddgo_tool, save_tool, clean_smogon_tool, team_search_tool # import the tools that we will use in the agent
 from langchain_core.output_parsers import PydanticOutputParser
 from pprint import pprint
 from models import TeamSearchResult, AllTeamSearchResult, TeamPokemon # import the models that we will use to parse the output of the LLM
 import re  
+
 # TODO:
 # look into not having to download all the data from smogon but rather just use it throuhg github API
 
@@ -48,14 +49,17 @@ strat_format_team = strat_parser.get_format_instructions()
 strat_prompt_team = ChatPromptTemplate.from_messages([
     ("system", 
     """
-       You are a Pokémon research assistant helping with competitive teams.
+    You are a Pokémon research assistant helping with competitive teams.
 
-        When a user asks for teams featuring specific Pokémon (e.g. 'teams with Umbreon and Chansey'), 
-        you must use the `team_search_tool` to retrieve full team data.
+    When a user asks for teams featuring specific Pokémon (e.g. 'teams with Umbreon and Chansey in Gen 7 OU'), 
+    you must use the `team_search_tool` to retrieve full team data.
 
-        Return the result as structured output, using markdown format.
-        List *all* Pokémon on each team in detail. Do not summarize or skip any entries.
-        {format_instructions}
+    **Important: Always include the entire user query, including generation and tier (e.g., 'gen7', 'ou'), when calling the tool.**
+
+    Return the result as structured output, using markdown format.  
+    List *all* Pokémon on each team in detail. Do not summarize or skip any entries.
+
+    {format_instructions}
     """
     ),
     ("placeholder", "{chat_history}"),
@@ -63,48 +67,71 @@ strat_prompt_team = ChatPromptTemplate.from_messages([
     ("placeholder", "{agent_scratchpad}"),
 ]).partial(format_instructions=strat_format_team)
 
-# strat_format_single = (
-#     "Use bullet points, markdown, and emoji where helpful.\n"
 
-#     "Summarize, expand the data given into a clear readable format for user.\n"
 
-#     "Avoid JSON formatting unless explicitly asked."
-# )
 # strat_prompt_single = ChatPromptTemplate.from_messages([
 #     ("system", 
 #     """
-#         You are a Pokémon research assistant that helps generate competitive strategies.
+#     You are a Pokémon research assistant that generates competitive strategy writeups for Pokémon teams or individual builds.
 
-#         Summarize key team roles, highlight synergy, explain strengths/weaknesses, and use natural language formatting.
+#     **IMPORTANT**: Do not copy or quote raw text, HTML, or large blocks from the tool output.
 
-#         Avoid raw JSON. Use readable formatting like bullet points, emoji, or markdown if appropriate.
+#     Instead:
+#     - Understand the information returned by tools.
+#     - Write your response naturally in your own words.
+    
+#     Respond with:
+#     - Clear markdown formatting, new line between the 2 section (Full text and bullet point sections)
+#     - Bullet points and emojis where helpful
+#     - **No raw JSON or code unless explicitly asked**
+#     - Sections like: Moveset, Role, Teammates, Threats, Tips
+#     - Also a detail paragraph that summarize the most importants notes that was returned to you
 
-#         Correct any typos in Pokémon names, tier labels, or generation numbers where possible.\n{format_instructions}
-#     """
-#     ),
+#     Do not include HTML, code blocks, JSON, or any unprocessed output from tools.
+    
+#     Correct typos in Pokémon names, tiers, or generations when needed.
+# """),
 #     ("placeholder", "{chat_history}"),
 #     ("human", "{query} {name}"),
-#     ("placeholder", "{agent_scratchpad}"),
+#     ("placeholder", "{agent_scratchpad}")
 # ])
 
 strat_prompt_single = ChatPromptTemplate.from_messages([
     ("system", 
-    """You are a Pokémon research assistant that generates competitive strategy writeups for Pokémon teams or individual builds.
+    """
+    You are a Pokémon research assistant that generates competitive strategy writeups for Pokémon teams or individual builds.
 
-Respond with:
-- Clear markdown formatting
-- Bullet points and emojis where helpful
-- **No raw JSON or code unless explicitly asked**
-- Sections like: Moveset, Role, Teammates, Threats, Tips
+    ⚠️ **Do NOT** copy or quote raw text, HTML, or code blocks from tool outputs. Instead:
+    - Fully understand the returned content.
+    - Write the response in your **own words** using clean, natural language.
 
-Correct typos in Pokémon names, tiers, or generations when needed.
-"""),
+    ✅ Format your response like this:
+    1. Start with a **short summary paragraph** of the build or strategy.
+    2. Then insert **two newlines** (`\\n\\n`) between the pink text and green text sections.
+    3. Use clear **Markdown formatting** with bold headers (e.g., `### Moveset`) and bullet points (`- `).
+    4. Use **emojis** where helpful for visual clarity (e.g., 🔥, 🛡️, ⚠️).
+
+    ❌ Avoid:
+    - Raw HTML or tool text
+    - Code blocks
+    - JSON output
+
+    🔍 Sections to include:
+    - **Moveset**
+    - **Role**
+    - **Teammates**
+    - **Threats**
+    - **Tips**
+
+    🧹 Also, fix typos in Pokémon names, tiers, or generations when needed.
+    """),
     ("placeholder", "{chat_history}"),
     ("human", "{query} {name}"),
     ("placeholder", "{agent_scratchpad}")
 ])
 
-tools = [ddgo_tool, save_tool, smogon_tool, team_search_tool] # list of tools that we want to use in the agent, in this case we are using the search tool
+
+tools = [ddgo_tool, save_tool, clean_smogon_tool, team_search_tool] # list of tools that we want to use in the agent, in this case we are using the search tool
 
 def format_strategy_team_output(resp: TeamSearchResult) -> str:
     output = [f"🔍 **Team Name:** {resp.team_name}\n👤 **Author:** {resp.author}\n"]
@@ -138,32 +165,71 @@ def format_multiple_teams_output(teams: List[TeamSearchResult]) -> str:
         outputs.append("\n" + "-"*30 + "\n")
     return "\n".join(outputs)
 
+def fix_markdown_headers_spacing(text: str) -> str:
+    """
+    Ensure that markdown headers like #, ##, ### are preceded by two newlines
+    so they render properly after paragraphs.
+    """
+    return re.sub(r"(?<!\n)\s*(?=#+\s)", r"\n\n", text)
 
-query = input("How can I help with Pokemon? ")
+while True:
+    query = input("\nHow can I help with Pokémon? (Type 'quit' or 'exit' to stop): ").strip()
+    if re.search(r"\b(quit|exit)\b", query.lower()):
+        print("👋 Goodbye! Happy battling!")
+        break
 
-#or "build" in query.lower() or "weakness" in query.lower() or "strength" in query.lower() or "moves" in query.lower() or "items" in query.lower() or "abilities" in query.lower()
+    # Choose prompt type
+    if re.search(r"\bteam(s|ing)?\b", query, re.IGNORECASE):
+        prompt = strat_prompt_team
+    elif re.search(r"\b(strategy|build|weakness|strength|moves|items|abilities)\b", query, re.IGNORECASE):
+        prompt = strat_prompt_single
+    else:
+        prompt = general_prompt
 
-if re.search(r"\bteam(s|ing)?\b", query, re.IGNORECASE):
-    prompt = strat_prompt_team
-elif re.search(r"\b(strategy|build|weakness|strength|moves|items|abilities)\b", query, re.IGNORECASE):
-    prompt = strat_prompt_single
-else:
-    prompt = general_prompt
+    # Recreate agent in case prompt changes
+    agent = create_tool_calling_agent(llm=llm, prompt=prompt, tools=tools)
+    agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
 
-agent = create_tool_calling_agent(
-    llm = llm,
-    prompt=prompt,
-    tools=tools
-)
+    # Invoke
+    response = agent_executor.invoke({
+        "query": query,
+        "chat_history": [],
+        "name": "Pokemon Research Assistant"
+    })
 
-agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True) # create an agent executor to run the agent
-response = agent_executor.invoke({"query": query, "chat_history": [], "name": "Pokemon Research Assistant"}) # run the agent executor with the query
+    # Display response
+    if isinstance(response, AllTeamSearchResult):
+        print(format_multiple_teams_output(response.teams))
+    else:
+        output_text = str(response)
+        output_text = fix_markdown_headers_spacing(output_text)
+        print(output_text)
 
-if isinstance(response, AllTeamSearchResult):
-    print(format_multiple_teams_output(response.teams))
-else:
-    print("⚠️ Response is not a TeamSearchResult. Dumping raw output for inspection:\n")
-    pprint(response)  # Pretty print for readability
-    # Optional: print raw type
-    print(f"\n📦 Actual response type: {type(response)}")
+
+# query = input("How can I help with Pokemon? ")
+
+# #or "build" in query.lower() or "weakness" in query.lower() or "strength" in query.lower() or "moves" in query.lower() or "items" in query.lower() or "abilities" in query.lower()
+
+# if re.search(r"\bteam(s|ing)?\b", query, re.IGNORECASE):
+#     prompt = strat_prompt_team
+# elif re.search(r"\b(strategy|build|weakness|strength|moves|items|abilities)\b", query, re.IGNORECASE):
+#     prompt = strat_prompt_single
+# else:
+#     prompt = general_prompt
+
+# agent = create_tool_calling_agent(
+#     llm = llm,
+#     prompt=prompt,
+#     tools=tools
+# )
+
+# agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True) # create an agent executor to run the agent
+# response = agent_executor.invoke({"query": query, "chat_history": [], "name": "Pokemon Research Assistant"}) # run the agent executor with the query
+
+# if isinstance(response, AllTeamSearchResult):
+#     print(format_multiple_teams_output(response.teams))
+# else:
+#     output_text = str(response)
+#     output_text = fix_markdown_headers_spacing(output_text)
+#     print(output_text)
 

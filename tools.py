@@ -11,6 +11,7 @@ from langchain_community.tools import WikipediaQueryRun
 import spacy
 from spacy.matcher import PhraseMatcher
 from pydantic import BaseModel, Field
+from bs4 import BeautifulSoup
 from typing import Optional
 from models import AllTeamSearchResult, TeamSearchResult, TeamPokemon
 from langchain.tools import StructuredTool
@@ -71,21 +72,16 @@ def normalize_tier(text: str) -> Optional[str]:
     return ALL_TIERS.get(cleaned)
 
 
-# def extract_species_tier_gen(user_input: str, ALL_SPECIES: List[str], valid_tiers: set):
-#     doc = nlp(user_input.lower())
-#     pokemon = None
-#     tier = None
-#     gen = None
+# def strip_html(text: str) -> str:
+#     """Strip HTML tags from text and return clean plain text."""
+#     soup = BeautifulSoup(text, "html.parser")
+#     return soup.get_text(separator="\n").strip()
 
-#     for token in doc:
-#         if token.text.title() in ALL_SPECIES:
-#             pokemon = token.text.title()
-#         elif token.text.lower() in valid_tiers:
-#             tier = token.text.lower()
-#         elif token.text.lower().startswith("gen") and token.text[3:].isdigit():
-#             gen = token.text.lower()
+def strip_html(text: str) -> str:
+    soup = BeautifulSoup(text, "html.parser")
+    clean = soup.get_text(separator="\n").strip()
+    return re.sub(r"\n{2,}", "\n\n", clean)  # Collapse excessive newlines
 
-#     return pokemon, tier, gen
 
 def extract_species_tier_gen(user_input: str):
     user_input = user_input.lower()
@@ -379,12 +375,39 @@ def create_pokemon_showdown_export(team_data: list) -> str:
 
     return "\n".join(lines).strip()
 
+def fix_markdown_headers_spacing(text: str) -> str:
+    """
+    Ensure that markdown headers like #, ##, ### are preceded by two newlines
+    so they render properly after paragraphs.
+    """
+    return re.sub(r"(?<!\n)\s*(?=#+\s)", r"\n\n", text)
 
-smogon_tool = Tool(
-    name="smogon_strategy_lookup",
-    func=combined_smogon_search,
-    description="Use this tool to search for Pokémon strategies, moves and analyses from Smogon data based on user queries."
+# def clean_smogon_search(query: str) -> str:
+#     # Call your existing combined smogon search function
+#     raw_output = combined_smogon_search(query)
+#     # Clean HTML from raw output
+#     return strip_html(raw_output)
+
+def clean_smogon_search(query: str) -> str:
+    raw_output = combined_smogon_search(query)  # Your original HTML-returning function
+    text_only = strip_html(raw_output)
+    cleaned = fix_markdown_headers_spacing(text_only)
+    return cleaned
+
+clean_smogon_tool = Tool(
+    name="clean_smogon_strategy_lookup",
+    func=clean_smogon_search,
+    description="Use this tool to search for Pokémon strategies and moves from Smogon data, but returns clean text with HTML removed.",
+    return_direct=False
 )
+
+# smogon_tool = Tool(
+#     name="smogon_strategy_lookup",
+#     func=combined_smogon_search,
+#     description="Use this tool to search for Pokémon strategies, moves and analyses from Smogon data based on user queries.",
+#     return_direct=False  
+# )
+
 
 team_search_tool = StructuredTool.from_function(
     name="search_teams_by_pokemon",
