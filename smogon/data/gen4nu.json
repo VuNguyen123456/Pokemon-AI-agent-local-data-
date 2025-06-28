@@ -1,0 +1,112 @@
+[
+  {
+    "name": "Standard RegiKing Balance (Innovamania)",
+    "data": [
+      {"species": "Jynx", "item": "Focus Sash", "ability": "Forewarn", "evs": {"hp": 4, "spa": 252, "spe": 252}, "nature": "Timid", "moves": ["Fake Out", "Ice Beam", "Lovely Kiss", "Psychic"]},
+      {"species": "Haunter", "gender": "F", "item": "Life Orb", "ability": "Levitate", "evs": {"def": 4, "spa": 252, "spe": 252}, "nature": "Timid", "moves": ["Hidden Power Ground", "Shadow Ball", "Sludge Bomb", "Substitute"], "ivs": {"spa": 30, "spd": 30}},
+      {"species": "Manectric", "gender": "F", "item": "Choice Scarf", "ability": "Static", "evs": {"def": 4, "spa": 252, "spe": 252}, "nature": "Timid", "ivs": {"atk": 2, "spa": 30}, "moves": ["Flamethrower", "Hidden Power Grass", "Switcheroo", "Thunderbolt"]},
+      {"species": "Regirock", "item": "Leftovers", "ability": "Clear Body", "evs": {"hp": 252, "def": 4, "spd": 252}, "nature": "Careful", "moves": ["Explosion", "Rock Slide", "Stealth Rock", "Thunder Wave"]},
+      {"species": "Slowking", "gender": "M", "item": "Leftovers", "ability": "Own Tempo", "evs": {"hp": 252, "def": 144, "spd": 112}, "nature": "Calm", "moves": ["Psychic", "Slack Off", "Surf", "Thunder Wave"]},
+      {"species": "Tauros", "item": "Choice Band", "ability": "Intimidate", "evs": {"hp": 4, "atk": 252, "spe": 252}, "nature": "Jolly", "moves": ["Double-Edge", "Earthquake", "Stone Edge", "Zen Headbutt"]}
+    ]
+  },
+  {
+    "name": "Sash Jynx Offense (atomicllamas)",
+    "data": [
+      {"species": "Jynx", "item": "Focus Sash", "ability": "Forewarn", "evs": {"spa": 252, "spd": 4, "spe": 252}, "nature": "Timid", "moves": ["Grass Knot", "Ice Beam", "Lovely Kiss", "Nasty Plot"]},
+      {"species": "Haunter", "gender": "M", "item": "Life Orb", "ability": "Levitate", "evs": {"def": 4, "spa": 252, "spe": 252}, "nature": "Timid", "moves": ["Hidden Power Ground", "Shadow Ball", "Sludge Bomb", "Substitute"], "ivs": {"spa": 30, "spd": 30}},
+      {"species": "Hitmonchan", "item": "Leftovers", "ability": "Iron Fist", "evs": {"hp": 160, "atk": 252, "spe": 96}, "nature": "Adamant", "moves": ["Bulk Up", "Drain Punch", "Ice Punch", "Mach Punch"]},
+      {"species": "Manectric", "gender": "M", "item": "Choice Scarf", "ability": "Static", "evs": {"spa": 252, "spd": 4, "spe": 252}, "nature": "Timid", "moves": ["Hidden Power Grass", "Overheat", "Switcheroo", "Thunderbolt"], "ivs": {"atk": 30, "spa": 30}},
+      {"species": "Regirock", "item": "Leftovers", "ability": "Clear Body", "evs": {"hp": 204, "atk": 148, "spd": 156}, "nature": "Adamant", "moves": ["Earthquake", "Explosion", "Rock Slide", "Stealth Rock"]},
+      {"species": "Skuntank", "gender": "M", "item": "Leftovers", "ability": "Aftermath", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Adamant", "moves": ["Explosion", "Pursuit", "Sucker Punch", "Taunt"]}
+    ]
+  },
+  {
+    "name": "SubNP Jynx Offense (Heysup)",
+    "data": [
+      {"species": "Piloswine", "gender": "M", "item": "Life Orb", "ability": "Oblivious", "evs": {"hp": 200, "atk": 252, "spe": 56}, "nature": "Adamant", "moves": ["Avalanche", "Earthquake", "Ice Shard", "Stealth Rock"]},
+      {"species": "Haunter", "gender": "M", "item": "Life Orb", "ability": "Levitate", "evs": {"spa": 252, "spd": 4, "spe": 252}, "nature": "Timid", "moves": ["Hidden Power Ground", "Shadow Ball", "Sludge Bomb", "Substitute"], "ivs": {"spa": 30, "spd": 30}},
+      {"species": "Jynx", "item": "Leftovers", "ability": "Forewarn", "evs": {"hp": 8, "spa": 248, "spe": 252}, "nature": "Timid", "ivs": {"atk": 0}, "moves": ["Ice Beam", "Lovely Kiss", "Nasty Plot", "Substitute"]},
+      {"species": "Magmortar", "gender": "M", "item": "Choice Scarf", "ability": "Flame Body", "evs": {"spa": 252, "spd": 4, "spe": 252}, "nature": "Hasty", "moves": ["Earthquake", "Fire Blast", "Focus Blast", "Thunderbolt"]},
+      {"species": "Magneton", "item": "Leftovers", "ability": "Magnet Pull", "evs": {"hp": 64, "spa": 228, "spe": 216}, "nature": "Modest", "moves": ["Flash Cannon", "Hidden Power Ground", "Substitute", "Thunderbolt"], "ivs": {"spa": 30, "spd": 30}},
+      {"species": "Politoed", "gender": "M", "item": "Leftovers", "ability": "Water Absorb", "evs": {"hp": 188, "def": 68, "spd": 252}, "nature": "Calm", "moves": ["Encore", "Protect", "Surf", "Toxic"]}
+    ]
+  },
+  {
+    "name": "Firespam Offense (Honko)",
+    "data": [
+      {"species": "Regirock", "item": "Lum Berry", "ability": "Clear Body", "evs": {"hp": 248, "atk": 252, "spe": 8}, "nature": "Adamant", "moves": ["Earthquake", "Explosion", "Stealth Rock", "Stone Edge"]},
+      {"species": "Charizard", "gender": "M", "item": "Life Orb", "ability": "Blaze", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Jolly", "moves": ["Earthquake", "Flare Blitz", "Swords Dance", "Thunder Punch"]},
+      {"species": "Hitmonchan", "item": "Life Orb", "ability": "Iron Fist", "evs": {"hp": 32, "atk": 252, "def": 12, "spe": 212}, "nature": "Adamant", "moves": ["Close Combat", "Ice Punch", "Mach Punch", "Rapid Spin"]},
+      {"species": "Magmortar", "gender": "F", "item": "Choice Scarf", "ability": "Flame Body", "evs": {"spa": 252, "spd": 4, "spe": 252}, "nature": "Timid", "ivs": {"atk": 2, "spa": 30}, "moves": ["Fire Blast", "Flamethrower", "Hidden Power Grass", "Thunderbolt"]},
+      {"species": "Skuntank", "gender": "M", "item": "Life Orb", "ability": "Aftermath", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Adamant", "moves": ["Crunch", "Explosion", "Pursuit", "Sucker Punch"]},
+      {"species": "Whiscash", "gender": "M", "item": "Life Orb", "ability": "Anticipation", "evs": {"atk": 252, "def": 4, "spe": 252}, "nature": "Adamant", "moves": ["Bounce", "Dragon Dance", "Earthquake", "Waterfall"]}
+    ]
+  },
+  {
+    "name": "ZardPlume Offense (Oglemi)",
+    "data": [
+      {"species": "Floatzel", "gender": "M", "item": "Focus Sash", "ability": "Swift Swim", "evs": {"hp": 4, "atk": 252, "spe": 252}, "nature": "Jolly", "moves": ["Baton Pass", "Ice Punch", "Taunt", "Waterfall"]},
+      {"species": "Charizard", "gender": "M", "item": "Life Orb", "ability": "Blaze", "evs": {"spa": 252, "spd": 4, "spe": 252}, "nature": "Timid", "moves": ["Air Slash", "Fire Blast", "Hidden Power Grass", "Roost"], "ivs": {"atk": 30, "spa": 30}},
+      {"species": "Gardevoir", "gender": "M", "item": "Choice Scarf", "ability": "Trace", "evs": {"hp": 4, "spa": 252, "spe": 252}, "nature": "Timid", "moves": ["Focus Blast", "Psychic", "Thunderbolt", "Trick"]},
+      {"species": "Sandslash", "gender": "M", "item": "Leftovers", "ability": "Sand Veil", "evs": {"hp": 252, "def": 252, "spd": 4}, "nature": "Impish", "moves": ["Earthquake", "Rapid Spin", "Shadow Claw", "Stealth Rock"]},
+      {"species": "Skuntank", "gender": "M", "item": "Black Glasses", "ability": "Aftermath", "evs": {"hp": 4, "atk": 252, "spe": 252}, "nature": "Adamant", "moves": ["Crunch", "Explosion", "Pursuit", "Sucker Punch"]},
+      {"species": "Vileplume", "gender": "M", "item": "Life Orb", "ability": "Chlorophyll", "evs": {"hp": 4, "spa": 252, "spe": 252}, "nature": "Timid", "moves": ["Sleep Powder", "Sludge Bomb", "Solar Beam", "Sunny Day"]}
+    ]
+  },
+  {
+    "name": "Dual Fighting Balance (Honko)",
+    "data": [
+      {"species": "Medicham", "gender": "M", "item": "Life Orb", "ability": "Pure Power", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Jolly", "moves": ["Fake Out", "High Jump Kick", "Thunder Punch", "Zen Headbutt"]},
+      {"species": "Gligar", "gender": "M", "item": "Leftovers", "ability": "Hyper Cutter", "evs": {"hp": 252, "def": 240, "spe": 16}, "nature": "Impish", "moves": ["Earthquake", "Roost", "Stealth Rock", "Taunt"]},
+      {"species": "Hitmonchan", "item": "Choice Scarf", "ability": "Iron Fist", "evs": {"hp": 40, "atk": 252, "spe": 216}, "nature": "Adamant", "moves": ["Close Combat", "Earthquake", "Ice Punch", "Thunder Punch"]},
+      {"species": "Hypno", "gender": "M", "item": "Leftovers", "ability": "Insomnia", "evs": {"hp": 252, "def": 120, "spd": 136}, "nature": "Calm", "ivs": {"atk": 0}, "moves": ["Protect", "Seismic Toss", "Toxic", "Wish"]},
+      {"species": "Magneton", "item": "Leftovers", "ability": "Magnet Pull", "evs": {"hp": 80, "spa": 252, "spe": 176}, "nature": "Modest", "ivs": {"atk": 2, "spa": 30}, "moves": ["Flash Cannon", "Hidden Power Grass", "Substitute", "Thunderbolt"]},
+      {"species": "Tauros", "item": "Choice Band", "ability": "Intimidate", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Jolly", "moves": ["Double-Edge", "Earthquake", "Pursuit", "Return"], "happiness": 255}
+    ]
+  },
+  {
+    "name": "DD Whiscash Offense (BKC)",
+    "data": [
+      {"species": "Machoke", "gender": "F", "item": "Lum Berry", "ability": "No Guard", "evs": {"hp": 248, "atk": 252, "spd": 8}, "nature": "Adamant", "moves": ["Bullet Punch", "Dynamic Punch", "Ice Punch", "Payback"]},
+      {"species": "Charizard", "gender": "M", "item": "Life Orb", "ability": "Blaze", "evs": {"spa": 252, "spd": 4, "spe": 252}, "nature": "Timid", "moves": ["Air Slash", "Fire Blast", "Hidden Power Grass", "Roost"], "ivs": {"atk": 30, "spa": 30}},
+      {"species": "Jumpluff", "gender": "M", "item": "Life Orb", "ability": "Chlorophyll", "evs": {"atk": 252, "def": 4, "spe": 252}, "nature": "Jolly", "moves": ["Aerial Ace", "Seed Bomb", "Sleep Powder", "Swords Dance"]},
+      {"species": "Manectric", "gender": "M", "item": "Choice Scarf", "ability": "Static", "evs": {"hp": 40, "spa": 252, "spe": 216}, "nature": "Timid", "moves": ["Flamethrower", "Hidden Power Grass", "Switcheroo", "Thunderbolt"], "ivs": {"atk": 30, "spa": 30}},
+      {"species": "Sandslash", "gender": "M", "item": "Leftovers", "ability": "Sand Veil", "evs": {"hp": 248, "atk": 252, "spe": 8}, "nature": "Adamant", "moves": ["Earthquake", "Rapid Spin", "Shadow Claw", "Stealth Rock"]},
+      {"species": "Whiscash", "gender": "M", "item": "Leftovers", "ability": "Anticipation", "evs": {"atk": 252, "def": 4, "spe": 252}, "nature": "Adamant", "moves": ["Dragon Dance", "Earthquake", "Stone Edge", "Waterfall"]}
+    ]
+  },
+  {
+    "name": "Semi-Room (FLCL)",
+    "data": [
+      {"species": "Solrock", "item": "Lum Berry", "ability": "Levitate", "evs": {"hp": 252, "atk": 252, "def": 4}, "nature": "Brave", "ivs": {"spe": 0}, "moves": ["Explosion", "Stealth Rock", "Stone Edge", "Trick Room"]},
+      {"species": "Camerupt", "gender": "M", "item": "Life Orb", "ability": "Solid Rock", "evs": {"atk": 252, "def": 4, "spa": 252}, "nature": "Quiet", "ivs": {"atk": 30, "spa": 30, "spe": 1}, "moves": ["Earthquake", "Explosion", "Fire Blast", "Hidden Power Grass"]},
+      {"species": "Gardevoir", "gender": "M", "item": "Choice Scarf", "ability": "Trace", "evs": {"def": 4, "spa": 252, "spe": 252}, "nature": "Timid", "ivs": {"atk": 0}, "moves": ["Focus Blast", "Psychic", "Thunderbolt", "Trick"]},
+      {"species": "Marowak", "gender": "M", "item": "Thick Club", "ability": "Rock Head", "evs": {"hp": 248, "atk": 252, "def": 8}, "nature": "Brave", "ivs": {"spe": 0}, "moves": ["Double-Edge", "Earthquake", "Rock Slide", "Swords Dance"]},
+      {"species": "Medicham", "gender": "M", "item": "Life Orb", "ability": "Pure Power", "evs": {"atk": 252, "def": 4, "spe": 252}, "nature": "Adamant", "moves": ["Bullet Punch", "Fake Out", "High Jump Kick", "Thunder Punch"]},
+      {"species": "Tauros", "item": "Choice Band", "ability": "Intimidate", "evs": {"atk": 252, "def": 4, "spe": 252}, "nature": "Jolly", "moves": ["Earthquake", "Facade", "Pursuit", "Return"], "happiness": 255}
+    ]
+  },
+  {
+    "name": "SubEncoreWrath Balance (atomicllamas)",
+    "data": [
+      {"species": "Charizard", "gender": "F", "item": "Choice Specs", "ability": "Blaze", "evs": {"def": 4, "spa": 252, "spe": 252}, "nature": "Timid", "moves": ["Air Slash", "Fire Blast", "Focus Blast", "Hidden Power Grass"], "ivs": {"atk": 30, "spa": 30}},
+      {"species": "Grumpig", "gender": "F", "item": "Leftovers", "ability": "Thick Fat", "evs": {"hp": 252, "def": 80, "spd": 176}, "nature": "Calm", "moves": ["Focus Blast", "Heal Bell", "Psychic", "Toxic"]},
+      {"species": "Jumpluff", "gender": "F", "item": "Life Orb", "ability": "Chlorophyll", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Jolly", "moves": ["Aerial Ace", "Seed Bomb", "Sleep Powder", "Swords Dance"]},
+      {"species": "Poliwrath", "gender": "F", "item": "Leftovers", "ability": "Water Absorb", "evs": {"hp": 120, "atk": 252, "spe": 136}, "nature": "Adamant", "moves": ["Encore", "Focus Punch", "Substitute", "Waterfall"]},
+      {"species": "Sandslash", "gender": "F", "item": "Leftovers", "ability": "Sand Veil", "evs": {"hp": 252, "atk": 4, "def": 252}, "nature": "Impish", "moves": ["Earthquake", "Night Slash", "Rapid Spin", "Stealth Rock"]},
+      {"species": "Tauros", "item": "Choice Band", "ability": "Intimidate", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Jolly", "moves": ["Double-Edge", "Earthquake", "Pursuit", "Rock Slide"]}
+    ]
+  },
+  {
+    "name": "Sunny Day (Honko)",
+    "data": [
+      {"species": "Persian", "gender": "M", "item": "Heat Rock", "ability": "Technician", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Jolly", "moves": ["Fake Out", "Sunny Day", "Taunt", "U-turn"]},
+      {"species": "Hypno", "gender": "M", "item": "Heat Rock", "ability": "Insomnia", "evs": {"hp": 252, "def": 160, "spd": 96}, "nature": "Calm", "ivs": {"atk": 0}, "moves": ["Baton Pass", "Psychic", "Sunny Day", "Thunder Wave"]},
+      {"species": "Regirock", "item": "Heat Rock", "ability": "Clear Body", "evs": {"hp": 248, "atk": 252, "spe": 8}, "nature": "Adamant", "moves": ["Explosion", "Stealth Rock", "Stone Edge", "Sunny Day"]},
+      {"species": "Shiftry", "gender": "M", "item": "Life Orb", "ability": "Chlorophyll", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Adamant", "moves": ["Explosion", "Seed Bomb", "Sucker Punch", "Swords Dance"]},
+      {"species": "Typhlosion", "gender": "F", "item": "Choice Scarf", "ability": "Blaze", "evs": {"spa": 252, "spd": 4, "spe": 252}, "nature": "Timid", "ivs": {"atk": 2, "spa": 30}, "moves": ["Eruption", "Flamethrower", "Focus Blast", "Hidden Power Grass"]},
+      {"species": "Victreebel", "gender": "F", "item": "Life Orb", "ability": "Chlorophyll", "evs": {"spa": 252, "spd": 4, "spe": 252}, "nature": "Timid", "ivs": {"atk": 3, "def": 30, "spd": 30, "spe": 30}, "moves": ["Hidden Power Rock", "Sleep Powder", "Solar Beam", "Weather Ball"]}
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Noctowl Balance",
+    "author": "Earthworm",
+    "data": [
+      {"species": "Delibird", "gender": "M", "ivs": {"hp": 23, "atk": 27, "def": 25}, "moves": ["Hidden Power Rock", "Ice Beam", "Spikes", "Thief"]},
+      {"species": "Elekid", "gender": "M", "item": "Leftovers", "moves": ["Light Screen", "Psychic", "Thunderbolt", "Toxic"]},
+      {"species": "Golbat", "gender": "M", "item": "Leftovers", "moves": ["Giga Drain", "Protect", "Toxic", "Wing Attack"]},
+      {"species": "Murkrow", "gender": "M", "item": "Black Glasses", "moves": ["Drill Peck", "Haze", "Hidden Power Dark", "Pursuit"]},
+      {"species": "Noctowl", "gender": "M", "item": "Leftovers", "moves": ["Hypnosis", "Nightmare", "Return", "Toxic"], "happiness": 255},
+      {"species": "Venomoth", "gender": "M", "item": "Leftovers", "moves": ["Giga Drain", "Psychic", "Screech", "Sludge Bomb"]}
+    ]
+  }
+]

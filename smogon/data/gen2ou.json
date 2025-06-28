@@ -1,0 +1,218 @@
+[
+  {
+    "name": "Nidoking + Gengar Offense",
+    "data": [
+      {"species": "Snorlax", "gender": "M", "item": "Leftovers", "moves": ["Curse", "Double-Edge", "Rest", "Sleep Talk"]},
+      {"species": "Cloyster", "gender": "M", "item": "Leftovers", "moves": ["Explosion", "Spikes", "Surf", "Toxic"]},
+      {"species": "Gengar", "gender": "M", "item": "Leftovers", "moves": ["Dynamic Punch", "Explosion", "Ice Punch", "Thunder"]},
+      {"species": "Nidoking", "moves": ["Earthquake", "Ice Beam", "Thief", "Thunder"]},
+      {"species": "Tyranitar", "gender": "M", "item": "Leftovers", "moves": ["Earthquake", "Pursuit", "Roar", "Rock Slide"]},
+      {"species": "Zapdos", "item": "Leftovers", "ivs": {"def": 27}, "moves": ["Hidden Power Ice", "Rest", "Sleep Talk", "Thunder"]}
+    ]
+  },
+  {
+    "name": "Nidoking + Machamp Offense",
+    "data": [
+      {"species": "Nidoking", "item": "Leftovers", "moves": ["Earthquake", "Ice Beam", "Lovely Kiss", "Thunder"]},
+      {"species": "Cloyster", "gender": "M", "item": "Leftovers", "moves": ["Explosion", "Spikes", "Surf", "Toxic"]},
+      {"species": "Machamp", "gender": "M", "item": "Leftovers", "moves": ["Cross Chop", "Curse", "Earthquake", "Rock Slide"]},
+      {"species": "Snorlax", "gender": "M", "item": "Leftovers", "moves": ["Body Slam", "Curse", "Rest", "Sleep Talk"]},
+      {"species": "Tyranitar", "gender": "M", "item": "Leftovers", "moves": ["Fire Blast", "Pursuit", "Roar", "Rock Slide"]},
+      {"species": "Zapdos", "item": "Leftovers", "ivs": {"atk": 23, "def": 27}, "moves": ["Hidden Power Ice", "Rest", "Sleep Talk", "Thunder"]}
+    ]
+  },
+  {
+    "name": "Jynx + Gengar Offense",
+    "author": "Fear",
+    "data": [
+      {"species": "Snorlax", "gender": "M", "item": "Leftovers", "moves": ["Double-Edge", "Earthquake", "Rest", "Sleep Talk"]},
+      {"species": "Cloyster", "gender": "M", "item": "Leftovers", "moves": ["Explosion", "Spikes", "Surf", "Toxic"]},
+      {"species": "Gengar", "gender": "M", "moves": ["Explosion", "Ice Punch", "Thief", "Thunderbolt"]},
+      {"species": "Golem", "gender": "M", "item": "Leftovers", "moves": ["Earthquake", "Explosion", "Rapid Spin", "Roar"]},
+      {"species": "Jynx", "item": "Leftovers", "moves": ["Ice Beam", "Lovely Kiss", "Psychic", "Substitute"]},
+      {"species": "Zapdos", "item": "Leftovers", "ivs": {"hp": 15, "atk": 29, "def": 27}, "moves": ["Hidden Power Water", "Protect", "Thunderbolt", "Whirlwind"]}
+    ]
+  },
+  {
+    "name": "Vaporeon + Explosions Offense",
+    "author": "Borat",
+    "data": [
+      {"species": "Zapdos", "item": "Leftovers", "evs": {"atk": 0}, "ivs": {"atk": 23, "def": 27}, "moves": ["Hidden Power Ice", "Rest", "Sleep Talk", "Thunder"]},
+      {"species": "Cloyster", "gender": "M", "item": "Leftovers", "moves": ["Explosion", "Spikes", "Surf", "Toxic"]},
+      {"species": "Exeggutor", "gender": "M", "item": "Leftovers", "moves": ["Explosion", "Giga Drain", "Psychic", "Sleep Powder"]},
+      {"species": "Snorlax", "gender": "M", "item": "Leftovers", "moves": ["Curse", "Double-Edge", "Earthquake", "Rest"]},
+      {"species": "Steelix", "gender": "M", "item": "Leftovers", "moves": ["Curse", "Earthquake", "Explosion", "Roar"]},
+      {"species": "Vaporeon", "gender": "F", "item": "Leftovers", "evs": {"atk": 0}, "ivs": {"atk": 3}, "moves": ["Growth", "Rest", "Sleep Talk", "Surf"]}
+    ]
+  },
+  {
+    "name": "Paralysis & Marowak",
+    "author": "Earthworm",
+    "data": [
+      {"species": "Snorlax", "gender": "M", "item": "Leftovers", "moves": ["Double-Edge", "Rest", "Sleep Talk", "Thunder"]},
+      {"species": "Cloyster", "gender": "M", "item": "Leftovers", "moves": ["Explosion", "Spikes", "Surf", "Toxic"]},
+      {"species": "Marowak", "gender": "M", "item": "Thick Club", "moves": ["Earthquake", "Fire Blast", "Rock Slide", "Swords Dance"], "evs": {"atk": 240}},
+      {"species": "Starmie", "item": "Leftovers", "moves": ["Rapid Spin", "Recover", "Surf", "Thunder Wave"]},
+      {"species": "Tyranitar", "gender": "M", "item": "Leftovers", "moves": ["Dynamic Punch", "Earthquake", "Rock Slide", "Screech"]},
+      {"species": "Zapdos", "item": "Leftovers", "ivs": {"def": 27}, "moves": ["Hidden Power Ice", "Thunder", "Thunder Wave", "Whirlwind"]}
+    ]
+  },
+  {
+    "name": "Heracross + Explosions",
+    "author": "Lavos & Sulcata",
+    "data": [
+      {"species": "Raikou", "item": "Leftovers", "ivs": {"hp": 15, "atk": 29, "def": 27}, "moves": ["Hidden Power Water", "Rest", "Sleep Talk", "Thunder"]},
+      {"species": "Cloyster", "gender": "M", "item": "Leftovers", "moves": ["Explosion", "Spikes", "Surf", "Toxic"]},
+      {"species": "Exeggutor", "gender": "M", "item": "Leftovers", "moves": ["Explosion", "Giga Drain", "Psychic", "Sleep Powder"]},
+      {"species": "Golem", "gender": "M", "item": "Leftovers", "moves": ["Earthquake", "Explosion", "Rapid Spin", "Roar"]},
+      {"species": "Heracross", "gender": "M", "item": "Leftovers", "moves": ["Curse", "Megahorn", "Rest", "Sleep Talk"]},
+      {"species": "Snorlax", "gender": "M", "item": "Leftovers", "moves": ["Body Slam", "Curse", "Earthquake", "Self-Destruct"]}
+    ]
+  },
+  {
+    "name": "Double Electric + Gengar Offense",
+    "data": [
+      {"species": "Zapdos", "item": "Leftovers", "ivs": {"def": 27}, "moves": ["Hidden Power Ice", "Rest", "Sleep Talk", "Thunder"]},
+      {"species": "Cloyster", "gender": "M", "item": "Leftovers", "moves": ["Explosion", "Spikes", "Surf", "Toxic"]},
+      {"species": "Gengar", "gender": "M", "item": "Leftovers", "moves": ["Dynamic Punch", "Explosion", "Ice Punch", "Thunderbolt"]},
+      {"species": "Golem", "gender": "M", "item": "Leftovers", "moves": ["Earthquake", "Explosion", "Rapid Spin", "Roar"]},
+      {"species": "Raikou", "item": "Leftovers", "ivs": {"hp": 15, "atk": 29, "def": 27}, "moves": ["Hidden Power Water", "Rest", "Sleep Talk", "Thunder"]},
+      {"species": "Snorlax", "gender": "M", "item": "Leftovers", "moves": ["Curse", "Double-Edge", "Earthquake", "Rest"]}
+    ]
+  },
+  {
+    "name": "Thief Exeggutor + Espeon Offense",
+    "data": [
+      {"species": "Exeggutor", "gender": "M", "ivs": {"hp": 7, "atk": 29, "def": 25}, "moves": ["Explosion", "Hidden Power Fire", "Psychic", "Thief"]},
+      {"species": "Cloyster", "gender": "M", "item": "Leftovers", "moves": ["Explosion", "Spikes", "Surf", "Toxic"]},
+      {"species": "Espeon", "gender": "M", "item": "Leftovers", "ivs": {"hp": 15, "atk": 29, "def": 27}, "moves": ["Growth", "Hidden Power Water", "Morning Sun", "Psychic"]},
+      {"species": "Golem", "gender": "M", "item": "Leftovers", "moves": ["Earthquake", "Explosion", "Rapid Spin", "Roar"]},
+      {"species": "Snorlax", "gender": "M", "item": "Leftovers", "moves": ["Curse", "Double-Edge", "Earthquake", "Self-Destruct"]},
+      {"species": "Zapdos", "item": "Leftovers", "ivs": {"def": 27}, "moves": ["Hidden Power Ice", "Rest", "Sleep Talk", "Thunder"]}
+    ]
+  },
+  {
+    "name": "Alakazam + Explosions Offense",
+    "data": [
+      {"species": "Zapdos", "item": "Leftovers", "ivs": {"def": 27}, "moves": ["Hidden Power Ice", "Rest", "Sleep Talk", "Thunder"]},
+      {"species": "Alakazam", "gender": "M", "item": "Leftovers", "moves": ["Encore", "Fire Punch", "Psychic", "Recover"]},
+      {"species": "Cloyster", "gender": "M", "item": "Leftovers", "moves": ["Explosion", "Spikes", "Surf", "Toxic"]},
+      {"species": "Exeggutor", "gender": "M", "item": "Leftovers", "ivs": {"hp": 7, "atk": 29, "def": 25}, "moves": ["Explosion", "Giga Drain", "Hidden Power Fire", "Psychic"]},
+      {"species": "Gengar", "gender": "M", "item": "Leftovers", "moves": ["Destiny Bond", "Explosion", "Ice Punch", "Thunderbolt"]},
+      {"species": "Snorlax", "gender": "M", "item": "Leftovers", "moves": ["Double-Edge", "Earthquake", "Fire Blast", "Self-Destruct"]}
+    ]
+  },
+  {
+    "name": "Moltres + Exeggutor Offense",
+    "author": "RealJester",
+    "data": [
+      {"species": "Snorlax", "gender": "M", "item": "Leftovers", "moves": ["Curse", "Double-Edge", "Earthquake", "Rest"]},
+      {"species": "Cloyster", "gender": "M", "item": "Leftovers", "moves": ["Explosion", "Spikes", "Surf", "Toxic"]},
+      {"species": "Exeggutor", "gender": "M", "item": "Leftovers", "ivs": {"hp": 7, "atk": 29, "def": 25}, "moves": ["Explosion", "Giga Drain", "Hidden Power Fire", "Psychic"]},
+      {"species": "Golem", "gender": "M", "item": "Leftovers", "moves": ["Earthquake", "Explosion", "Rapid Spin", "Roar"]},
+      {"species": "Moltres", "item": "Charcoal", "moves": ["Fire Blast", "Rest", "Sleep Talk", "Sunny Day"]},
+      {"species": "Zapdos", "item": "Leftovers", "ivs": {"def": 27}, "moves": ["Hidden Power Ice", "Rest", "Sleep Talk", "Thunder"]}
+    ]
+  },
+  {
+    "name": "Standard Agility Baton Pass",
+    "data": [
+      {"species": "Smeargle", "gender": "M", "item": "Miracle Berry", "moves": ["Agility", "Baton Pass", "Spikes", "Spore"]},
+      {"species": "Jolteon", "gender": "M", "item": "Leftovers", "ivs": {"hp": 15, "atk": 29, "def": 27}, "moves": ["Agility", "Baton Pass", "Hidden Power Water", "Thunder"]},
+      {"species": "Machamp", "gender": "M", "item": "Miracle Berry", "ivs": {"atk": 27, "def": 27}, "moves": ["Cross Chop", "Hidden Power Bug", "Meditate", "Rock Slide"]},
+      {"species": "Marowak", "gender": "M", "item": "Thick Club", "ivs": {"atk": 27, "def": 27}, "moves": ["Earthquake", "Fire Blast", "Hidden Power Bug", "Rock Slide"]},
+      {"species": "Scizor", "gender": "M", "item": "Miracle Berry", "ivs": {"atk": 27, "def": 27}, "moves": ["Agility", "Baton Pass", "Hidden Power Bug", "Swords Dance"]},
+      {"species": "Snorlax", "gender": "M", "item": "Leftovers", "moves": ["Belly Drum", "Double-Edge", "Earthquake", "Protect"]}
+    ]
+  },
+  {
+    "name": "Rest Marowak + Heal Bell Support",
+    "data": [
+      {"species": "Snorlax", "gender": "M", "item": "Leftovers", "moves": ["Body Slam", "Curse", "Rest", "Thunder"]},
+      {"species": "Marowak", "gender": "M", "item": "Thick Club", "evs": {"atk": 240}, "moves": ["Earthquake", "Rest", "Rock Slide", "Swords Dance"]},
+      {"species": "Miltank", "item": "Leftovers", "moves": ["Body Slam", "Growl", "Heal Bell", "Milk Drink"]},
+      {"species": "Raikou", "item": "Leftovers", "evs": {"atk": 0}, "ivs": {"def": 27}, "moves": ["Hidden Power Ice", "Rest", "Sleep Talk", "Thunderbolt"]},
+      {"species": "Skarmory", "gender": "M", "item": "Leftovers", "moves": ["Curse", "Drill Peck", "Rest", "Whirlwind"]},
+      {"species": "Starmie", "item": "Leftovers", "moves": ["Rapid Spin", "Recover", "Surf", "Thunder Wave"]}
+    ]
+  },
+  {
+    "name": "Paralysis + Drum Quagsire",
+    "data": [
+      {"species": "Zapdos", "item": "Leftovers", "ivs": {"hp": 15, "atk": 29, "def": 27}, "moves": ["Hidden Power Water", "Thunderbolt", "Thunder Wave", "Whirlwind"]},
+      {"species": "Miltank", "item": "Leftovers", "moves": ["Body Slam", "Growl", "Heal Bell", "Milk Drink"]},
+      {"species": "Quagsire", "gender": "M", "item": "Leftovers", "ivs": {"hp": 23, "atk": 27, "def": 25}, "moves": ["Belly Drum", "Earthquake", "Hidden Power Rock", "Rest"]},
+      {"species": "Snorlax", "gender": "M", "item": "Leftovers", "moves": ["Body Slam", "Curse", "Fire Blast", "Rest"]},
+      {"species": "Starmie", "item": "Leftovers", "moves": ["Rapid Spin", "Recover", "Surf", "Thunder Wave"]},
+      {"species": "Tyranitar", "gender": "M", "item": "Leftovers", "moves": ["Fire Blast", "Pursuit", "Roar", "Rock Slide"]}
+    ]
+  },
+  {
+    "name": "Paralysis + Drum Charizard Offense",
+    "data": [
+      {"species": "Exeggutor", "gender": "M", "item": "Leftovers", "moves": ["Explosion", "Giga Drain", "Psychic", "Stun Spore"]},
+      {"species": "Charizard", "gender": "M", "item": "Leftovers", "moves": ["Belly Drum", "Earthquake", "Fire Blast", "Rock Slide"]},
+      {"species": "Raikou", "item": "Leftovers", "ivs": {"def": 27}, "moves": ["Hidden Power Ice", "Rest", "Sleep Talk", "Thunder"]},
+      {"species": "Rhydon", "gender": "M", "item": "Leftovers", "moves": ["Earthquake", "Roar", "Rock Slide", "Zap Cannon"]},
+      {"species": "Snorlax", "gender": "M", "item": "Leftovers", "moves": ["Double-Edge", "Earthquake", "Lovely Kiss", "Self-Destruct"]},
+      {"species": "Starmie", "item": "Leftovers", "moves": ["Rapid Spin", "Recover", "Surf", "Thunder Wave"]}
+    ]
+  },
+  {
+    "name": "Double Electric Stall",
+    "data": [
+      {"species": "Zapdos", "item": "Leftovers", "ivs": {"def": 27}, "moves": ["Hidden Power Ice", "Rest", "Sleep Talk", "Thunder"]},
+      {"species": "Cloyster", "gender": "M", "item": "Leftovers", "moves": ["Explosion", "Spikes", "Surf", "Toxic"]},
+      {"species": "Golem", "gender": "M", "item": "Leftovers", "moves": ["Earthquake", "Explosion", "Rapid Spin", "Roar"]},
+      {"species": "Raikou", "item": "Leftovers", "evs": {"spe": 216}, "ivs": {"def": 27}, "moves": ["Hidden Power Ice", "Rest", "Roar", "Thunderbolt"]},
+      {"species": "Skarmory", "gender": "M", "item": "Leftovers", "moves": ["Curse", "Drill Peck", "Rest", "Toxic"]},
+      {"species": "Snorlax", "gender": "M", "item": "Leftovers", "moves": ["Double-Edge", "Earthquake", "Rest", "Sleep Talk"]}
+    ]
+  },
+  {
+    "name": "Spin Tentacruel Stall",
+    "author": "Zokuru",
+    "data": [
+      {"species": "Raikou", "item": "Leftovers", "ivs": {"hp": 15, "atk": 29, "def": 27}, "moves": ["Hidden Power Water", "Rest", "Sleep Talk", "Thunder"]},
+      {"species": "Forretress", "gender": "M", "item": "Leftovers", "ivs": {"hp": 7, "atk": 29, "def": 25}, "moves": ["Hidden Power Fire", "Rapid Spin", "Spikes", "Toxic"]},
+      {"species": "Skarmory", "gender": "M", "item": "Leftovers", "moves": ["Curse", "Rest", "Sleep Talk", "Toxic"]},
+      {"species": "Snorlax", "gender": "M", "item": "Leftovers", "moves": ["Curse", "Double-Edge", "Rest", "Sleep Talk"]},
+      {"species": "Tentacruel", "gender": "M", "item": "Leftovers", "moves": ["Protect", "Rapid Spin", "Surf", "Toxic"]},
+      {"species": "Tyranitar", "gender": "M", "item": "Leftovers", "moves": ["Pursuit", "Rest", "Roar", "Rock Slide"]}
+    ]
+  },
+  {
+    "name": "Forretress + Umbreon Stall",
+    "data": [
+      {"species": "Snorlax", "gender": "M", "item": "Leftovers", "moves": ["Curse", "Double-Edge", "Flamethrower", "Rest"]},
+      {"species": "Forretress", "gender": "M", "item": "Leftovers", "ivs": {"hp": 7, "atk": 29, "def": 25}, "moves": ["Explosion", "Hidden Power Fire", "Spikes", "Toxic"]},
+      {"species": "Raikou", "item": "Leftovers", "evs": {"atk": 0}, "ivs": {"def": 27}, "moves": ["Hidden Power Ice", "Rest", "Roar", "Thunderbolt"]},
+      {"species": "Skarmory", "gender": "M", "item": "Leftovers", "moves": ["Curse", "Drill Peck", "Rest", "Whirlwind"]},
+      {"species": "Starmie", "item": "Leftovers", "moves": ["Psychic", "Rapid Spin", "Recover", "Surf"]},
+      {"species": "Umbreon", "gender": "F", "item": "Leftovers", "evs": {"atk": 0}, "ivs": {"atk": 3}, "moves": ["Charm", "Pursuit", "Rest", "Sleep Talk"]}
+    ]
+  },
+  {
+    "name": "Double Dog Golem Stall",
+    "author": "ABR & BKC",
+    "data": [
+      {"species": "Snorlax", "gender": "M", "item": "Leftovers", "moves": ["Curse", "Double-Edge", "Flamethrower", "Rest"]},
+      {"species": "Cloyster", "gender": "M", "item": "Leftovers", "moves": ["Explosion", "Spikes", "Surf", "Toxic"]},
+      {"species": "Golem", "gender": "M", "item": "Leftovers", "moves": ["Earthquake", "Explosion", "Rapid Spin", "Roar"]},
+      {"species": "Raikou", "item": "Leftovers", "evs": {"atk": 0, "spe": 216}, "ivs": {"atk": 23, "def": 27}, "moves": ["Hidden Power Ice", "Rest", "Roar", "Thunderbolt"]},
+      {"species": "Skarmory", "gender": "M", "item": "Leftovers", "moves": ["Curse", "Drill Peck", "Rest", "Sleep Talk"]},
+      {"species": "Suicune", "item": "Leftovers", "evs": {"atk": 0}, "ivs": {"atk": 3}, "moves": ["Ice Beam", "Rest", "Sleep Talk", "Surf"]}
+    ]
+  },
+  {
+    "name": "Blissey + Golem Stall",
+    "data": [
+      {"species": "Snorlax", "gender": "M", "item": "Leftovers", "moves": ["Double-Edge", "Earthquake", "Flamethrower", "Rest"]},
+      {"species": "Blissey", "item": "Leftovers", "moves": ["Flamethrower", "Heal Bell", "Light Screen", "Soft-Boiled"]},
+      {"species": "Cloyster", "gender": "M", "item": "Leftovers", "moves": ["Rest", "Spikes", "Surf", "Toxic"]},
+      {"species": "Golem", "gender": "M", "item": "Leftovers", "moves": ["Earthquake", "Rapid Spin", "Rest", "Roar"]},
+      {"species": "Skarmory", "gender": "M", "item": "Leftovers", "moves": ["Curse", "Drill Peck", "Rest", "Toxic"]},
+      {"species": "Zapdos", "item": "Leftovers", "ivs": {"def": 27}, "moves": ["Hidden Power Ice", "Rest", "Sleep Talk", "Thunder"]}
+    ]
+  }
+]

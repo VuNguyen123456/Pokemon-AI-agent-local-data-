@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Omanyte HO",
+    "author": "beauts",
+    "data": [
+      {"species": "Omanyte", "gender": "M", "item": "Custap Berry", "ability": "Swift Swim", "evs": {"hp": 252, "spa": 4, "spe": 252}, "nature": "Timid", "ivs": {"atk": 0}, "moves": ["Endure", "Spikes", "Stealth Rock", "Surf"]},
+      {"species": "Arbok", "gender": "M", "item": "Choice Scarf", "ability": "Intimidate", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Jolly", "moves": ["Earthquake", "Poison Jab", "Seed Bomb", "Switcheroo"]},
+      {"species": "Grovyle", "gender": "M", "item": "Life Orb", "ability": "Overgrow", "evs": {"atk": 4, "spa": 252, "spe": 252}, "nature": "Hasty", "moves": ["Hidden Power Ice", "Leaf Storm", "Low Kick", "Rock Slide"], "ivs": {"atk": 30, "def": 30}},
+      {"species": "Lairon", "gender": "M", "item": "Life Orb", "ability": "Rock Head", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Adamant", "moves": ["Earthquake", "Head Smash", "Iron Head", "Rock Polish"]},
+      {"species": "Luxray", "gender": "M", "item": "Expert Belt", "ability": "Intimidate", "evs": {"atk": 4, "spa": 252, "spe": 252}, "nature": "Rash", "moves": ["Hidden Power Water", "Signal Beam", "Superpower", "Thunderbolt"], "ivs": {"atk": 30, "def": 30, "spa": 30}},
+      {"species": "Whiscash", "gender": "M", "item": "Leftovers", "ability": "Anticipation", "evs": {"hp": 4, "atk": 252, "spe": 252}, "nature": "Jolly", "moves": ["Dragon Dance", "Earthquake", "Stone Edge", "Waterfall"]}
+    ]
+  },
+  {
+    "name": "SubTox Wailord + SD Mawile",
+    "author": "waterbends",
+    "data": [
+      {"species": "Persian", "gender": "M", "item": "Silk Scarf", "ability": "Technician", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Jolly", "moves": ["Double-Edge", "Fake Out", "Taunt", "U-turn"]},
+      {"species": "Camerupt", "gender": "M", "item": "Leftovers", "ability": "Solid Rock", "evs": {"hp": 252, "def": 4, "spd": 252}, "nature": "Calm", "ivs": {"atk": 0}, "moves": ["Earth Power", "Lava Plume", "Protect", "Stealth Rock"]},
+      {"species": "Golbat", "gender": "M", "item": "Black Sludge", "ability": "Inner Focus", "evs": {"hp": 248, "def": 204, "spe": 56}, "nature": "Impish", "moves": ["Brave Bird", "Roost", "Super Fang", "U-turn"]},
+      {"species": "Grovyle", "gender": "F", "item": "Leftovers", "ability": "Overgrow", "evs": {"spa": 252, "spd": 4, "spe": 252}, "nature": "Timid", "ivs": {"atk": 2, "def": 30}, "moves": ["Energy Ball", "Hidden Power Ice", "Leech Seed", "Substitute"]},
+      {"species": "Mawile", "gender": "M", "item": "Life Orb", "ability": "Hyper Cutter", "evs": {"hp": 80, "atk": 252, "spe": 176}, "nature": "Adamant", "moves": ["Brick Break", "Iron Head", "Sucker Punch", "Swords Dance"]},
+      {"species": "Wailord", "gender": "M", "item": "Leftovers", "ability": "Water Veil", "evs": {"hp": 60, "spd": 196, "spe": 252}, "nature": "Timid", "ivs": {"atk": 0}, "moves": ["Protect", "Substitute", "Surf", "Toxic"]}
+    ]
+  },
+  {
+    "name": "Lead Dewgong + LO Plusle BO",
+    "author": "BeatsBlack",
+    "data": [
+      {"species": "Dewgong", "gender": "M", "item": "Lum Berry", "ability": "Thick Fat", "evs": {"def": 4, "spa": 252, "spe": 252}, "nature": "Timid", "moves": ["Hidden Power Grass", "Ice Beam", "Ice Shard", "Surf"], "ivs": {"atk": 30, "spa": 30}},
+      {"species": "Arbok", "gender": "M", "item": "Expert Belt", "ability": "Intimidate", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Jolly", "moves": ["Earthquake", "Poison Jab", "Pursuit", "Seed Bomb"]},
+      {"species": "Camerupt", "gender": "M", "item": "Leftovers", "ability": "Solid Rock", "evs": {"hp": 252, "spa": 16, "spd": 240}, "nature": "Calm", "ivs": {"atk": 0}, "moves": ["Earth Power", "Lava Plume", "Protect", "Stealth Rock"]},
+      {"species": "Carnivine", "gender": "M", "item": "Leftovers", "ability": "Levitate", "evs": {"hp": 252, "atk": 4, "def": 252}, "nature": "Impish", "moves": ["Power Whip", "Return", "Sleep Powder", "Synthesis"], "happiness": 255},
+      {"species": "Girafarig", "gender": "F", "item": "Choice Scarf", "ability": "Inner Focus", "evs": {"spa": 252, "spd": 4, "spe": 252}, "nature": "Timid", "ivs": {"atk": 3, "def": 30, "spa": 30, "spd": 30, "spe": 30}, "moves": ["Grass Knot", "Hidden Power Fighting", "Psychic", "Trick"]},
+      {"species": "Plusle", "gender": "F", "item": "Life Orb", "ability": "Plus", "evs": {"def": 4, "spa": 252, "spe": 252}, "nature": "Timid", "ivs": {"atk": 2, "def": 30}, "moves": ["Encore", "Grass Knot", "Hidden Power Ice", "Thunderbolt"]}
+    ]
+  },
+  {
+    "name": "Probopass Offense",
+    "author": "BeatsBlack",
+    "data": [
+      {"species": "Persian", "gender": "M", "item": "Silk Scarf", "ability": "Technician", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Jolly", "moves": ["Fake Out", "Return", "Taunt", "U-turn"], "happiness": 255},
+      {"species": "Arbok", "gender": "M", "item": "Expert Belt", "ability": "Intimidate", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Jolly", "moves": ["Earthquake", "Ice Fang", "Poison Jab", "Seed Bomb"]},
+      {"species": "Crawdaunt", "gender": "M", "item": "Lum Berry", "ability": "Hyper Cutter", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Adamant", "moves": ["Crunch", "Dragon Dance", "Superpower", "Waterfall"]},
+      {"species": "Fearow", "gender": "M", "item": "Choice Band", "ability": "Keen Eye", "evs": {"hp": 16, "atk": 252, "spe": 240}, "nature": "Adamant", "moves": ["Drill Peck", "Pursuit", "Return", "U-turn"], "happiness": 255},
+      {"species": "Luxray", "gender": "F", "item": "Leftovers", "ability": "Intimidate", "evs": {"hp": 208, "spa": 124, "spe": 176}, "nature": "Timid", "ivs": {"atk": 2, "def": 30}, "moves": ["Hidden Power Ice", "Protect", "Thunderbolt", "Toxic"]},
+      {"species": "Probopass", "gender": "F", "item": "Chople Berry", "ability": "Magnet Pull", "evs": {"hp": 248, "def": 56, "spa": 184, "spe": 20}, "nature": "Modest", "ivs": {"atk": 2, "spa": 30, "spe": 30}, "moves": ["Earth Power", "Hidden Power Fire", "Stealth Rock", "Thunderbolt"]}
+    ]
+  }
+]

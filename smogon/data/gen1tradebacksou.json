@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Lead Lovely Kiss Snorlax",
+    "author": "Caetano93",
+    "data": [
+      {"species": "Snorlax", "moves": ["Body Slam", "Earthquake", "Lovely Kiss", "Self-Destruct"]},
+      {"species": "Chansey", "moves": ["Reflect", "Seismic Toss", "Soft-Boiled", "Thunder Wave"]},
+      {"species": "Hypno", "moves": ["Amnesia", "Ice Punch", "Psychic", "Rest"]},
+      {"species": "Persian", "moves": ["Amnesia", "Hypnosis", "Slash", "Thunderbolt"]},
+      {"species": "Starmie", "moves": ["Recover", "Surf", "Thunderbolt", "Thunder Wave"]},
+      {"species": "Tauros", "moves": ["Body Slam", "Earthquake", "Hyper Beam", "Surf"]}
+    ]
+  },
+  {
+    "name": "Big 6",
+    "author": "Melanie",
+    "data": [
+      {"species": "Starmie", "ivs": {"atk": 3}, "moves": ["Blizzard", "Recover", "Thunderbolt", "Thunder Wave"]},
+      {"species": "Chansey", "ivs": {"atk": 3}, "moves": ["Reflect", "Seismic Toss", "Soft-Boiled", "Thunder Wave"]},
+      {"species": "Exeggutor", "moves": ["Explosion", "Mega Drain", "Psychic", "Sleep Powder"]},
+      {"species": "Hypno", "ivs": {"atk": 3}, "moves": ["Amnesia", "Psychic", "Reflect", "Rest"]},
+      {"species": "Snorlax", "moves": ["Body Slam", "Earthquake", "Reflect", "Rest"]},
+      {"species": "Tauros", "moves": ["Body Slam", "Earthquake", "Hyper Beam", "Surf"]}
+    ]
+  },
+  {
+    "name": "Standard Vaporeon",
+    "author": "Caetano93",
+    "data": [
+      {"species": "Persian", "moves": ["Amnesia", "Hypnosis", "Slash", "Thunderbolt"]},
+      {"species": "Gengar", "moves": ["Explosion", "Hypnosis", "Ice Punch", "Thunderbolt"]},
+      {"species": "Hypno", "moves": ["Amnesia", "Ice Punch", "Psychic", "Thunder Wave"]},
+      {"species": "Snorlax", "moves": ["Body Slam", "Reflect", "Rest", "Self-Destruct"]},
+      {"species": "Starmie", "moves": ["Recover", "Surf", "Thunderbolt", "Thunder Wave"]},
+      {"species": "Vaporeon", "moves": ["Acid Armor", "Growth", "Rest", "Surf"]}
+    ]
+  },
+  {
+    "name": "Starmie Lead Physical Offence",
+    "author": "Shellnuts",
+    "data": [
+      {"species": "Starmie", "moves": ["Blizzard", "Recover", "Thunderbolt", "Thunder Wave"]},
+      {"species": "Exeggutor", "moves": ["Explosion", "Psychic", "Sleep Powder", "Stun Spore"]},
+      {"species": "Gengar", "moves": ["Explosion", "Hypnosis", "Ice Punch", "Thunderbolt"]},
+      {"species": "Rhydon", "moves": ["Body Slam", "Earthquake", "Rock Slide", "Substitute"]},
+      {"species": "Snorlax", "moves": ["Body Slam", "Earthquake", "Hyper Beam", "Self-Destruct"]},
+      {"species": "Tauros", "moves": ["Blizzard", "Body Slam", "Earthquake", "Hyper Beam"]}
+    ]
+  },
+  {
+    "name": "Alakazam Lead Mixed Offence",
+    "author": "Shellnuts",
+    "data": [
+      {"species": "Alakazam", "moves": ["Psychic", "Recover", "Seismic Toss", "Thunder Wave"]},
+      {"species": "Exeggutor", "moves": ["Explosion", "Psychic", "Sleep Powder", "Stun Spore"]},
+      {"species": "Gengar", "moves": ["Explosion", "Hypnosis", "Ice Punch", "Thunderbolt"]},
+      {"species": "Snorlax", "moves": ["Body Slam", "Earthquake", "Hyper Beam", "Self-Destruct"]},
+      {"species": "Tauros", "moves": ["Blizzard", "Body Slam", "Earthquake", "Hyper Beam"]},
+      {"species": "Zapdos", "moves": ["Agility", "Drill Peck", "Thunderbolt", "Thunder Wave"]}
+    ]
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Lead Octillery",
+    "data": [
+      {"species": "Octillery", "gender": "F", "item": "Lum Berry", "ability": "Suction Cups", "evs": {"hp": 172, "spa": 252, "spe": 84}, "nature": "Modest", "ivs": {"atk": 3, "spa": 30}, "moves": ["Fire Blast", "Hidden Power Electric", "Surf", "Thunder Wave"]},
+      {"species": "Chimecho", "gender": "F", "item": "Leftovers", "ability": "Levitate", "evs": {"hp": 252, "def": 156, "spe": 100}, "nature": "Bold", "ivs": {"atk": 2, "spa": 30, "spe": 30}, "moves": ["Calm Mind", "Hidden Power Fire", "Psychic", "Reflect"]},
+      {"species": "Metang", "item": "Leftovers", "ability": "Clear Body", "evs": {"hp": 252, "def": 28, "spd": 228}, "nature": "Careful", "moves": ["Earthquake", "Meteor Mash", "Protect", "Toxic"]},
+      {"species": "Murkrow", "gender": "M", "item": "Choice Band", "ability": "Insomnia", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Jolly", "moves": ["Drill Peck", "Haze", "Hidden Power Ground", "Shadow Ball"], "ivs": {"spa": 30, "spd": 30}},
+      {"species": "Pupitar", "gender": "M", "item": "Leftovers", "ability": "Shed Skin", "evs": {"atk": 252, "def": 4, "spe": 252}, "nature": "Jolly", "moves": ["Dragon Dance", "Earthquake", "Hidden Power Bug", "Rock Slide"], "ivs": {"atk": 30, "def": 30, "spd": 30}},
+      {"species": "Roselia", "gender": "M", "item": "Leftovers", "ability": "Natural Cure", "evs": {"hp": 252, "def": 20, "spd": 220, "spe": 16}, "nature": "Calm", "ivs": {"atk": 0}, "moves": ["Aromatherapy", "Giga Drain", "Spikes", "Synthesis"]}
+    ]
+  },
+  {
+    "name": "Lead Wailord Balance",
+    "data": [
+      {"species": "Wailord", "gender": "M", "item": "Leftovers", "ability": "Water Veil", "evs": {"spa": 252, "spd": 40, "spe": 216}, "nature": "Modest", "moves": ["Hidden Power Grass", "Hydro Pump", "Ice Beam", "Self-Destruct"], "ivs": {"atk": 30, "spa": 30}},
+      {"species": "Chimecho", "gender": "F", "item": "Leftovers", "ability": "Levitate", "evs": {"hp": 252, "def": 156, "spe": 100}, "nature": "Bold", "ivs": {"atk": 2, "spa": 30, "spe": 30}, "moves": ["Calm Mind", "Heal Bell", "Hidden Power Fire", "Psychic"]},
+      {"species": "Golbat", "gender": "M", "item": "Leftovers", "ability": "Inner Focus", "evs": {"hp": 252, "atk": 112, "spe": 144}, "nature": "Jolly", "moves": ["Aerial Ace", "Hidden Power Ground", "Sludge Bomb", "Toxic"], "ivs": {"spa": 30, "spd": 30}},
+      {"species": "Metang", "item": "Leftovers", "ability": "Clear Body", "evs": {"hp": 252, "def": 56, "spd": 200}, "nature": "Careful", "moves": ["Explosion", "Meteor Mash", "Protect", "Toxic"]},
+      {"species": "Pupitar", "gender": "M", "item": "Leftovers", "ability": "Shed Skin", "evs": {"atk": 252, "def": 4, "spe": 252}, "nature": "Jolly", "moves": ["Dragon Dance", "Earthquake", "Hidden Power Bug", "Rock Slide"], "ivs": {"atk": 30, "def": 30, "spd": 30}},
+      {"species": "Roselia", "gender": "M", "item": "Leftovers", "ability": "Natural Cure", "evs": {"hp": 252, "def": 20, "spd": 216, "spe": 20}, "nature": "Calm", "ivs": {"atk": 0}, "moves": ["Giga Drain", "Spikes", "Stun Spore", "Synthesis"]}
+    ]
+  },
+  {
+    "name": "Swords Dance Lead Crawdaunt",
+    "data": [
+      {"species": "Crawdaunt", "gender": "M", "item": "Lum Berry", "ability": "Hyper Cutter", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Adamant", "moves": ["Ancient Power", "Double-Edge", "Hidden Power Ground", "Swords Dance"], "ivs": {"spa": 30, "spd": 30}},
+      {"species": "Haunter", "gender": "M", "ability": "Levitate", "evs": {"atk": 4, "spa": 252, "spe": 252}, "nature": "Naive", "moves": ["Explosion", "Psychic", "Thief", "Thunderbolt"]},
+      {"species": "Metang", "item": "Leftovers", "ability": "Clear Body", "evs": {"hp": 116, "atk": 252, "spe": 140}, "nature": "Adamant", "moves": ["Agility", "Earthquake", "Explosion", "Meteor Mash"]},
+      {"species": "Murkrow", "gender": "M", "item": "Lum Berry", "ability": "Insomnia", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Jolly", "moves": ["Drill Peck", "Haze", "Hidden Power Ground", "Shadow Ball"], "ivs": {"spa": 30, "spd": 30}},
+      {"species": "Roselia", "gender": "M", "item": "Leftovers", "ability": "Natural Cure", "evs": {"hp": 252, "def": 20, "spd": 216, "spe": 20}, "nature": "Calm", "moves": ["Giga Drain", "Sludge Bomb", "Spikes", "Synthesis"]},
+      {"species": "Wailord", "gender": "M", "item": "Leftovers", "ability": "Oblivious", "evs": {"hp": 60, "def": 252, "spd": 136, "spe": 60}, "nature": "Bold", "ivs": {"atk": 0}, "moves": ["Rest", "Roar", "Sleep Talk", "Surf"]}
+    ]
+  },
+  {
+    "name": "Offensive Calm Mind Chimecho",
+    "data": [
+      {"species": "Wailord", "gender": "M", "item": "Leftovers", "ability": "Water Veil", "evs": {"spa": 252, "spd": 200, "spe": 56}, "nature": "Mild", "moves": ["Hidden Power Electric", "Ice Beam", "Self-Destruct", "Surf"], "ivs": {"spa": 30}},
+      {"species": "Chimecho", "gender": "F", "item": "Leftovers", "ability": "Levitate", "evs": {"hp": 116, "spa": 252, "spe": 140}, "nature": "Modest", "ivs": {"atk": 2, "spa": 30, "spe": 30}, "moves": ["Calm Mind", "Hidden Power Fire", "Psychic", "Taunt"]},
+      {"species": "Golbat", "gender": "M", "item": "Choice Band", "ability": "Inner Focus", "evs": {"atk": 252, "def": 4, "spe": 252}, "nature": "Jolly", "moves": ["Aerial Ace", "Hidden Power Ground", "Shadow Ball", "Sludge Bomb"], "ivs": {"spa": 30, "spd": 30}},
+      {"species": "Metang", "item": "Leftovers", "ability": "Clear Body", "evs": {"hp": 252, "def": 56, "spd": 200}, "nature": "Careful", "moves": ["Earthquake", "Meteor Mash", "Protect", "Toxic"]},
+      {"species": "Plusle", "gender": "F", "item": "Leftovers", "ability": "Plus", "evs": {"spa": 252, "spd": 4, "spe": 252}, "nature": "Timid", "ivs": {"atk": 2, "def": 30}, "moves": ["Encore", "Hidden Power Ice", "Substitute", "Thunderbolt"]},
+      {"species": "Roselia", "gender": "F", "item": "Leftovers", "ability": "Natural Cure", "evs": {"hp": 252, "spd": 228, "spe": 28}, "nature": "Calm", "ivs": {"atk": 2, "spe": 30}, "moves": ["Giga Drain", "Hidden Power Psychic", "Spikes", "Synthesis"]}
+    ]
+  },
+  {
+    "name": "Flying-type Spam",
+    "data": [
+      {"species": "Metang", "item": "Leftovers", "ability": "Clear Body", "evs": {"hp": 252, "def": 120, "spd": 124, "spe": 12}, "nature": "Careful", "moves": ["Earthquake", "Meteor Mash", "Protect", "Toxic"]},
+      {"species": "Chimecho", "gender": "F", "item": "Leftovers", "ability": "Levitate", "evs": {"hp": 252, "def": 168, "spd": 56, "spe": 32}, "nature": "Bold", "ivs": {"atk": 2, "spa": 30, "spe": 30}, "moves": ["Calm Mind", "Heal Bell", "Hidden Power Fire", "Psychic"]},
+      {"species": "Murkrow", "gender": "M", "item": "Choice Band", "ability": "Insomnia", "evs": {"atk": 252, "spd": 4, "spe": 252}, "nature": "Jolly", "moves": ["Drill Peck", "Haze", "Hidden Power Ground", "Shadow Ball"], "ivs": {"spa": 30, "spd": 30}},
+      {"species": "Roselia", "gender": "M", "item": "Leftovers", "ability": "Natural Cure", "evs": {"hp": 252, "spd": 236, "spe": 20}, "nature": "Calm", "ivs": {"atk": 0}, "moves": ["Giga Drain", "Spikes", "Stun Spore", "Synthesis"]},
+      {"species": "Tropius", "gender": "M", "item": "Leftovers", "ability": "Chlorophyll", "evs": {"hp": 252, "atk": 52, "spd": 60, "spe": 144}, "nature": "Careful", "moves": ["Earthquake", "Hidden Power Flying", "Swords Dance", "Synthesis"], "ivs": {"hp": 30, "atk": 30, "def": 30, "spa": 30, "spd": 30}},
+      {"species": "Wailord", "gender": "M", "item": "Leftovers", "ability": "Water Veil", "evs": {"spa": 252, "spd": 176, "spe": 80}, "nature": "Modest", "moves": ["Hidden Power Grass", "Ice Beam", "Self-Destruct", "Surf"], "ivs": {"atk": 30, "spa": 30}}
+    ]
+  },
+  {
+    "name": "Baton Pass",
+    "data": [
+      {"species": "Venomoth", "gender": "M", "item": "Leftovers", "ability": "Shield Dust", "evs": {"hp": 252, "atk": 4, "spe": 252}, "nature": "Jolly", "moves": ["Baton Pass", "Sleep Powder", "Sludge Bomb", "Substitute"]},
+      {"species": "Delcatty", "gender": "M", "item": "Leftovers", "ability": "Cute Charm", "evs": {"hp": 248, "def": 8, "spe": 252}, "nature": "Timid", "ivs": {"atk": 0}, "moves": ["Baton Pass", "Calm Mind", "Substitute", "Wish"]},
+      {"species": "Ledian", "gender": "M", "item": "Leftovers", "ability": "Early Bird", "evs": {"hp": 252, "def": 4, "spe": 252}, "nature": "Timid", "ivs": {"atk": 0}, "moves": ["Agility", "Baton Pass", "Light Screen", "Substitute"]},
+      {"species": "Mawile", "gender": "M", "item": "Leftovers", "ability": "Intimidate", "evs": {"hp": 248, "atk": 8, "spd": 252}, "nature": "Careful", "moves": ["Baton Pass", "Hidden Power Steel", "Iron Defense", "Substitute"], "ivs": {"spd": 30}},
+      {"species": "Octillery", "gender": "F", "item": "Leftovers", "ability": "Suction Cups", "evs": {"hp": 112, "spa": 252, "spe": 144}, "nature": "Modest", "ivs": {"atk": 3, "spa": 30}, "moves": ["Hidden Power Electric", "Ice Beam", "Substitute", "Surf"]},
+      {"species": "Plusle", "gender": "F", "item": "Leftovers", "ability": "Plus", "evs": {"hp": 248, "spa": 8, "spe": 252}, "nature": "Timid", "ivs": {"atk": 2, "def": 30}, "moves": ["Baton Pass", "Hidden Power Ice", "Substitute", "Thunderbolt"]}
+    ]
+  }
+]

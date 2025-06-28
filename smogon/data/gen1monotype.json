@@ -1,0 +1,123 @@
+[
+  {
+    "name": "[PvK] Normal with Kang",
+    "data": [
+      {"species": "Chansey", "moves": ["Ice Beam", "Reflect", "Sing", "Soft-Boiled"]},
+      {"species": "Dodrio", "moves": ["Agility", "Body Slam", "Drill Peck", "Hyper Beam"]},
+      {"species": "Kangaskhan", "moves": ["Body Slam", "Counter", "Earthquake", "Hyper Beam"]},
+      {"species": "Persian", "moves": ["Bubble Beam", "Hyper Beam", "Slash", "Thunderbolt"]},
+      {"species": "Snorlax", "moves": ["Amnesia", "Blizzard", "Body Slam", "Self-Destruct"]},
+      {"species": "Tauros", "moves": ["Blizzard", "Body Slam", "Earthquake", "Hyper Beam"]}
+    ]
+  },
+  {
+    "name": "[PvK] Psychic with Mr. Mime",
+    "data": [
+      {"species": "Jynx", "moves": ["Blizzard", "Counter", "Lovely Kiss", "Psychic"]},
+      {"species": "Alakazam", "moves": ["Psychic", "Recover", "Seismic Toss", "Thunder Wave"]},
+      {"species": "Exeggutor", "moves": ["Explosion", "Psychic", "Sleep Powder", "Stun Spore"]},
+      {"species": "Mr. Mime", "moves": ["Barrier", "Psychic", "Thunderbolt", "Thunder Wave"]},
+      {"species": "Slowbro", "moves": ["Amnesia", "Rest", "Surf", "Thunder Wave"]},
+      {"species": "Starmie", "moves": ["Blizzard", "Psychic", "Recover", "Thunder Wave"]}
+    ]
+  },
+  {
+    "name": "[PvK] Water LeadWrath",
+    "data": [
+      {"species": "Poliwrath", "moves": ["Amnesia", "Hydro Pump", "Hypnosis", "Submission"]},
+      {"species": "Cloyster", "moves": ["Blizzard", "Clamp", "Explosion", "Surf"]},
+      {"species": "Gyarados", "moves": ["Blizzard", "Body Slam", "Hyper Beam", "Thunderbolt"]},
+      {"species": "Lapras", "moves": ["Blizzard", "Body Slam", "Sing", "Thunderbolt"]},
+      {"species": "Slowbro", "moves": ["Amnesia", "Rest", "Surf", "Thunder Wave"]},
+      {"species": "Starmie", "moves": ["Psychic", "Recover", "Thunderbolt", "Thunder Wave"]}
+    ]
+  },
+  {
+    "name": "[PvK] Fire Toxic+FSpin",
+    "data": [
+      {"species": "Charizard", "moves": ["Counter", "Fire Blast", "Fire Spin", "Slash"]},
+      {"species": "Arcanine", "moves": ["Agility", "Body Slam", "Fire Blast", "Toxic"]},
+      {"species": "Magmar", "moves": ["Fire Blast", "Psychic", "Submission", "Toxic"]},
+      {"species": "Moltres", "moves": ["Agility", "Fire Blast", "Fire Spin", "Toxic"]},
+      {"species": "Ninetales", "moves": ["Body Slam", "Fire Blast", "Fire Spin", "Toxic"]},
+      {"species": "Rapidash", "moves": ["Agility", "Fire Blast", "Fire Spin", "Toxic"]}
+    ]
+  },
+  {
+    "name": "[PvK] Flying LeadZard",
+    "data": [
+      {"species": "Charizard", "moves": ["Counter", "Fire Blast", "Fire Spin", "Slash"]},
+      {"species": "Articuno", "moves": ["Agility", "Blizzard", "Double-Edge", "Toxic"]},
+      {"species": "Dodrio", "moves": ["Agility", "Body Slam", "Drill Peck", "Hyper Beam"]},
+      {"species": "Dragonite", "moves": ["Agility", "Hyper Beam", "Thunder Wave", "Wrap"]},
+      {"species": "Moltres", "moves": ["Agility", "Fire Blast", "Fire Spin", "Toxic"]},
+      {"species": "Zapdos", "moves": ["Agility", "Drill Peck", "Thunderbolt", "Thunder Wave"]}
+    ]
+  },
+  {
+    "name": "[PvK] Electric ScreechBoom Trode",
+    "data": [
+      {"species": "Electrode", "moves": ["Explosion", "Screech", "Thunderbolt", "Thunder Wave"]},
+      {"species": "Electabuzz", "moves": ["Psychic", "Submission", "Thunderbolt", "Thunder Wave"]},
+      {"species": "Jolteon", "moves": ["Double Kick", "Pin Missile", "Thunderbolt", "Thunder Wave"]},
+      {"species": "Magneton", "moves": ["Double-Edge", "Thunder", "Thunderbolt", "Thunder Wave"]},
+      {"species": "Raichu", "moves": ["Agility", "Surf", "Thunderbolt", "Thunder Wave"]},
+      {"species": "Zapdos", "moves": ["Agility", "Drill Peck", "Thunderbolt", "Thunder Wave"]}
+    ]
+  },
+  {
+    "name": "[PvK] Rock LeadAero",
+    "data": [
+      {"species": "Aerodactyl", "moves": ["Double-Edge", "Fire Blast", "Hyper Beam", "Toxic"]},
+      {"species": "Golem", "moves": ["Body Slam", "Earthquake", "Explosion", "Rock Slide"]},
+      {"species": "Kabutops", "moves": ["Hyper Beam", "Submission", "Surf", "Swords Dance"]},
+      {"species": "Omastar", "moves": ["Blizzard", "Body Slam", "Seismic Toss", "Surf"]},
+      {"species": "Onix", "moves": ["Bind", "Earthquake", "Rock Slide", "Toxic"]},
+      {"species": "Rhydon", "moves": ["Body Slam", "Earthquake", "Rock Slide", "Substitute"]}
+    ]
+  },
+  {
+    "name": "[PvK] Ground Lead Bind Onix",
+    "data": [
+      {"species": "Onix", "moves": ["Bind", "Earthquake", "Explosion", "Rock Slide"]},
+      {"species": "Dugtrio", "moves": ["Earthquake", "Rock Slide", "Slash", "Toxic"]},
+      {"species": "Golem", "moves": ["Body Slam", "Earthquake", "Explosion", "Rock Slide"]},
+      {"species": "Nidoking", "moves": ["Blizzard", "Body Slam", "Earthquake", "Thunderbolt"]},
+      {"species": "Rhydon", "moves": ["Body Slam", "Earthquake", "Rock Slide", "Substitute"]},
+      {"species": "Sandslash", "moves": ["Earthquake", "Rock Slide", "Submission", "Swords Dance"]}
+    ]
+  },
+  {
+    "name": "[PvK] Poison Tent+Veno",
+    "data": [
+      {"species": "Tentacruel", "moves": ["Blizzard", "Hyper Beam", "Surf", "Wrap"]},
+      {"species": "Gengar", "moves": ["Explosion", "Hypnosis", "Night Shade", "Thunderbolt"]},
+      {"species": "Muk", "moves": ["Body Slam", "Explosion", "Fire Blast", "Sludge"]},
+      {"species": "Nidoking", "moves": ["Blizzard", "Body Slam", "Earthquake", "Thunderbolt"]},
+      {"species": "Venomoth", "moves": ["Double-Edge", "Psychic", "Sleep Powder", "Stun Spore"]},
+      {"species": "Victreebel", "moves": ["Razor Leaf", "Sleep Powder", "Stun Spore", "Wrap"]}
+    ]
+  },
+  {
+    "name": "[PvK] Psychic with Mr. Mime",
+    "data": [
+      {"species": "Jynx", "moves": ["Blizzard", "Counter", "Lovely Kiss", "Psychic"]},
+      {"species": "Alakazam", "moves": ["Psychic", "Recover", "Seismic Toss", "Thunder Wave"]},
+      {"species": "Exeggutor", "moves": ["Double-Edge", "Explosion", "Psychic", "Sleep Powder"]},
+      {"species": "Mr. Mime", "moves": ["Psychic", "Seismic Toss", "Thunderbolt", "Thunder Wave"]},
+      {"species": "Slowbro", "moves": ["Amnesia", "Rest", "Surf", "Thunder Wave"]},
+      {"species": "Starmie", "moves": ["Blizzard", "Recover", "Thunderbolt", "Thunder Wave"]}
+    ]
+  },
+  {
+    "name": "[PvK] Normal with Counter Kang v2",
+    "data": [
+      {"species": "Dodrio", "moves": ["Agility", "Body Slam", "Drill Peck", "Hyper Beam"]},
+      {"species": "Chansey", "moves": ["Ice Beam", "Reflect", "Sing", "Soft-Boiled"]},
+      {"species": "Kangaskhan", "moves": ["Body Slam", "Counter", "Earthquake", "Hyper Beam"]},
+      {"species": "Persian", "moves": ["Bubble Beam", "Hyper Beam", "Slash", "Thunderbolt"]},
+      {"species": "Snorlax", "moves": ["Amnesia", "Blizzard", "Body Slam", "Self-Destruct"]},
+      {"species": "Tauros", "moves": ["Body Slam", "Earthquake", "Hyper Beam", "Thunderbolt"]}
+    ]
+  }
+]

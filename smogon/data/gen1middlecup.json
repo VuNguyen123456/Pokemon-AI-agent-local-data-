@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Counter Machoke",
+    "author": "Beelzemon 2003",
+    "data": [
+      {"species": "Kadabra", "level": 50, "evs": {"hp": 251}, "moves": ["Psychic", "Recover", "Seismic Toss", "Thunder Wave"]},
+      {"species": "Dragonair", "level": 50, "evs": {"hp": 251}, "moves": ["Agility", "Hyper Beam", "Surf", "Wrap"]},
+      {"species": "Graveler", "level": 50, "evs": {"hp": 251}, "moves": ["Earthquake", "Explosion", "Rock Slide", "Substitute"]},
+      {"species": "Haunter", "level": 50, "evs": {"hp": 251}, "moves": ["Explosion", "Hypnosis", "Psychic", "Thunderbolt"]},
+      {"species": "Machoke", "level": 50, "evs": {"hp": 251}, "moves": ["Body Slam", "Counter", "Earthquake", "Fire Blast"]},
+      {"species": "Poliwhirl", "level": 50, "evs": {"hp": 251}, "moves": ["Amnesia", "Blizzard", "Psychic", "Surf"]}
+    ]
+  },
+  {
+    "name": "Graveler + Counter Wartortle",
+    "author": "Beelzemon 2003",
+    "data": [
+      {"species": "Kadabra", "level": 50, "evs": {"hp": 251}, "moves": ["Psychic", "Recover", "Seismic Toss", "Thunder Wave"]},
+      {"species": "Dragonair", "level": 50, "evs": {"hp": 251}, "moves": ["Body Slam", "Surf", "Thunder Wave", "Wrap"]},
+      {"species": "Graveler", "level": 50, "evs": {"hp": 251}, "moves": ["Earthquake", "Explosion", "Rock Slide", "Substitute"]},
+      {"species": "Haunter", "level": 50, "evs": {"hp": 251}, "moves": ["Explosion", "Mega Drain", "Psychic", "Thunderbolt"]},
+      {"species": "Poliwhirl", "level": 50, "evs": {"hp": 251}, "moves": ["Amnesia", "Blizzard", "Psychic", "Surf"]},
+      {"species": "Wartortle", "level": 50, "evs": {"hp": 251}, "moves": ["Blizzard", "Body Slam", "Counter", "Surf"]}
+    ]
+  },
+  {
+    "name": "Graveler + Weepinbell",
+    "author": "Beelzemon 2003",
+    "data": [
+      {"species": "Kadabra", "level": 50, "evs": {"hp": 251}, "moves": ["Psychic", "Recover", "Seismic Toss", "Thunder Wave"]},
+      {"species": "Dragonair", "level": 50, "evs": {"hp": 251}, "moves": ["Agility", "Blizzard", "Hyper Beam", "Wrap"]},
+      {"species": "Graveler", "level": 50, "evs": {"hp": 251}, "moves": ["Earthquake", "Explosion", "Rock Slide", "Substitute"]},
+      {"species": "Haunter", "level": 50, "evs": {"hp": 251}, "moves": ["Explosion", "Hypnosis", "Psychic", "Thunderbolt"]},
+      {"species": "Poliwhirl", "level": 50, "evs": {"hp": 251}, "moves": ["Amnesia", "Blizzard", "Psychic", "Surf"]},
+      {"species": "Weepinbell", "level": 50, "evs": {"hp": 251}, "moves": ["Razor Leaf", "Sleep Powder", "Stun Spore", "Wrap"]}
+    ]
+  },
+  {
+    "name": "Graveler + Ivysaur",
+    "author": "Beelzemon 2003",
+    "data": [
+      {"species": "Kadabra", "level": 50, "evs": {"hp": 251}, "moves": ["Psychic", "Recover", "Seismic Toss", "Thunder Wave"]},
+      {"species": "Dragonair", "level": 50, "evs": {"hp": 251}, "moves": ["Blizzard", "Surf", "Thunderbolt", "Thunder Wave"]},
+      {"species": "Graveler", "level": 50, "evs": {"hp": 251}, "moves": ["Earthquake", "Explosion", "Rock Slide", "Substitute"]},
+      {"species": "Haunter", "level": 50, "evs": {"hp": 251}, "moves": ["Explosion", "Night Shade", "Psychic", "Thunderbolt"]},
+      {"species": "Ivysaur", "level": 50, "evs": {"hp": 251}, "moves": ["Body Slam", "Leech Seed", "Razor Leaf", "Sleep Powder"]},
+      {"species": "Poliwhirl", "level": 50, "evs": {"hp": 251}, "moves": ["Amnesia", "Blizzard", "Psychic", "Surf"]}
+    ]
+  },
+  {
+    "name": "Graveler + Charmeleon",
+    "author": "Beelzemon 2003",
+    "data": [
+      {"species": "Kadabra", "level": 50, "evs": {"hp": 251}, "moves": ["Psychic", "Recover", "Seismic Toss", "Thunder Wave"]},
+      {"species": "Charmeleon", "level": 50, "evs": {"hp": 251}, "moves": ["Counter", "Flamethrower", "Seismic Toss", "Slash"]},
+      {"species": "Dragonair", "level": 50, "evs": {"hp": 251}, "moves": ["Agility", "Hyper Beam", "Surf", "Wrap"]},
+      {"species": "Graveler", "level": 50, "evs": {"hp": 251}, "moves": ["Earthquake", "Explosion", "Rock Slide", "Substitute"]},
+      {"species": "Haunter", "level": 50, "evs": {"hp": 251}, "moves": ["Explosion", "Hypnosis", "Psychic", "Thunderbolt"]},
+      {"species": "Poliwhirl", "level": 50, "evs": {"hp": 251}, "moves": ["Amnesia", "Blizzard", "Psychic", "Surf"]}
+    ]
+  }
+]

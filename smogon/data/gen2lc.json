@@ -1,0 +1,57 @@
+[
+  {
+    "name": "LC Sample 1",
+    "data": [
+      {"species": "Diglett", "gender": "M", "item": "Berry Juice", "level": 5, "ivs": {"atk": 27, "def": 27}, "moves": ["Ancient Power", "Earthquake", "Hidden Power Bug", "Thief"]},
+      {"species": "Chinchou", "gender": "M", "item": "Berry Juice", "level": 5, "moves": ["Hydro Pump", "Ice Beam", "Thunder", "Thunder Wave"]},
+      {"species": "Exeggcute", "gender": "M", "item": "Berry Juice", "level": 5, "moves": ["Explosion", "Giga Drain", "Psychic", "Sleep Powder"]},
+      {"species": "Houndour", "gender": "M", "item": "Berry Juice", "level": 5, "ivs": {"hp": 7, "atk": 29, "def": 29}, "moves": ["Crunch", "Fire Blast", "Hidden Power Grass", "Pursuit"]},
+      {"species": "Magby", "gender": "M", "item": "Berry Juice", "level": 5, "ivs": {"hp": 7, "atk": 29, "def": 29}, "moves": ["Cross Chop", "Fire Blast", "Hidden Power Grass", "Thief"]},
+      {"species": "Porygon", "item": "Miracle Berry", "level": 5, "moves": ["Ice Beam", "Sharpen", "Thunder Wave", "Tri Attack"]}
+    ]
+  },
+  {
+    "name": "LC Sample 2",
+    "data": [
+      {"species": "Gastly", "gender": "M", "item": "Berry Juice", "level": 5, "moves": ["Giga Drain", "Hypnosis", "Thief", "Thunderbolt"]},
+      {"species": "Elekid", "gender": "M", "item": "Berry Juice", "level": 5, "moves": ["Cross Chop", "Ice Punch", "Thief", "Thunder"]},
+      {"species": "Houndour", "gender": "M", "item": "Berry Juice", "level": 5, "moves": ["Crunch", "Fire Blast", "Solar Beam", "Sunny Day"]},
+      {"species": "Machop", "gender": "M", "item": "Berry Juice", "level": 5, "ivs": {"atk": 27, "def": 27}, "moves": ["Cross Chop", "Curse", "Earthquake", "Hidden Power Bug"]},
+      {"species": "Porygon", "item": "Miracle Berry", "level": 5, "moves": ["Ice Beam", "Sharpen", "Thunder Wave", "Tri Attack"]},
+      {"species": "Staryu", "item": "Miracle Berry", "level": 5, "moves": ["Ice Beam", "Surf", "Thunderbolt", "Thunder Wave"]}
+    ]
+  },
+  {
+    "name": "LC Sample 3",
+    "data": [
+      {"species": "Staryu", "item": "Miracle Berry", "level": 5, "moves": ["Ice Beam", "Surf", "Thunderbolt", "Thunder Wave"]},
+      {"species": "Abra", "gender": "M", "item": "Berry Juice", "level": 5, "moves": ["Encore", "Ice Punch", "Psychic", "Thief"]},
+      {"species": "Chansey", "item": "Berry Juice", "level": 5, "moves": ["Body Slam", "Ice Beam", "Soft-Boiled", "Thunder Wave"]},
+      {"species": "Cubone", "gender": "M", "item": "Thick Club", "level": 5, "ivs": {"atk": 27, "def": 27}, "moves": ["Earthquake", "Hidden Power Bug", "Rock Slide", "Swords Dance"]},
+      {"species": "Machop", "gender": "M", "item": "Berry Juice", "level": 5, "ivs": {"atk": 27, "def": 27}, "moves": ["Cross Chop", "Curse", "Earthquake", "Hidden Power Bug"]},
+      {"species": "Magby", "gender": "M", "item": "Berry Juice", "level": 5, "moves": ["Cross Chop", "Fire Blast", "Thief", "Thunder Punch"]}
+    ]
+  },
+  {
+    "name": "LC Sample 4",
+    "data": [
+      {"species": "Exeggcute", "gender": "M", "item": "Berry Juice", "level": 5, "moves": ["Giga Drain", "Psychic", "Sleep Powder", "Stun Spore"]},
+      {"species": "Chansey", "item": "Berry Juice", "level": 5, "moves": ["Ice Beam", "Soft-Boiled", "Thunderbolt", "Thunder Wave"]},
+      {"species": "Elekid", "gender": "M", "level": 5, "moves": ["Cross Chop", "Ice Punch", "Thief", "Thunderbolt"]},
+      {"species": "Houndour", "gender": "M", "item": "Berry Juice", "level": 5, "ivs": {"hp": 7, "atk": 29, "def": 29}, "moves": ["Crunch", "Fire Blast", "Hidden Power Grass", "Pursuit"]},
+      {"species": "Machop", "gender": "M", "item": "Berry Juice", "level": 5, "ivs": {"atk": 27, "def": 27}, "moves": ["Cross Chop", "Curse", "Earthquake", "Hidden Power Bug"]},
+      {"species": "Staryu", "item": "Berry Juice", "level": 5, "moves": ["Ice Beam", "Surf", "Thunderbolt", "Thunder Wave"]}
+    ]
+  },
+  {
+    "name": "LC Sample 5",
+    "data": [
+      {"species": "Elekid", "gender": "M", "item": "Berry Juice", "level": 5, "moves": ["Cross Chop", "Ice Punch", "Thief", "Thunder"]},
+      {"species": "Doduo", "gender": "M", "item": "Berry Juice", "level": 5, "moves": ["Drill Peck", "Quick Attack", "Return", "Thief"], "happiness": 255},
+      {"species": "Drowzee", "gender": "M", "item": "Berry Juice", "level": 5, "moves": ["Fire Punch", "Light Screen", "Psychic", "Thunder Wave"]},
+      {"species": "Machop", "gender": "M", "item": "Berry Juice", "level": 5, "ivs": {"atk": 27, "def": 27}, "moves": ["Cross Chop", "Earthquake", "Encore", "Hidden Power Bug"]},
+      {"species": "Poliwag", "gender": "M", "item": "Berry Juice", "level": 5, "moves": ["Ice Beam", "Lovely Kiss", "Psychic", "Surf"]},
+      {"species": "Sandshrew", "gender": "M", "item": "Berry Juice", "level": 5, "moves": ["Counter", "Earthquake", "Rapid Spin", "Thief"]}
+    ]
+  }
+]
