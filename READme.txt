@@ -1,75 +1,86 @@
-🧠 Pokémon AI Agent
-A smart conversational assistant built using LangChain and ChatGPT-4o Mini, capable of performing advanced Pokémon strategy queries and analysis with integrated tools like Smogon, DuckDuckGo, and Pokémon team data search.
+# 🧠 Pokémon AI Agent
 
-This project is designed for both casual and competitive players who want quick and high-quality strategic insights.
+A smart conversational assistant built with **LangChain** and **ChatGPT-4o Mini**, capable of handling advanced Pokémon strategy queries and analysis. It integrates tools like **Smogon**, **DuckDuckGo**, and competitive team data to provide fast, detailed, and natural explanations.
 
-🚀 Features
-🔎 1. General Pokémon Info
-Ask about any Pokémon, and the agent will return well-formatted general details including types, abilities, lore, and more using natural language with markdown, emojis, and bullet points.
+This project is designed for both **casual** and **competitive** players who want quick, high-quality strategic insights.
 
-Example:
-What is Garchomp’s typing and ability?
+---
 
-⚔️ 2. Competitive Strategy Insights
-Get detailed strategy analysis for a specific Pokémon, with optional filters like generation and tier.
+## 🚀 Features
 
-The AI summarizes movesets, roles, team synergies, threats, and usage tips in its own natural language—no raw dumps from tools or HTML clutter.
+### 🔎 1. General Pokémon Info  
+Ask about **any Pokémon**, and the assistant returns clean, markdown-formatted summaries including:
 
-Example:
-Charizard build in Gen7 OU
-How do people use Umbreon in Gen8 UU?
+- Typing  
+- Abilities  
+- Lore  
+- General stats and usage  
 
-You’ll receive a clean summary including:
+> **Example:**  
+> `What is Garchomp’s typing and ability?`
 
-🛡️ Role
+---
 
-🧠 Moveset
+### ⚔️ 2. Competitive Strategy Insights  
+Get detailed **strategy breakdowns** for specific Pokémon. Optionally, filter by **generation** and **tier**.
 
-🤝 Teammates
+The AI analyzes the tool output and rewrites it **in its own words**—not copying raw text or HTML. You get a natural summary with:
 
-⚠️ Threats
+- 🛡️ **Role**  
+- 🧠 **Moveset**  
+- 🤝 **Teammates**  
+- ⚠️ **Threats**  
+- 💡 **Tips**
 
-💡 Tips
+> **Examples:**  
+> `Charizard build in Gen7 OU`  
+> `How do people use Umbreon in Gen8 UU?`
 
-🧩 3. Team Search by Pokémon
-Search for competitive teams that include a specific Pokémon, optionally filtered by generation and tier.
+---
 
-Each team result contains:
+### 🧩 3. Team Search by Pokémon  
+Ask for **sample teams** that include specific Pokémon, filtered by **generation** and **tier**.
 
-Pokémon names, movesets, abilities, EVs, and IVs
+Each team includes:
 
-Team export (Pokémon Showdown format)
+- Full Pokémon roster  
+- Moves, abilities, natures, EVs/IVs  
+- Showdown export format (📋)  
+- Clean markdown layout  
 
-Markdown layout for easy reading
+> **Examples:**  
+> `Charizard team Gen7 OU`  
+> `Teams with Gliscor in Gen6`
 
-Example:
-Charizard team Gen7 OU
-Teams with Gliscor in Gen6
+---
 
-🛠️ Tools Used
-Tool	Purpose
-smogon_tool	Strategy data (moves, sets, usage, etc.)
-team_search_tool	Retrieve actual sample teams including specified Pokémon
-ddgo_tool	General info via DuckDuckGo
-save_tool	Save outputs and ideas for reuse or export
+## 🛠️ Tools Used
 
-All tools are wrapped inside a LangChain agent which determines what tools to use based on the user query.
+| Tool               | Purpose                                                     |
+|--------------------|-------------------------------------------------------------|
+| `smogon_tool`      | Retrieves movesets, strategies, and usage from Smogon       |
+| `team_search_tool` | Finds sample teams based on Pokémon names and filters       |
+| `ddgo_tool`        | Fetches general Pokémon info using DuckDuckGo               |
+| `save_tool`        | Saves outputs or results for later reuse or export          |
 
-🧰 Tech Stack
-Python 3.10+
+> 🧠 These tools are dynamically called by the **LangChain agent**, depending on the user’s query.
 
-LangChain
+---
 
-OpenAI GPT-4o (Mini) via ChatOpenAI
+## 🧰 Tech Stack
 
-Pydantic for structured tool output
+- 🐍 Python 3.10+  
+- 🔗 LangChain  
+- 🧠 OpenAI GPT-4o Mini (`ChatOpenAI`)  
+- 📦 Pydantic (for structured outputs)  
+- 🌐 BeautifulSoup4 (for HTML cleanup)  
+- 🔤 Regex + markdown formatting helpers  
 
-BeautifulSoup4 for HTML cleanup
+---
 
-Re and markdown formatting helpers
+## 💬 Usage Tips
 
-💬 Usage Tips
-You can type:
+Try asking:
 
 "Show me teams with Umbreon and Chansey."
 
@@ -90,15 +101,3 @@ You can type:
 "What are the strengths and weaknesses of a rain team?"
 
 "Build a Hyper Offense team strategy around Dragapult."
-
-✅ To Do
- Add leaderboard or ranking data
-
- Optimize team search filters by usage stats
-
- Add GUI version with search and strategy tabs
-
- Export results to Markdown or PDF
-
-📄 License
-This project is licensed under the MIT License.
