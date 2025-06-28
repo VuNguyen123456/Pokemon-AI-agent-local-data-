@@ -98,12 +98,10 @@ Try asking:
 
 "What's a good moveset for Iron Valiant in OU?"
 
-![Screenshot 2025-06-28 001957](https://github.com/user-attachments/assets/0e2ce7fc-a90b-4b65-abf0-a79b7e3b4a6a)
-
-![Screenshot 2025-06-28 001842](https://github.com/user-attachments/assets/916f9b69-6538-4d26-afdb-c27e92f05b33)
-
-
-
 "What are the strengths and weaknesses of a rain team?"
 
 "Build a Hyper Offense team strategy around Dragapult."
+
+![Screenshot 2025-06-28 001957](https://github.com/user-attachments/assets/0e2ce7fc-a90b-4b65-abf0-a79b7e3b4a6a)
+
+![Screenshot 2025-06-28 001842](https://github.com/user-attachments/assets/916f9b69-6538-4d26-afdb-c27e92f05b33)
