@@ -2,62 +2,55 @@ import gradio as gr
 import re
 from langchain.memory import ConversationBufferMemory
 from langchain.agents import create_tool_calling_agent, AgentExecutor
-from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
 from typing import List
 from dotenv import load_dotenv
 
 # tools:
-from tools import ddgo_tool, save_tool, clean_smogon_tool, team_search_tool
-from models import AllTeamSearchResult
-from tools import fix_markdown_headers_spacing 
+from tools import ddgo_tool, save_tool, clean_smogon_tool, team_search_tool, fix_markdown_headers_spacing, ALL_SPECIES, extract_species_tier_gen
 from models import TeamSearchResult, AllTeamSearchResult, TeamPokemon 
+from utils import general_prompt, strat_prompt_single, strat_prompt_team, strat_prompt_multi, format_strategy_team_output, format_multiple_teams_output 
 
 load_dotenv()
 
-def format_strategy_team_output(resp: TeamSearchResult) -> str:
-    output = [f"🔍 **Team Name:** {resp.team_name}\n👤 **Author:** {resp.author}\n"]
 
-    for pokemon in resp.team:
-        output.append(f"---\n**{pokemon.species}**")
-        if pokemon.item:
-            output.append(f"- **Item:** {pokemon.item}")
-        if pokemon.ability:
-            output.append(f"- **Ability:** {pokemon.ability}")
-        if pokemon.nature:
-            output.append(f"- **Nature:** {pokemon.nature}")
-        if pokemon.evs:
-            evs_str = " / ".join(f"{v} {k}" for k, v in pokemon.evs.items())
-            output.append(f"- **EVs:** {evs_str}")
-        if pokemon.ivs:
-            ivs_str = " / ".join(f"{v} {k}" for k, v in pokemon.ivs.items())
-            output.append(f"- **IVs:** {ivs_str}")
-        output.append(f"- **Moves:** {', '.join(pokemon.moves)}")
-
-    if resp.pokemonShowdownExport:
-        output.append("\n📋 **Showdown Export**:\n```\n" + resp.pokemonShowdownExport + "\n```")
-
-    return "\n".join(output)
-
-def format_multiple_teams_output(teams: List[TeamSearchResult]) -> str:
-    outputs = []
-    for i, team in enumerate(teams, 1):
-        outputs.append(f"### Team #{i}\n")
-        outputs.append(format_strategy_team_output(team))
-        outputs.append("\n" + "-"*30 + "\n")
-    return "\n".join(outputs)
 
 tools = [ddgo_tool, save_tool, clean_smogon_tool, team_search_tool]
+last_pokemon_list = []
 llm = ChatOpenAI(model = "gpt-3.5-turbo") 
   # or gpt-3.5-turbo
 
-#prompts !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!PROMBLEM IS HERE 
-from main import general_prompt, strat_prompt_single, strat_prompt_team, strat_prompt_multi
+def format_strategy_markdown(output: str) -> str:
+    # Replace \n with actual newlines
+    output = output.replace("\\n", "\n")
+
+    # Highlight section titles
+    output = output.replace("Moveset", "### 🧠 Moveset")
+    output = output.replace("Role", "### 🛡️ Role")
+    output = output.replace("Teammates", "### 🤝 Teammates")
+    output = output.replace("Threats", "### ⚠️ Threats")
+    output = output.replace("Tips", "### 💡 Tips")
+
+    # Add markdown formatting for lists
+    output = output.replace("- ", "- ")
+
+    return output.strip()
 
 memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True, input_key="query")
 
 def chat_with_agent(query, chat_history):
-    # Determine the right prompt
+    global last_pokemon_list
+
+    # Extract Pokémon, tier, and gen
+    pokemon_list, tier, gen = extract_species_tier_gen(query)
+
+    # Clear memory only if new Pokémon are detected
+    if pokemon_list and set(pokemon_list) != set(last_pokemon_list):
+        print(f"[DEBUG] New Pokémon detected: {pokemon_list}, clearing memory.")
+        memory.clear()
+        last_pokemon_list = pokemon_list.copy()
+
+    # Prompt selection logic...
     if re.search(r"\bteam(s|ing)?\b", query, re.IGNORECASE):
         prompt = strat_prompt_team
     elif re.search(r"\b(strategy|build|moveset|compare|vs)\b", query, re.IGNORECASE) and (" and " in query.lower() or "," in query):
@@ -67,30 +60,45 @@ def chat_with_agent(query, chat_history):
     else:
         prompt = general_prompt
 
-    # Create agent with prompt + memory
+    # Agent execution...
     agent = create_tool_calling_agent(llm=llm, prompt=prompt, tools=tools)
     agent_executor = AgentExecutor(agent=agent, tools=tools, memory=memory, verbose=False)
 
-    # Run agent
-    response = agent_executor.invoke({"query": query, "name": "Pokemon Research Assistant"})
+    response = agent_executor.invoke({
+        "query": query,
+        "name": "Pokemon Research Assistant"
+    })
 
-    # Format output
+    # Format result
     if isinstance(response, AllTeamSearchResult):
         output = format_multiple_teams_output(response.teams)
     else:
         output = fix_markdown_headers_spacing(str(response))
 
-    # Update chat history for Gradio (optional, if using ChatInterface)
-    chat_history.append((query, output))
-    return "", chat_history
+    return output, chat_history
+
+
+
+
 
 # 🖼️ Gradio UI
-gr.ChatInterface(
-    fn=chat_with_agent,
-    title="🧠 Pokémon Strategy Assistant",
-    chatbot=gr.Chatbot(height=500),
-    theme="soft",
-    examples=["Charizard build in Gen7 OU", "Teams with Umbreon", "Compare Garchomp and Salamence"],
-    stop_btn="Stop",
-    retry_btn="Retry"
-).launch()
+with gr.Blocks(theme="soft") as demo:
+    gr.Markdown("## 🧠 Pokémon Strategy Assistant")
+    chatbot = gr.Chatbot(type="messages", render_markdown=True, height=500)
+    query = gr.Textbox(placeholder="Ask about teams, builds, or matchups...")
+
+    def respond(message, chat_history):
+        output, chat_history = chat_with_agent(message, chat_history)
+        formatted_output = format_strategy_markdown(output)
+
+        # Add both user and assistant messages
+        chat_history.append({"role": "user", "content": message})
+        chat_history.append({"role": "assistant", "content": formatted_output})
+
+        return "", chat_history
+
+
+    query.submit(respond, [query, chatbot], [query, chatbot])
+
+
+demo.launch()
