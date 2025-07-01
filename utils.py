@@ -21,8 +21,11 @@ general_prompt = ChatPromptTemplate.from_messages([
         Answer the user query, recommend some additional information surrounding it and use necessary tools.
 
         Use readable formatting like bullet points, emoji, or markdown if appropriate.
-        
+
         Correct any typos in Pokémon names, tier labels, or generation numbers where possible.\n{format_instructions}
+
+        If the generation or tier is not provided then it mean that any generation or tier is allowed for the search. 
+        Do NOT assume a generation or tier unless clearly specified by the user.
     """
     ),
     ("placeholder", "{chat_history}"),
@@ -40,6 +43,8 @@ strat_prompt_team = ChatPromptTemplate.from_messages([
 
     When a user asks for teams featuring specific Pokémon (e.g. 'teams with Umbreon and Chansey in Gen 7 OU'), 
     you must use the `team_search_tool` to retrieve full team data.
+
+    If no generation or tier is specified, do NOT guess. Instead it means that any generation or tier is allow for the search.
 
     **Important: Always include the entire user query, including generation and tier (e.g., 'gen7', 'ou'), when calling the tool.**
 
@@ -83,6 +88,9 @@ strat_prompt_single = ChatPromptTemplate.from_messages([
     - **Tips**
 
     🧹 Also, fix typos in Pokémon names, tiers, or generations when needed.
+
+    If the user does not mention a generation or tier, use the most recent **official tier** 
+    (e.g., Gen 9 OU) as a fallback — but **mention the assumed context in your response**.
     """),
     ("placeholder", "{chat_history}"),
     ("human", "{query} {name}"),
@@ -107,6 +115,9 @@ strat_prompt_multi = ChatPromptTemplate.from_messages([
     - Avoid quoting raw tool output
 
     You may be asked to focus on specific tiers or generations.
+
+    If the generation or tier is unclear, you must assume that any generation and tier is find to use for the search
+    Do not assume the generation unless the user gives a strong hint.
     """),
     ("placeholder", "{chat_history}"),
     ("human", "{query}"),
