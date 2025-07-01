@@ -12,13 +12,13 @@ from langchain_core.output_parsers import PydanticOutputParser
 from pprint import pprint
 from models import TeamSearchResult, AllTeamSearchResult, TeamPokemon # import the models that we will use to parse the output of the LLM
 import re  
+from langchain.memory import ConversationBufferMemory
 
 # TODO:
 # look into not having to download all the data from smogon but rather just use it throuhg github API
 
 
 load_dotenv() #load the env file
-
 
 llm = ChatOpenAI(model = "gpt-3.5-turbo") 
 general_format = (
@@ -130,6 +130,30 @@ strat_prompt_single = ChatPromptTemplate.from_messages([
     ("placeholder", "{agent_scratchpad}")
 ])
 
+strat_prompt_multi = ChatPromptTemplate.from_messages([
+    ("system", 
+    """
+    You are a Pokémon research assistant who creates comparative strategy summaries for competitive play.
+
+    When multiple Pokémon are requested, gather strategy information for **each** and then:
+    - Compare their roles, strengths, and weaknesses
+    - Present differences in movesets and team fit
+    - Use markdown and clear structure to distinguish them
+
+    Response format:
+    - 📝 Summary comparison paragraph
+    - 🔍 Separate sections per Pokémon (Moveset, Role, Teammates, Threats, Tips)
+    - Use headings like `### Charizard X` and `### Charizard Y`
+    - Use emojis and markdown formatting
+    - Avoid quoting raw tool output
+
+    You may be asked to focus on specific tiers or generations.
+    """),
+    ("placeholder", "{chat_history}"),
+    ("human", "{query}"),
+    ("placeholder", "{agent_scratchpad}")
+])
+
 
 tools = [ddgo_tool, save_tool, clean_smogon_tool, team_search_tool] # list of tools that we want to use in the agent, in this case we are using the search tool
 
@@ -172,6 +196,8 @@ def fix_markdown_headers_spacing(text: str) -> str:
     """
     return re.sub(r"(?<!\n)\s*(?=#+\s)", r"\n\n", text)
 
+memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True, input_key="query")
+
 while True:
     query = input("\nHow can I help with Pokémon? (Type 'quit' or 'exit' to stop): ").strip()
     if re.search(r"\b(quit|exit)\b", query.lower()):
@@ -181,19 +207,29 @@ while True:
     # Choose prompt type
     if re.search(r"\bteam(s|ing)?\b", query, re.IGNORECASE):
         prompt = strat_prompt_team
+
+    # Detect multiple Pokémon for comparison (e.g., "Charizard and Garchomp", or comma-separated)
+    elif (
+        re.search(r"\b(strategy|build|moveset|compare|vs)\b", query, re.IGNORECASE)
+        and (" and " in query.lower() or "," in query)
+    ):
+        prompt = strat_prompt_multi  # <-- use your new multi-strategy prompt
+
+    # Single Pokémon strategy
     elif re.search(r"\b(strategy|build|weakness|strength|moves|items|abilities)\b", query, re.IGNORECASE):
         prompt = strat_prompt_single
+
+    # Default to general prompt
     else:
         prompt = general_prompt
 
     # Recreate agent in case prompt changes
     agent = create_tool_calling_agent(llm=llm, prompt=prompt, tools=tools)
-    agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
+    agent_executor = AgentExecutor(agent=agent, tools=tools, memory=memory,verbose=True)
 
     # Invoke
     response = agent_executor.invoke({
         "query": query,
-        "chat_history": [],
         "name": "Pokemon Research Assistant"
     })
 
