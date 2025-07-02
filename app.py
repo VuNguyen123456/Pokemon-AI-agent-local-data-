@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 # tools:
 from tools import ddgo_tool, save_tool, clean_smogon_tool, team_search_tool, fix_markdown_headers_spacing, ALL_SPECIES, extract_species_tier_gen
 from models import TeamSearchResult, AllTeamSearchResult, TeamPokemon 
-from utils import general_prompt, strat_prompt_single, strat_prompt_team, strat_prompt_multi, format_strategy_team_output, format_multiple_teams_output 
+from utils import general_prompt, strat_prompt_single, strat_prompt_team, strat_prompt_multi, format_strategy_team_output, format_multiple_teams_output, suffixes, ALL_FILENAMES
 
 load_dotenv()
 
@@ -37,6 +37,20 @@ def format_strategy_markdown(output: str) -> str:
     return output.strip()
 
 memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True, input_key="query")
+
+def add_pokemon_image(pokemon_name):
+    base_url = "https://play.pokemonshowdown.com/sprites/gen5/"
+    return f"![{pokemon_name} sprite]({base_url}{pokemon_name.lower()}.png)\n"
+
+# def format_strategy_markdown(output: str) -> str:
+#     output = output.replace("\\n", "\n")
+#     # Add image at the top if Pokémon name is found
+#     for name in ALL_SPECIES:
+#         if name in output:
+#             output = add_pokemon_image(name) + output
+#             break
+#     # Continue your section formatting...
+#     return output.strip()
 
 def chat_with_agent(query, chat_history):
     global last_pokemon_list
@@ -78,27 +92,71 @@ def chat_with_agent(query, chat_history):
     return output, chat_history
 
 
-
-
-
 # 🖼️ Gradio UI
 with gr.Blocks(theme="soft") as demo:
     gr.Markdown("## 🧠 Pokémon Strategy Assistant")
+    
+    # Add image area for showing Pokémon sprite
+    pokemon_gallery = gr.Gallery(label="Pokémon Sprites", visible=False, columns=6, height=120)
+
     chatbot = gr.Chatbot(type="messages", render_markdown=True, height=500)
     query = gr.Textbox(placeholder="Ask about teams, builds, or matchups...")
+
+    def get_pokemon_image_urls_from_text(text: str) -> List[str]:
+        text = text.lower()
+        matches = []
+        sprite_base_url = "https://play.pokemonshowdown.com/sprites/gen5/"
+
+        for species in ALL_SPECIES:
+            base_name = species.lower()
+            if base_name in text:
+                for filename in ALL_FILENAMES:
+                    if filename.startswith(base_name):
+                        matches.append(f"{sprite_base_url}{filename}")
+                break  # Only match the first Pokémon found in the text
+
+        return matches
+
+
+
 
     def respond(message, chat_history):
         output, chat_history = chat_with_agent(message, chat_history)
         formatted_output = format_strategy_markdown(output)
 
-        # Add both user and assistant messages
         chat_history.append({"role": "user", "content": message})
         chat_history.append({"role": "assistant", "content": formatted_output})
 
-        return "", chat_history
+        image_urls = get_pokemon_image_urls_from_text(message)
+        if image_urls:
+            return "", chat_history, gr.update(value=image_urls, visible=True)
+        else:
+            return "", chat_history, gr.update(visible=False)
 
 
-    query.submit(respond, [query, chatbot], [query, chatbot])
+    query.submit(respond, [query, chatbot], [query, chatbot, pokemon_gallery])
 
 
 demo.launch()
+
+# # 🖼️ Gradio UI
+# with gr.Blocks(theme="soft") as demo:
+#     gr.Markdown("## 🧠 Pokémon Strategy Assistant")
+#     chatbot = gr.Chatbot(type="messages", render_markdown=True, height=500)
+#     query = gr.Textbox(placeholder="Ask about teams, builds, or matchups...")
+
+#     def respond(message, chat_history):
+#         output, chat_history = chat_with_agent(message, chat_history)
+#         formatted_output = format_strategy_markdown(output)
+
+#         # Add both user and assistant messages
+#         chat_history.append({"role": "user", "content": message})
+#         chat_history.append({"role": "assistant", "content": formatted_output})
+
+#         return "", chat_history
+
+
+#     query.submit(respond, [query, chatbot], [query, chatbot])
+
+
+# demo.launch()
