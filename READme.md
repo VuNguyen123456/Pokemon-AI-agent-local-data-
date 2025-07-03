@@ -8,12 +8,13 @@ This project is designed for both casual and competitive players who want quick,
 
 ## 🚀 Features
 
-### 🔎 1. General Pokémon Info  
+### 🔎 1. General Pokémon Info
 Ask about any Pokémon, and the assistant returns clean, markdown-formatted summaries including:
+
 - Typing  
 - Abilities  
 - Lore  
-- General stats and usage  
+- General stats and usage
 
 **Example:**  
 > What is Garchomp’s typing and ability?
@@ -23,13 +24,13 @@ Ask about any Pokémon, and the assistant returns clean, markdown-formatted summ
 ### ⚔️ 2. Competitive Strategy Insights  
 Get detailed strategy breakdowns for specific Pokémon. Optionally, filter by generation and tier.
 
-The AI analyzes the tool output and rewrites it in its own words—not copying raw text or HTML. You get a natural summary with:
+The AI analyzes tool outputs and rewrites them in its own words—not copying raw text or HTML. You get a natural summary with:
 
 - 🛡️ Role  
 - 🧠 Moveset  
 - 🤝 Teammates  
 - ⚠️ Threats  
-- 💡 Tips  
+- 💡 Tips
 
 **Examples:**  
 > Charizard build in Gen7 OU  
@@ -38,9 +39,9 @@ The AI analyzes the tool output and rewrites it in its own words—not copying r
 ---
 
 ### 🔁 3. Multi-Pokémon Strategy Comparison (NEW)  
-Compare strategies, builds, and roles for **two or more Pokémon** side by side. This is useful for decisions like choosing team leaders or understanding type synergy.
+Compare strategies, builds, and roles for two or more Pokémon side by side. Useful for building balanced teams or understanding synergy.
 
-**Example:**  
+**Examples:**  
 > Compare Charizard X and Y in Gen6 OU  
 > What are the roles of Garchomp and Landorus-T in Gen9 OU?
 
@@ -50,10 +51,11 @@ Compare strategies, builds, and roles for **two or more Pokémon** side by side.
 Ask for sample teams that include specific Pokémon, filtered by generation and tier.
 
 Each team includes:
+
 - Full Pokémon roster  
 - Moves, abilities, natures, EVs/IVs  
 - Showdown export format (📋)  
-- Clean markdown layout  
+- Clean markdown layout
 
 **Examples:**  
 > Charizard team Gen7 OU  
@@ -61,24 +63,37 @@ Each team includes:
 
 ---
 
-### 🧠 5. Conversational Memory (NEW)  
-The assistant **remembers previous Pokémon or topics** mentioned in the current session using LangChain memory.
+### 🧠 5. Conversational Memory 
+The assistant remembers previously mentioned Pokémon and topics in the session using LangChain memory.
 
-This means you can follow up with natural questions like:
+**Examples:**  
 > What were Gliscor’s threats again?  
 > Add a teammate to that Umbreon build.  
 > Can I see a rain team with the same Pokémon?
 
 ---
 
+### 🖼️ 6. Smart UI with Pokémon Sprites
+Built with **Gradio**, the assistant now includes an intuitive interface:
+
+- 🖼️ **Image gallery preview** of detected Pokémon and their variants (e.g. mega, gmax, hisui, paldea forms)
+- 🔍 Automatically detects and displays matching sprites above the chat
+- 💬 Clean chat-only markdown output (no duplicated image inside chat bubble)
+
+**Example:**  
+> What’s the best set for Tyranitar in Gen3?  
+→ You'll see **Tyranitar** and **Tyranitar-Mega** images above the chat, and a clean markdown strategy breakdown below.
+
+---
+
 ## 🛠️ Tools Used
 
-| Tool              | Purpose                                               |
-|-------------------|-------------------------------------------------------|
-| `smogon_tool`     | Retrieves movesets, strategies, and usage from Smogon |
-| `team_search_tool`| Finds sample teams based on Pokémon and filters       |
-| `ddgo_tool`       | Fetches general Pokémon info from DuckDuckGo          |
-| `save_tool`       | Saves outputs or builds for reuse or export           |
+| Tool               | Purpose                                                |
+|--------------------|--------------------------------------------------------|
+| `smogon_tool`      | Retrieves movesets, strategies, and usage from Smogon |
+| `team_search_tool` | Finds sample teams based on Pokémon and filters       |
+| `ddgo_tool`        | Fetches general Pokémon info from DuckDuckGo          |
+| `save_tool`        | Saves outputs or builds for reuse or export           |
 
 🧠 These tools are dynamically selected by a LangChain agent based on your query.
 
@@ -88,37 +103,24 @@ This means you can follow up with natural questions like:
 
 - 🐍 Python 3.10+  
 - 🔗 LangChain  
-- 🧠 OpenAI GPT-4o Mini (ChatOpenAI)  
-- 📦 Pydantic (for structured outputs)  
-- 🌐 BeautifulSoup4 (for HTML cleanup)  
-- 🔤 Regex + Markdown formatting helpers  
-- 🖼️ Gradio (for future UI)
+- 🧠 OpenAI GPT-4o Mini (`ChatOpenAI`)  
+- 📦 Pydantic  
+- 🌐 BeautifulSoup4  
+- 🧹 Regex + Markdown formatting helpers  
+- 🖼️ Gradio (interactive UI)
 
 ---
 
 ## 💬 Usage Tips
 
-You can ask things like:
+Ask things like:
 
-- "Show me teams with Umbreon and Chansey."  
-- "Compare Charizard X and Y in Gen6."  
-- "Give me 3 VGC teams with Flutter Mane and Iron Hands."  
-- "What is a good moveset for Iron Valiant in OU?"  
-- "What are the strengths of a rain team?"  
-- "Build a Hyper Offense strategy around Dragapult."  
-- "Remind me of Garchomp’s role again."  
+- "Show me teams with Umbreon and Chansey."
+- "Compare Charizard X and Y in Gen6."
+- "Give me 3 VGC teams with Flutter Mane and Iron Hands."
+- "What is a good moveset for Iron Valiant in OU?"
+- "What are the strengths of a rain team?"
+- "Build a Hyper Offense strategy around Dragapult."
+- "Remind me of Garchomp’s role again."
 - "Add a wallbreaker to the team with Skarmory."
 
----
-
-## ✅ To Do
-- Add tier usage stats and rankings  
-- Better support for team builder UI  
-- Export builds and summaries as PDF or Markdown  
-- Type synergy checker  
-- Visualization of team roles and weaknesses
-
----
-
-## 📄 License
-This project is licensed under the **MIT License**.
