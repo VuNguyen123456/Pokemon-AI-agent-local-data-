@@ -124,3 +124,6 @@ Ask things like:
 - "Remind me of Garchomp’s role again."
 - "Add a wallbreaker to the team with Skarmory."
 
+![image](https://github.com/user-attachments/assets/57b6c657-bb1c-4fdd-ad8f-3143ef2e4c32)
+
+
