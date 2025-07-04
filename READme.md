@@ -73,16 +73,17 @@ The assistant remembers previously mentioned Pokémon and topics in the session 
 
 ---
 
-### 🖼️ 6. Smart UI with Pokémon Sprites
-Built with **Gradio**, the assistant now includes an intuitive interface:
+### 🖼️ 6. Smart UI with Pokémon Sprites 
+Built with **Gradio**, the assistant now includes an intuitive and visual interface:
 
-- 🖼️ **Image gallery preview** of detected Pokémon and their variants (e.g. mega, gmax, hisui, paldea forms)
-- 🔍 Automatically detects and displays matching sprites above the chat
-- 💬 Clean chat-only markdown output (no duplicated image inside chat bubble)
+- 🖼️ **Image gallery preview** of detected Pokémon and all variants (e.g. mega, gmax, hisui, paldea forms)  
+- 🔍 **Automatic sprite detection** and display above the chatbox (based on your question)  
+- 💬 **Clean markdown chat output** (no duplicate images in chat bubbles)  
+- Responsive layout that adapts across screen sizes  
 
 **Example:**  
-> What’s the best set for Tyranitar in Gen3?  
-→ You'll see **Tyranitar** and **Tyranitar-Mega** images above the chat, and a clean markdown strategy breakdown below.
+`What’s the best set for Tyranitar in Gen3?`  
+→ You'll see `Tyranitar` and `Tyranitar-Mega` sprites above the chat, and a detailed markdown strategy below.
 
 ---
 
