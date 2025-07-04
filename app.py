@@ -13,7 +13,9 @@ from utils import general_prompt, strat_prompt_single, strat_prompt_team, strat_
 
 load_dotenv()
 
-
+# TODO:
+# Imrpove UI so the picture appear correctly in the view (size is weird when full screen)
+# Improve the pictureproblem when there's more than 1 mon called
 
 tools = [ddgo_tool, save_tool, clean_smogon_tool, team_search_tool]
 last_pokemon_list = []
@@ -93,14 +95,42 @@ def chat_with_agent(query, chat_history):
 
 
 # 🖼️ Gradio UI
-with gr.Blocks(theme="soft") as demo:
+with gr.Blocks(theme="soft", css="styles.css") as demo:
     gr.Markdown("## 🧠 Pokémon Strategy Assistant")
     
     # Add image area for showing Pokémon sprite
-    pokemon_gallery = gr.Gallery(label="Pokémon Sprites", visible=False, columns=6, height=120)
+    # pokemon_gallery = gr.Gallery(visible=False, columns=6, height=120, container=False)
+    # with gr.Row():
+    #     with gr.Column(scale=1):
+    #         pass  # Spacer column (optional)
 
-    chatbot = gr.Chatbot(type="messages", render_markdown=True, height=500)
-    query = gr.Textbox(placeholder="Ask about teams, builds, or matchups...")
+    #     with gr.Column(min_width=100, elem_id="gallery-container"):
+    #         pokemon_gallery = gr.Gallery(
+    #             visible=False,
+    #             columns="auto",
+    #             allow_preview=False,
+    #             container=False,
+    #             elem_id="pokemon-gallery",
+    #         )
+
+    #     with gr.Column(scale=1):
+    #         pass  # Spacer column (optional)
+    pokemon_galleries = []
+    for row in range(2):  # 2 rows
+        with gr.Row():
+            for col in range(3):  # 3 columns per row
+                with gr.Column(scale=1, min_width=100):
+                    gallery = gr.Gallery(
+                        visible=False,
+                        columns="auto",
+                        allow_preview=False,
+                        container=False,
+                        elem_id=f"gallery-{row*3 + col}"
+                    )
+                    pokemon_galleries.append(gallery)
+
+    chatbot = gr.Chatbot(type="messages", render_markdown=True, height=500, container=False)
+    query = gr.Textbox(placeholder="Ask about teams, builds, or matchups...", container=False)
 
     def get_pokemon_image_urls_from_text(text: str) -> List[str]:
         text = text.lower()
@@ -120,6 +150,19 @@ with gr.Blocks(theme="soft") as demo:
 
 
 
+    # def respond(message, chat_history):
+    #     output, chat_history = chat_with_agent(message, chat_history)
+    #     formatted_output = format_strategy_markdown(output)
+
+    #     chat_history.append({"role": "user", "content": message})
+    #     chat_history.append({"role": "assistant", "content": formatted_output})
+
+    #     image_urls = get_pokemon_image_urls_from_text(message)
+    #     if image_urls:
+    #         return "", chat_history, gr.update(value=image_urls, visible=True)
+    #     else:
+    #         return "", chat_history, gr.update(visible=False)
+
     def respond(message, chat_history):
         output, chat_history = chat_with_agent(message, chat_history)
         formatted_output = format_strategy_markdown(output)
@@ -127,14 +170,36 @@ with gr.Blocks(theme="soft") as demo:
         chat_history.append({"role": "user", "content": message})
         chat_history.append({"role": "assistant", "content": formatted_output})
 
-        image_urls = get_pokemon_image_urls_from_text(message)
-        if image_urls:
-            return "", chat_history, gr.update(value=image_urls, visible=True)
-        else:
-            return "", chat_history, gr.update(visible=False)
+        text = message.lower()
+        sprite_base_url = "https://play.pokemonshowdown.com/sprites/gen5/"
+
+        matched_species = []
+        for species in ALL_SPECIES:
+            name = species.lower()
+            if name in text and name not in matched_species:
+                matched_species.append(name)
+                if len(matched_species) == 6:
+                    break
+
+        gallery_updates = []
+        for i in range(6):
+            if i < len(matched_species):
+                matched_name = matched_species[i]
+                image_urls = [
+                    f"{sprite_base_url}{filename}"
+                    for filename in ALL_FILENAMES
+                    if filename.startswith(matched_name)
+                ]
+                gallery_updates.append(gr.update(value=image_urls, visible=True))
+            else:
+                gallery_updates.append(gr.update(visible=False))
+
+        return "", chat_history, *gallery_updates
 
 
-    query.submit(respond, [query, chatbot], [query, chatbot, pokemon_gallery])
+
+    query.submit(respond, [query, chatbot], [query, chatbot, *pokemon_galleries])
+
 
 
 demo.launch()

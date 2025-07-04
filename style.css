@@ -1,0 +1,48 @@
+#gallery-container {
+    display: flex;
+    justify-content: center;
+    /* Optionally constrain max width if needed */
+    max-width: 380px; /* slightly wider to give some breathing room */
+    margin: 0 auto;
+    padding: 0 8px; /* some horizontal padding */
+}
+
+#pokemon-gallery {
+    max-width: 360px; /* keeps gallery container width limited */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2px; /* reduce space between images */
+    padding: 2px 0; /* tighten vertical padding */
+}
+
+#pokemon-gallery img {
+    height: 40px;  /* reduce height to make images smaller */
+    width: auto;
+    object-fit: contain;
+    margin: 0; /* remove extra margin if any */
+    display: block; /* better control */
+}
+
+
+/* #gallery-container {
+    display: flex;
+    justify-content: center;
+}
+
+#pokemon-gallery {
+    max-width: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+    padding: 4px 0;
+}
+
+#pokemon-gallery img {
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+} */
+
+
