@@ -197,6 +197,7 @@ strat_prompt_team = ChatPromptTemplate.from_messages([
     Return the result as structured output, using markdown format.  
     List *all* Pokémon on each team in detail. Do not summarize or skip any entries.
 
+    You only need to list out the Export style of the team if user asked for it
     {format_instructions}
     """
     ),

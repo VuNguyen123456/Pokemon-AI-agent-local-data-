@@ -13,10 +13,6 @@ from utils import general_prompt, strat_prompt_single, strat_prompt_team, strat_
 
 load_dotenv()
 
-# TODO:
-# Imrpove UI so the picture appear correctly in the view (size is weird when full screen)
-# Improve the pictureproblem when there's more than 1 mon called
-
 tools = [ddgo_tool, save_tool, clean_smogon_tool, team_search_tool]
 last_pokemon_list = []
 llm = ChatOpenAI(model = "gpt-3.5-turbo") 
@@ -54,6 +50,53 @@ def add_pokemon_image(pokemon_name):
 #     # Continue your section formatting...
 #     return output.strip()
 
+# def chat_with_agent(query, chat_history):
+#     global last_pokemon_list
+
+#     # Extract Pokémon, tier, and gen
+#     pokemon_list, tier, gen = extract_species_tier_gen(query)
+
+#     # Clear memory only if new Pokémon are detected
+#     if pokemon_list and set(pokemon_list) != set(last_pokemon_list):
+#         print(f"[DEBUG] New Pokémon detected: {pokemon_list}, clearing memory.")
+#         memory.clear()
+#         last_pokemon_list = pokemon_list.copy()
+
+#     # Prompt selection logic...
+#     if re.search(r"\bteam(s|ing)?\b", query, re.IGNORECASE):
+#         prompt = strat_prompt_team
+#     elif re.search(r"\b(strategy|build|moveset|compare|vs)\b", query, re.IGNORECASE) and (" and " in query.lower() or "," in query):
+#         prompt = strat_prompt_multi
+#     elif re.search(r"\b(strategy|build|weakness|strength|moves|items|abilities)\b", query, re.IGNORECASE):
+#         prompt = strat_prompt_single
+#     else:
+#         prompt = general_prompt
+
+#     # Agent execution...
+#     agent = create_tool_calling_agent(llm=llm, prompt=prompt, tools=tools)
+#     agent_executor = AgentExecutor(agent=agent, tools=tools, memory=memory, verbose=False)
+
+#     response = agent_executor.invoke({
+#         "query": query,
+#         "name": "Pokemon Research Assistant"
+#     })
+
+#     # Format result
+#     # if isinstance(response, AllTeamSearchResult):
+#     #     output = format_multiple_teams_output(response.teams)
+#     # else:
+#     #     output = fix_markdown_headers_spacing(str(response))
+
+#     # return output, chat_history
+#     if isinstance(response, AllTeamSearchResult):
+#         output = format_multiple_teams_output(response.teams)
+#         is_team_output = True
+#     else:
+#         output = fix_markdown_headers_spacing(str(response))
+#         is_team_output = False
+
+#     return output, chat_history, is_team_output
+
 def chat_with_agent(query, chat_history):
     global last_pokemon_list
 
@@ -85,36 +128,27 @@ def chat_with_agent(query, chat_history):
         "name": "Pokemon Research Assistant"
     })
 
+    # IMPORTANT: Extract just the output from the response
+    if isinstance(response, dict) and 'output' in response:
+        output = response['output']
+    else:
+        output = str(response)
+
     # Format result
     if isinstance(response, AllTeamSearchResult):
         output = format_multiple_teams_output(response.teams)
+        is_team_output = True
     else:
-        output = fix_markdown_headers_spacing(str(response))
+        output = fix_markdown_headers_spacing(output)  # Use extracted output, not str(response)
+        is_team_output = False
 
-    return output, chat_history
+    return output, chat_history, is_team_output
 
 
 # 🖼️ Gradio UI
 with gr.Blocks(theme="soft", css="styles.css") as demo:
     gr.Markdown("## 🧠 Pokémon Strategy Assistant")
     
-    # Add image area for showing Pokémon sprite
-    # pokemon_gallery = gr.Gallery(visible=False, columns=6, height=120, container=False)
-    # with gr.Row():
-    #     with gr.Column(scale=1):
-    #         pass  # Spacer column (optional)
-
-    #     with gr.Column(min_width=100, elem_id="gallery-container"):
-    #         pokemon_gallery = gr.Gallery(
-    #             visible=False,
-    #             columns="auto",
-    #             allow_preview=False,
-    #             container=False,
-    #             elem_id="pokemon-gallery",
-    #         )
-
-    #     with gr.Column(scale=1):
-    #         pass  # Spacer column (optional)
     pokemon_galleries = []
     for row in range(2):  # 2 rows
         with gr.Row():
@@ -163,12 +197,21 @@ with gr.Blocks(theme="soft", css="styles.css") as demo:
     #     else:
     #         return "", chat_history, gr.update(visible=False)
 
+    # def respond(message, chat_history):
+    #     output, chat_history = chat_with_agent(message, chat_history)
+    #     formatted_output = format_strategy_markdown(output)
+
+    #     chat_history.append({"role": "user", "content": message})
+    #     chat_history.append({"role": "assistant", "content": formatted_output})
+    
     def respond(message, chat_history):
-        output, chat_history = chat_with_agent(message, chat_history)
-        formatted_output = format_strategy_markdown(output)
+        output, _ , is_team_output = chat_with_agent(message, chat_history)
+
+        if not is_team_output:
+            output = format_strategy_markdown(output)
 
         chat_history.append({"role": "user", "content": message})
-        chat_history.append({"role": "assistant", "content": formatted_output})
+        chat_history.append({"role": "assistant", "content": output})
 
         text = message.lower()
         sprite_base_url = "https://play.pokemonshowdown.com/sprites/gen5/"
@@ -197,31 +240,9 @@ with gr.Blocks(theme="soft", css="styles.css") as demo:
         return "", chat_history, *gallery_updates
 
 
-
     query.submit(respond, [query, chatbot], [query, chatbot, *pokemon_galleries])
 
 
 
 demo.launch()
 
-# # 🖼️ Gradio UI
-# with gr.Blocks(theme="soft") as demo:
-#     gr.Markdown("## 🧠 Pokémon Strategy Assistant")
-#     chatbot = gr.Chatbot(type="messages", render_markdown=True, height=500)
-#     query = gr.Textbox(placeholder="Ask about teams, builds, or matchups...")
-
-#     def respond(message, chat_history):
-#         output, chat_history = chat_with_agent(message, chat_history)
-#         formatted_output = format_strategy_markdown(output)
-
-#         # Add both user and assistant messages
-#         chat_history.append({"role": "user", "content": message})
-#         chat_history.append({"role": "assistant", "content": formatted_output})
-
-#         return "", chat_history
-
-
-#     query.submit(respond, [query, chatbot], [query, chatbot])
-
-
-# demo.launch()
