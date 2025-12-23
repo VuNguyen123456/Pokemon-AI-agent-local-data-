@@ -127,4 +127,27 @@ Ask things like:
 
 ![image](https://github.com/user-attachments/assets/57b6c657-bb1c-4fdd-ad8f-3143ef2e4c32)
 
+---
+
+## 📚 Data Sources & Credits
+
+This project uses data and assets from the following sources:
+
+### 🎮 Smogon Data
+**Competitive Pokémon strategy data** (movesets, analyses, team compositions) is sourced from:
+- **Smogon University**: [https://www.smogon.com/](https://www.smogon.com/)
+  - Smogon is a community-driven resource for competitive Pokémon battling
+  - Data includes analyses, usage statistics, and team sets across multiple generations and tiers
+  - All strategy information, movesets, and competitive insights come from Smogon's comprehensive database
+
+### 🖼️ Pokémon Sprites
+**Pokémon sprite images** are sourced from:
+- **Pokémon Showdown**: [https://play.pokemonshowdown.com/sprites/gen5/](https://play.pokemonshowdown.com/sprites/gen5/)
+  - Pokémon Showdown is the official battle simulator that hosts sprite assets
+  - Sprites include all Pokémon forms (Mega, G-Max, Regional variants, etc.)
+  - Used for visual display in the Gradio UI interface
+
+**Note:** This project is not affiliated with Smogon University or Pokémon Showdown. All data and assets are used for educational and research purposes in accordance with their respective terms of use.
+
+---
 

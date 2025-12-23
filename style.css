@@ -1,48 +1,97 @@
-#gallery-container {
+/* Modern Pokémon Theme - Based on Reference Design */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --pokemon-red: #FF0000;
+    --pokemon-red-dark: #CC0000;
+    --pokemon-yellow: #FFD700;
+    --pokemon-blue: #3B4CCA;
+    --background: #FAFAFA;
+    --foreground: #1A1A1A;
+    --muted: #F5F5F5;
+    --muted-foreground: #666666;
+    --border: #E5E5E5;
+    --card: #FFFFFF;
+}
+
+/* Pokémon Sprite Cards */
+.pokemon-sprites-modern {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    /* Optionally constrain max width if needed */
-    max-width: 380px; /* slightly wider to give some breathing room */
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+}
+
+.pokemon-sprite-modern {
+    background: var(--muted);
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    padding: 0.75rem;
+    text-align: center;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    min-width: 100px;
+    max-width: 120px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.pokemon-sprite-modern:hover {
+    transform: translateY(-4px);
+    border-color: var(--pokemon-red);
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.15);
+    background: white;
+}
+
+.pokemon-sprite-modern img {
+    height: 80px;
+    width: auto;
+    max-width: 100%;
+    display: block;
     margin: 0 auto;
-    padding: 0 8px; /* some horizontal padding */
-}
-
-#pokemon-gallery {
-    max-width: 360px; /* keeps gallery container width limited */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2px; /* reduce space between images */
-    padding: 2px 0; /* tighten vertical padding */
-}
-
-#pokemon-gallery img {
-    height: 40px;  /* reduce height to make images smaller */
-    width: auto;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    transition: transform 0.2s ease;
     object-fit: contain;
-    margin: 0; /* remove extra margin if any */
-    display: block; /* better control */
+    image-rendering: crisp-edges;
 }
 
-
-/* #gallery-container {
-    display: flex;
-    justify-content: center;
+.pokemon-sprite-modern:hover img {
+    transform: scale(1.05);
 }
 
-#pokemon-gallery {
-    max-width: 360px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 4px;
-    padding: 4px 0;
+.pokemon-sprite-name {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--foreground);
+    margin-top: 0.5rem;
+    text-transform: capitalize;
+    font-family: 'Outfit', sans-serif;
 }
 
-#pokemon-gallery img {
-    height: 48px;
-    width: auto;
-    object-fit: contain;
-} */
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
+.fade-in {
+    animation: fadeInUp 0.4s ease-out forwards;
+}
 
+/* Responsive */
+@media (max-width: 768px) {
+    .pokemon-sprite-modern {
+        min-width: 80px;
+        padding: 0.5rem;
+    }
+    
+    .pokemon-sprite-modern img {
+        height: 56px;
+    }
+}

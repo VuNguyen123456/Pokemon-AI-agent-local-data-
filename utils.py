@@ -1,12 +1,9 @@
-from langchain.prompts import ChatPromptTemplate
 from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.output_parsers import PydanticOutputParser # define a simple pythonclass that wil specify type of content that we want our LLM to generate
-from typing import List
-from tools import ddgo_tool, save_tool, clean_smogon_tool, team_search_tool # import the tools that we will use in the agent
 from langchain_core.output_parsers import PydanticOutputParser
-from pprint import pprint
-from models import TeamSearchResult, AllTeamSearchResult, TeamPokemon # import the models that we will use to parse the output of the LLM
-import re  
+from typing import List
+import re
+from shared import fix_markdown_headers_spacing
+from models import TeamSearchResult, AllTeamSearchResult, TeamPokemon  
 
 suffixes = [
     # Your provided suffixes:
@@ -304,9 +301,5 @@ def format_multiple_teams_output(teams: List[TeamSearchResult]) -> str:
         outputs.append("\n" + "-"*30 + "\n")
     return "\n".join(outputs)
 
-def fix_markdown_headers_spacing(text: str) -> str:
-    """
-    Ensure that markdown headers like #, ##, ### are preceded by two newlines
-    so they render properly after paragraphs.
-    """
-    return re.sub(r"(?<!\n)\s*(?=#+\s)", r"\n\n", text)
+# fix_markdown_headers_spacing moved to shared.py to avoid duplication
+from shared import fix_markdown_headers_spacing
