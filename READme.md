@@ -4,6 +4,7 @@ A smart conversational assistant built with LangChain and ChatGPT-4o Mini, capab
 
 This project is designed for both casual and competitive players who want quick, high-quality strategic insights.
 
+Data for this are taken from: https://github.com/pkmn/smogon/tree/main
 ---
 
 ## 🚀 Features
@@ -38,7 +39,7 @@ The AI analyzes tool outputs and rewrites them in its own words—not copying ra
 
 ---
 
-### 🔁 3. Multi-Pokémon Strategy Comparison (NEW)  
+### 🔁 3. Multi-Pokémon Strategy Comparison
 Compare strategies, builds, and roles for two or more Pokémon side by side. Useful for building balanced teams or understanding synergy.
 
 **Examples:**  
