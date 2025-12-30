@@ -1209,3 +1209,91 @@ AttributeError: 'HTML' object has no attribute 'load'
 2025-12-30 00:06:16,771 - tools - INFO - Found 1 teams for query: Umbreon Skarmory Raikou
 2025-12-30 00:06:17,096 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2025-12-30 00:07:20,841 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-30 00:21:55,573 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-30 00:21:56,356 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-30 00:23:52,863 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-30 00:24:35,682 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-30 00:27:03,447 - tools - INFO - Loaded 636 Pokémon species
+2025-12-30 00:27:04,769 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-30 00:27:04,796 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-30 00:27:05,050 - shared - INFO - Starting Gradio application...
+2025-12-30 00:27:05,394 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-30 00:27:05,418 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-30 00:27:05,578 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-30 00:27:58,091 - tools - INFO - Loaded 636 Pokémon species
+2025-12-30 00:27:59,195 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-30 00:27:59,196 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-30 00:27:59,449 - shared - INFO - Starting Gradio application...
+2025-12-30 00:27:59,763 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-30 00:27:59,787 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-30 00:27:59,798 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-30 00:28:21,516 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-30 00:28:22,522 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-30 00:30:40,962 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-30 00:30:42,292 - tools - INFO - Found 1 teams for query: umbreon, raikou, skarmory
+2025-12-30 00:30:43,655 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-30 00:31:28,159 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-30 00:35:22,286 - tools - INFO - Loaded 636 Pokémon species
+2025-12-30 00:35:23,454 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-30 00:35:23,455 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-30 00:35:23,751 - shared - INFO - Starting Gradio application...
+2025-12-30 00:35:24,093 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-30 00:35:24,121 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-30 00:35:24,220 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-30 00:35:28,096 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-30 00:35:28,809 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-12-30 00:35:28,810 - shared - ERROR - Error in agent execution: Error code: 400 - {'error': {'message': "This model's maximum context length is 16385 tokens. However, your messages resulted in 28699 tokens (28313 in the messages, 386 in the functions). Please reduce the length of the messages or functions.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\app.py", line 66, in chat_with_agent
+    response = agent_executor.invoke({
+  File "C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\venv\lib\site-packages\langchain\chains\base.py", line 167, in invoke
+    raise e
+  File "C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\venv\lib\site-packages\langchain\chains\base.py", line 157, in invoke
+    self._call(inputs, run_manager=run_manager)
+  File "C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\venv\lib\site-packages\langchain\agents\agent.py", line 1620, in _call
+    next_step_output = self._take_next_step(
+  File "C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\venv\lib\site-packages\langchain\agents\agent.py", line 1326, in _take_next_step
+    [
+  File "C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\venv\lib\site-packages\langchain\agents\agent.py", line 1326, in <listcomp>
+    [
+  File "C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\venv\lib\site-packages\langchain\agents\agent.py", line 1354, in _iter_next_step
+    output = self._action_agent.plan(
+  File "C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\venv\lib\site-packages\langchain\agents\agent.py", line 577, in plan
+    for chunk in self.runnable.stream(inputs, config={"callbacks": callbacks}):
+  File "C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\venv\lib\site-packages\langchain_core\runnables\base.py", line 3438, in stream
+    yield from self.transform(iter([input]), config, **kwargs)
+  File "C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\venv\lib\site-packages\langchain_core\runnables\base.py", line 3424, in transform
+    yield from self._transform_stream_with_config(
+  File "C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\venv\lib\site-packages\langchain_core\runnables\base.py", line 2215, in _transform_stream_with_config
+    chunk: Output = context.run(next, iterator)
+  File "C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\venv\lib\site-packages\langchain_core\runnables\base.py", line 3386, in _transform
+    yield from final_pipeline
+  File "C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\venv\lib\site-packages\langchain_core\runnables\base.py", line 1429, in transform
+    for ichunk in input:
+  File "C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\venv\lib\site-packages\langchain_core\runnables\base.py", line 5647, in transform
+    yield from self.bound.transform(
+  File "C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\venv\lib\site-packages\langchain_core\runnables\base.py", line 1447, in transform
+    yield from self.stream(final, config, **kwargs)
+  File "C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\venv\lib\site-packages\langchain_core\language_models\chat_models.py", line 499, in stream
+    for chunk in self._stream(input_messages, stop=stop, **kwargs):
+  File "C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\venv\lib\site-packages\langchain_openai\chat_models\base.py", line 911, in _stream
+    response = self.client.create(**payload)
+  File "C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\venv\lib\site-packages\openai\_utils\_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\venv\lib\site-packages\openai\resources\chat\completions\completions.py", line 925, in create
+    return self._post(
+  File "C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\venv\lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\venv\lib\site-packages\openai\_base_client.py", line 1037, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "This model's maximum context length is 16385 tokens. However, your messages resulted in 28699 tokens (28313 in the messages, 386 in the functions). Please reduce the length of the messages or functions.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+2025-12-30 00:35:42,161 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-30 00:35:42,729 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-30 00:35:49,097 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-30 00:37:05,617 - tools - INFO - Loaded 636 Pokémon species
+2025-12-30 00:37:06,608 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-30 00:37:06,608 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-30 00:37:06,927 - shared - INFO - Starting Gradio application...
+2025-12-30 00:37:07,205 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-30 00:37:07,254 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-30 00:37:07,279 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"

@@ -1729,6 +1729,11 @@ try:
                     'get teams', 'list teams', 'teams featuring', 'teams containing'
                 ])
                 
+                # Determine if this is a compare query - should show only 1 sprite per Pokemon
+                is_compare_query = any(keyword in message_lower for keyword in [
+                    'compare', 'comparison', 'vs', ' versus', 'difference between', 'differences between'
+                ])
+                
                 # Get Pokémon sprites - use Gen 5 Showdown sprites for strategy queries (not team strategy)
                 sprite_urls_lists = []
                 pokemon_list, _, _ = extract_species_tier_gen(message)
@@ -1839,6 +1844,36 @@ try:
                             sprite_urls_lists.append([
                                 f"https://play.pokemonshowdown.com/sprites/gen5/{base_name}.png"
                             ])
+                elif is_compare_query:
+                    # Compare queries: Show only 1 sprite per Pokemon (base form only) - same as team queries
+                    if pokemon_list:
+                        # Helper function to normalize species name to Showdown format
+                        def normalize_species_name(name: str) -> str:
+                            """
+                            Normalize species name to Pokémon Showdown filename base.
+                            - Multi-word names: "Great Tusk" → "greattusk" (remove spaces)
+                            - Form names: "Landorus-Therian" → "landorus-therian" (keep hyphens)
+                            """
+                            return (
+                                name.lower()
+                                .replace(" ", "")        # Remove spaces (e.g., "Great Tusk" → "greattusk")
+                                .replace("'", "")        # Remove apostrophes
+                                # Keep hyphens for forms (e.g., "Landorus-Therian" stays as "landorus-therian")
+                            )
+                        
+                        # Show exactly 1 sprite for EACH Pokemon in the compare query (base form only)
+                        for pokemon_name in pokemon_list[:8]:  # Limit to 8 Pokemon
+                            normalized_name = normalize_species_name(pokemon_name)
+                            matching_filenames = [
+                                filename for filename in ALL_FILENAMES
+                                if filename.lower().startswith(normalized_name)
+                            ]
+                            if matching_filenames:
+                                # Take only the first matching filename (base form)
+                                base_name = matching_filenames[0].replace('.png', '')
+                                sprite_urls_lists.append([
+                                    f"https://play.pokemonshowdown.com/sprites/gen5/{base_name}.png"
+                                ])
                 else:
                     # Strategy queries: Show all sprite variants (regular, shiny, back, back-shiny)
                     if pokemon_list:

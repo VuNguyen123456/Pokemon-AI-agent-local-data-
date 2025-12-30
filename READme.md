@@ -171,8 +171,6 @@ Ask things like:
 - "Remind me of Garchomp’s role again."
 - "Add a wallbreaker to the team with Skarmory."
 
-![image](https://github.com/user-attachments/assets/57b6c657-bb1c-4fdd-ad8f-3143ef2e4c32)
-
 ---
 
 ## 📚 Data Sources & Credits
@@ -200,7 +198,7 @@ This project uses data and assets from the following sources:
 ## 📸 Screenshots
 
 ### Main Interface
-![Pokémon Strategy Assistant Interface](https://github.com/user-attachments/assets/main-interface)
+<img width="2428" height="1201" alt="image" src="https://github.com/user-attachments/assets/ecf5d98e-96b0-4072-b2bc-709a825b2b09" />
 
 The main interface features a clean, modern design with:
 - Quick action buttons for common queries
@@ -209,7 +207,7 @@ The main interface features a clean, modern design with:
 - Team search and comparison capabilities
 
 ### Pokémon Stats Card
-![Pokémon Stats Card](https://github.com/user-attachments/assets/pokemon-stats-card)
+<img width="728" height="1196" alt="image" src="https://github.com/user-attachments/assets/c20c3e99-1df2-40a6-8bf9-777a9aed9783" />
 
 Interactive stats card showing comprehensive Pokémon information including:
 - Official artwork
@@ -218,7 +216,8 @@ Interactive stats card showing comprehensive Pokémon information including:
 - Color-coded base stats with animated progress bars
 
 ### Team Search Results
-![Team Search Results](https://github.com/user-attachments/assets/team-search-results)
+<img width="2363" height="1142" alt="image" src="https://github.com/user-attachments/assets/542e2f6b-f0dc-4d34-a1ba-63adcbae96b5" />
+
 
 Team search functionality displaying:
 - Complete team compositions
@@ -227,7 +226,7 @@ Team search functionality displaying:
 - Showdown export format
 
 ### Comparison Feature
-![Pokémon Comparison](https://github.com/user-attachments/assets/pokemon-comparison)
+<img width="2332" height="1200" alt="image" src="https://github.com/user-attachments/assets/2467a5bb-05bf-4744-99ab-9cb203c3afab" />
 
 Side-by-side comparison of multiple Pokémon showing:
 - Movesets
@@ -236,5 +235,4 @@ Side-by-side comparison of multiple Pokémon showing:
 - Usage recommendations
 
 ---
-
 
