@@ -116,6 +116,9 @@ try:
         --muted-foreground: #666666;
         --border: #E5E5E5;
         --card: #FFFFFF;
+        --primary: #FF0000;
+        --primary-foreground: #FFFFFF;
+        --secondary: #F5F5F5;
     }
     
     /* Main Container - Desktop Optimized */
@@ -224,30 +227,294 @@ try:
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 0.75rem;
+        gap: 0.5rem;
         margin: 1.5rem 0;
         position: relative;
         z-index: 1;
     }
     
     .quick-btn-modern {
-        background: var(--card) !important;
-        border: 2px solid var(--border) !important;
-        color: var(--foreground) !important;
-        padding: 0.7rem 1.4rem !important;
-        border-radius: 12px !important;
-        font-weight: 600 !important;
-        font-size: 0.95rem !important;
-        transition: all 0.2s ease !important;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important;
+        background: transparent !important;
+        border: none !important;
+        color: var(--muted-foreground) !important;
+        padding: 0.5rem 1rem !important;
+        border-radius: 8px !important;
+        font-weight: 500 !important;
+        font-size: 0.875rem !important;
+        transition: all 0.15s ease !important;
+        box-shadow: none !important;
     }
     
     .quick-btn-modern:hover {
-        background: var(--pokemon-red) !important;
-        color: white !important;
-        border-color: var(--pokemon-red) !important;
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(255, 0, 0, 0.2) !important;
+        background: var(--muted) !important;
+        color: var(--foreground) !important;
+        border: none !important;
+        transform: none !important;
+        box-shadow: none !important;
+    }
+    
+    /* Quick Team Container */
+    .quick-team-container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 0.125rem !important;
+    }
+    
+    /* Team Count Dropdown – matches React component */
+    .team-count-dropdown {
+        position: relative !important;
+        z-index: 100 !important;
+    }
+    
+    .team-count-dropdown label {
+        display: none !important;
+    }
+    
+    /* Outer wrappers - white background, no border, just positioning - even on hover */
+    .team-count-dropdown .wrap,
+    .team-count-dropdown .wrap:hover,
+    .team-count-dropdown .wrap:not(:hover),
+    .team-count-dropdown .wrap > div,
+    .team-count-dropdown .wrap > div:hover,
+    .team-count-dropdown .wrap > div:not(:hover) {
+        position: relative !important;
+        background: var(--card) !important;
+        border: none !important;
+        border-width: 0 !important;
+        outline: none !important;
+        outline-width: 0 !important;
+        box-shadow: none !important;
+    }
+    
+    /* Secondary wrap - also white, even on hover, no borders ever */
+    .team-count-dropdown .secondary-wrap,
+    .team-count-dropdown .secondary-wrap:hover,
+    .team-count-dropdown .secondary-wrap:not(:hover) {
+        position: relative !important;
+        background: var(--card) !important;
+        border: none !important;
+        border-width: 0 !important;
+        outline: none !important;
+        outline-width: 0 !important;
+        box-shadow: none !important;
+    }
+    
+    /* Ensure ALL child elements are white too */
+    .team-count-dropdown .wrap > *,
+    .team-count-dropdown .wrap > *:hover,
+    .team-count-dropdown .wrap > div > *,
+    .team-count-dropdown .wrap > div > *:hover {
+        background: var(--card) !important;
+    }
+    
+    /* Main container - Apply hover styles as default (always looks like hover state) */
+    .team-count-dropdown .wrap-inner,
+    .team-count-dropdown .wrap-inner:hover,
+    .team-count-dropdown .wrap-inner:not(:hover),
+    .team-count-dropdown .wrap-inner:focus-within,
+    .team-count-dropdown .wrap-inner:not(:focus-within) {
+        background: var(--card) !important;
+        border: none !important;
+        border-width: 0 !important;
+        border-style: none !important;
+        border-color: transparent !important;
+        border-radius: 999px !important;
+        box-shadow: none !important;
+        outline: none !important;
+        outline-width: 0 !important;
+        outline-style: none !important;
+        outline-color: transparent !important;
+        padding: 0.25rem 0.5rem !important;
+    }
+    
+    /* Input element styling - dark text, white background, smaller size, NO BORDERS */
+    .team-count-dropdown select,
+    .team-count-dropdown button,
+    .team-count-dropdown input {
+        background: var(--card) !important;
+        border: none !important;
+        outline: none !important;
+        padding: 0.25rem 0.5rem !important;
+        font-size: 0.75rem !important;
+        font-weight: 500 !important;
+        color: var(--foreground) !important;
+        min-width: 60px !important;
+        width: auto !important;
+        cursor: pointer !important;
+        transition: all 0.2s ease !important;
+        box-shadow: none !important;
+    }
+    
+    /* Hover and focus states - same as default (already applied above) */
+    .team-count-dropdown .wrap-inner:hover {
+        background: var(--card) !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+    
+    .team-count-dropdown .wrap-inner:focus-within {
+        border: none !important;
+        box-shadow: none !important;
+        background: var(--card) !important;
+    }
+    
+    /* Force all states to look the same (like hover) */
+    .team-count-dropdown .wrap-inner:active,
+    .team-count-dropdown .wrap-inner:visited,
+    .team-count-dropdown .wrap-inner:link {
+        background: var(--card) !important;
+        border: none !important;
+        box-shadow: none !important;
+        outline: none !important;
+    }
+    
+    .team-count-dropdown select:hover,
+    .team-count-dropdown button:hover,
+    .team-count-dropdown input:hover {
+        background: var(--card) !important;
+        color: var(--foreground) !important;
+    }
+    
+    .team-count-dropdown select:focus,
+    .team-count-dropdown button:focus,
+    .team-count-dropdown input:focus {
+        outline: none !important;
+        background: var(--card) !important;
+        color: var(--foreground) !important;
+    }
+    
+    /* Remove any default browser styles, borders, and shadows from ALL elements */
+    .team-count-dropdown *:not(.wrap-inner) {
+        box-shadow: none !important;
+        border: none !important;
+        outline: none !important;
+    }
+    
+    .team-count-dropdown *:not(.wrap-inner):hover {
+        background: var(--card) !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+    
+    .team-count-dropdown *:focus {
+        outline: none !important;
+        box-shadow: none !important;
+        border: none !important;
+    }
+    
+    /* Force white background and NO borders on all elements except wrap-inner */
+    .team-count-dropdown .wrap *:not(.wrap-inner),
+    .team-count-dropdown .wrap *:not(.wrap-inner):hover {
+        background: var(--card) !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+    
+    /* Remove ALL borders, outlines, and shadows from everything */
+    .team-count-dropdown * {
+        border: none !important;
+        border-width: 0 !important;
+        outline: none !important;
+        outline-width: 0 !important;
+        box-shadow: none !important;
+    }
+    
+    /* Specifically target wrap-inner to ensure no border in any state */
+    .team-count-dropdown .wrap-inner,
+    .team-count-dropdown .wrap-inner:not(:hover),
+    .team-count-dropdown .wrap-inner:not(:focus),
+    .team-count-dropdown .wrap-inner:not(:focus-within) {
+        border: none !important;
+        border-width: 0 !important;
+        box-shadow: none !important;
+        outline: none !important;
+        outline-width: 0 !important;
+    }
+    
+    /* Remove any potential inset shadows or borders from secondary-wrap */
+    .team-count-dropdown .secondary-wrap {
+        border: none !important;
+        box-shadow: none !important;
+        outline: none !important;
+    }
+    
+    /* Dropdown arrow/icon - dark to match text */
+    .team-count-dropdown .icon-wrap,
+    .team-count-dropdown .icon-wrap svg,
+    .team-count-dropdown .icon-wrap path {
+        color: var(--foreground) !important;
+        fill: var(--foreground) !important;
+        stroke: var(--foreground) !important;
+    }
+    
+    /* Remove any border artifacts and set white backgrounds on ALL pseudo-elements */
+    .team-count-dropdown .wrap::before,
+    .team-count-dropdown .wrap::after,
+    .team-count-dropdown .wrap > div::before,
+    .team-count-dropdown .wrap > div::after,
+    .team-count-dropdown .wrap-inner::before,
+    .team-count-dropdown .wrap-inner::after,
+    .team-count-dropdown .secondary-wrap::before,
+    .team-count-dropdown .secondary-wrap::after,
+    .team-count-dropdown *::before,
+    .team-count-dropdown *::after {
+        display: none !important;
+        border: none !important;
+        outline: none !important;
+        background: var(--card) !important;
+        box-shadow: none !important;
+    }
+    
+    /* Ensure no border on input/select elements inside, but keep wrap-inner border */
+    .team-count-dropdown .wrap-inner select,
+    .team-count-dropdown .wrap-inner button,
+    .team-count-dropdown .wrap-inner input,
+    .team-count-dropdown .secondary-wrap select,
+    .team-count-dropdown .secondary-wrap button,
+    .team-count-dropdown .secondary-wrap input {
+        border: none !important;
+        outline: none !important;
+    }
+    
+    /* Dropdown menu - matches React: rounded-xl, border-2, shadow-lg */
+    .team-count-dropdown .wrap .options,
+    .team-count-dropdown ul {
+        background: var(--card) !important;
+        border: 2px solid var(--border) !important;
+        border-radius: 0.75rem !important;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+        z-index: 1000 !important;
+        padding: 0.375rem !important;
+        margin-top: 0.5rem !important;
+        overflow: hidden !important;
+    }
+    
+    /* Dropdown items - matches React: rounded-lg, px-3, py-2 */
+    .team-count-dropdown .wrap .options li,
+    .team-count-dropdown ul li {
+        font-size: 0.875rem !important;
+        font-weight: 500 !important;
+        padding: 0.5rem 0.75rem !important;
+        border-radius: 0.5rem !important;
+        text-align: left !important;
+        transition: all 0.15s ease !important;
+        list-style: none !important;
+        color: var(--foreground) !important;
+    }
+    
+    /* Hover state - matches React: bg-secondary */
+    .team-count-dropdown .wrap .options li:hover,
+    .team-count-dropdown ul li:hover {
+        background: var(--secondary) !important;
+        color: var(--foreground) !important;
+    }
+    
+    /* Selected state - matches React: bg-primary, text-primary-foreground */
+    .team-count-dropdown .wrap .options li[aria-selected="true"],
+    .team-count-dropdown .wrap .options li.selected {
+        background: var(--primary) !important;
+        color: var(--primary-foreground) !important;
     }
     
         /* Desktop Layout - Two Column */
@@ -477,61 +744,385 @@ try:
         }
         
         .pokemon-stats-content {
-            background-color: var(--card);
-            margin: 10% auto;
-            padding: 2rem;
-            border-radius: 16px;
+            background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
+            margin: 2% auto;
+            padding: 0;
+            border-radius: 20px;
             width: 90%;
-            max-width: 400px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            max-width: 520px;
+            box-shadow: 0 12px 40px rgba(0,0,0,0.4);
             animation: slideDown 0.3s ease;
+            border: 4px solid var(--pokemon-red);
+            border-top: 8px solid var(--pokemon-red);
+            position: relative;
+            overflow: visible;
+        }
+        
+        .pokemon-card-top {
+            background: linear-gradient(135deg, var(--pokemon-red) 0%, var(--pokemon-red-dark) 100%);
+            padding: 1.5rem 2rem 1rem 2rem;
+            text-align: center;
+            position: relative;
+        }
+        
+        .pokeball-icon {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto 0.5rem auto;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .pokeball-icon::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(to bottom, #ffffff 0%, #ffffff 45%, #000000 45%, #000000 55%, #ffffff 55%, #ffffff 100%);
+            border: 3px solid #000000;
+            box-shadow: 0 0 0 2px #ffffff;
+        }
+        
+        .pokeball-icon::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: #ffffff;
+            border: 3px solid #000000;
+            box-shadow: 0 0 0 2px #ffffff, inset 0 0 0 2px #000000;
+        }
+        
+        .pokemon-card-body {
+            padding: 1.5rem 2rem 2rem 2rem;
         }
         
         .pokemon-stats-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
         }
         
         .pokemon-stats-title {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--foreground);
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: white;
             text-transform: capitalize;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin: 0;
         }
         
         .pokemon-stats-close {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             font-weight: bold;
-            color: var(--muted-foreground);
+            color: white;
             cursor: pointer;
             border: none;
-            background: none;
+            background: rgba(255,255,255,0.2);
             padding: 0;
-            width: 30px;
-            height: 30px;
+            width: 35px;
+            height: 35px;
             display: flex;
             align-items: center;
             justify-content: center;
             border-radius: 50%;
             transition: all 0.2s ease;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
         }
         
         .pokemon-stats-close:hover {
-            background: var(--muted);
-            color: var(--foreground);
+            background: rgba(255,255,255,0.3);
+            color: white;
+            transform: scale(1.1);
         }
         
         .pokemon-stats-art {
             text-align: center;
             margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #f0f0f0 0%, #e8e8e8 100%);
+            border-radius: 12px;
+            padding: 1rem;
+            border: 2px solid var(--border);
+            position: relative;
+            overflow: visible;
         }
         
         .pokemon-stats-art img {
-            width: 150px;
-            height: 150px;
-            image-rendering: pixelated;
+            width: 220px;
+            height: 220px;
+            image-rendering: auto;
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+            object-fit: contain;
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+        }
+        
+        .pokemon-type-icon {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            pointer-events: none;
+            opacity: 0.08;
+        }
+        
+        .pokemon-type-icon svg {
+            width: 140px;
+            height: 140px;
+        }
+        
+        .pokemon-physical-stats {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding: 1.25rem;
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            border-radius: 12px;
+            border: 2px solid var(--border);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        .physical-stat-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.25rem;
+        }
+        
+        .physical-stat-types {
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .pokemon-types-inline {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+        }
+        
+        .physical-stat-egggroups {
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .egg-groups-inline {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+        }
+        
+        .egg-group-badge {
+            display: inline-block;
+            padding: 0.3rem 0.7rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            background: var(--pokemon-blue);
+            color: white;
+            text-transform: capitalize;
+        }
+        
+        .physical-stat-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--muted-foreground);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .physical-stat-value {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--foreground);
+        }
+        
+        .physical-stat-value.total-stats {
+            color: var(--pokemon-red);
+            font-size: 1.1rem;
+        }
+        
+        .physical-stat-divider {
+            width: 1px;
+            height: 30px;
+            background: var(--border);
+        }
+        
+        .mega-symbol {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: linear-gradient(135deg, #FF6B6B 0%, #FF0000 100%);
+            color: white;
+            font-weight: 800;
+            font-size: 0.7rem;
+            padding: 0.3rem 0.6rem;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 8px rgba(255, 0, 0, 0.4);
+            border: 2px solid white;
+            z-index: 10;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 2px 8px rgba(255, 0, 0, 0.4);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 4px 12px rgba(255, 0, 0, 0.6);
+            }
+        }
+        
+        .pokemon-abilities-section {
+            margin-bottom: 1.25rem;
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            border-radius: 12px;
+            border: 2px solid var(--border);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .pokemon-abilities-label {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--muted-foreground);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin: 0;
+            flex-shrink: 0;
+        }
+        
+        .pokemon-abilities {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            align-items: center;
+        }
+        
+        .pokemon-ability-badge {
+            display: inline-block;
+            padding: 0.4rem 0.9rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            background: var(--muted);
+            color: var(--foreground);
+            border: 2px solid var(--border);
+            position: relative;
+            cursor: help;
+            transition: all 0.2s ease;
+        }
+        
+        .pokemon-ability-badge:hover {
+            background: var(--card);
+            border-color: var(--pokemon-red);
+            box-shadow: 0 2px 8px rgba(255, 0, 0, 0.15);
+        }
+        
+        .pokemon-ability-tooltip {
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-5px);
+            margin-bottom: 0.75rem;
+            padding: 1rem;
+            background: var(--foreground);
+            color: white;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            line-height: 1.5;
+            width: 320px;
+            max-width: calc(100vw - 4rem);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            z-index: 1001;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+            word-wrap: break-word;
+            white-space: normal;
+            box-sizing: border-box;
+        }
+        
+        .pokemon-ability-badge:hover .pokemon-ability-tooltip,
+        .pokemon-ability-badge:focus .pokemon-ability-tooltip {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateX(-50%) translateY(0);
+        }
+        
+        .pokemon-ability-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 6px solid transparent;
+            border-top-color: var(--foreground);
+        }
+        
+        .pokemon-type-badge {
+            display: inline-block;
+            padding: 0.4rem 0.9rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: capitalize;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        /* Type colors */
+        .pokemon-type-normal { background: #A8A878; }
+        .pokemon-type-fire { background: #F08030; }
+        .pokemon-type-water { background: #6890F0; }
+        .pokemon-type-electric { background: #F8D030; color: #333; }
+        .pokemon-type-grass { background: #78C850; }
+        .pokemon-type-ice { background: #98D8D8; color: #333; }
+        .pokemon-type-fighting { background: #C03028; }
+        .pokemon-type-poison { background: #A040A0; }
+        .pokemon-type-ground { background: #E0C068; color: #333; }
+        .pokemon-type-flying { background: #A890F0; }
+        .pokemon-type-psychic { background: #F85888; }
+        .pokemon-type-bug { background: #A8B820; }
+        .pokemon-type-rock { background: #B8A038; }
+        .pokemon-type-ghost { background: #705898; }
+        .pokemon-type-dragon { background: #7038F8; }
+        .pokemon-type-dark { background: #705848; }
+        .pokemon-type-steel { background: #B8B8D0; color: #333; }
+        .pokemon-type-fairy { background: #EE99AC; }
+        
+        .pokemon-ability-hidden {
+            background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+            border-color: var(--pokemon-red);
+        }
+        
+        .hidden-label {
+            font-size: 0.75rem;
+            color: var(--pokemon-red);
+            font-weight: 700;
         }
         
         .pokemon-stats-list {
@@ -541,26 +1132,58 @@ try:
         }
         
         .pokemon-stat-item {
+            margin-bottom: 0.75rem;
+            opacity: 0;
+            animation: fadeInUp 0.4s ease forwards;
+        }
+        
+        .stat-row-content {
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            padding: 0.75rem;
-            margin-bottom: 0.5rem;
-            background: var(--muted);
-            border-radius: 8px;
-            font-size: 0.95rem;
+            gap: 0.75rem;
         }
         
         .pokemon-stat-name {
             font-weight: 600;
             color: var(--foreground);
             text-transform: capitalize;
+            font-size: 0.9rem;
+            min-width: 70px;
+        }
+        
+        .stat-bar-container {
+            flex: 1;
+            height: 10px;
+            background: var(--muted);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .stat-bar {
+            height: 100%;
+            border-radius: 10px;
+            transition: width 0.6s ease, background-color 0.3s ease;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
         }
         
         .pokemon-stat-value {
             font-weight: 700;
-            color: var(--pokemon-red);
-            font-size: 1.1rem;
+            font-size: 1rem;
+            min-width: 35px;
+            text-align: right;
+            text-shadow: 0 0 3px rgba(255, 255, 255, 1), 0 0 6px rgba(255, 255, 255, 0.9), 0 0 8px rgba(255, 255, 255, 0.7), 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
         
         .pokemon-stats-loading {
@@ -595,7 +1218,7 @@ try:
         .chat-container-modern {
             background: var(--card);
             border: 1px solid var(--border);
-            border-radius: 20px;
+            border-radius: 32px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.04);
             position: relative;
             z-index: 1;
@@ -605,29 +1228,33 @@ try:
         
         .chatbot-modern {
             border: none !important;
-            background: var(--card) !important;
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%) !important;
             padding: 2rem !important;
             height: 550px !important;
+            border-radius: 32px !important;
         }
     
     /* Message Bubbles */
     .user-message-modern {
         background: var(--pokemon-red) !important;
         color: white !important;
-        border-radius: 18px 18px 4px 18px !important;
+        border-radius: 24px 24px 8px 24px !important;
         padding: 0.875rem 1.125rem !important;
         margin: 0.5rem 0 !important;
         max-width: 85%;
         margin-left: auto;
+        box-shadow: 0 2px 8px rgba(255, 0, 0, 0.15) !important;
     }
     
     .assistant-message-modern {
-        background: var(--muted) !important;
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%) !important;
         color: var(--foreground) !important;
-        border-radius: 18px 18px 18px 4px !important;
+        border-radius: 24px 24px 24px 8px !important;
         padding: 0.875rem 1.125rem !important;
         margin: 0.5rem 0 !important;
         max-width: 85%;
+        border: 1px solid var(--border);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
     }
     
     /* Input Area */
@@ -639,10 +1266,10 @@ try:
     
     .input-textbox-modern {
         border: 2px solid var(--border) !important;
-        border-radius: 12px !important;
+        border-radius: 28px !important;
         padding: 0.875rem 1.125rem !important;
         font-size: 1rem !important;
-        background: var(--background) !important;
+        background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%) !important;
         transition: all 0.2s ease !important;
     }
     
@@ -650,6 +1277,65 @@ try:
         border-color: var(--pokemon-red) !important;
         outline: none !important;
         box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.1) !important;
+    }
+    
+    /* Gradio Chatbot and Input Styling */
+    .gradio-chatbot,
+    .gradio-chatbot > div {
+        border-radius: 32px !important;
+        background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%) !important;
+    }
+    
+    /* Chatbot container background */
+    .bubble-wrap,
+    .panel-wrap {
+        background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%) !important;
+        border-radius: 32px !important;
+    }
+    
+    
+    /* Gradio Textbox/Input Styling */
+    textarea,
+    input[type="text"] {
+        border-radius: 28px !important;
+        border: 2px solid var(--border) !important;
+        background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%) !important;
+        padding: 0.875rem 1.125rem !important;
+        transition: all 0.2s ease !important;
+        color: var(--foreground) !important;
+    }
+    
+    textarea:focus,
+    input[type="text"]:focus {
+        border-color: var(--pokemon-red) !important;
+        outline: none !important;
+        box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.1) !important;
+        color: var(--foreground) !important;
+    }
+    
+    textarea::placeholder,
+    input[type="text"]::placeholder {
+        color: var(--muted-foreground) !important;
+    }
+    
+    /* Multimodal Textbox Container */
+    .multimodal-textbox-container,
+    .multimodal-textbox-container textarea {
+        border-radius: 28px !important;
+        color: var(--foreground) !important;
+    }
+    
+    /* Ensure text color in input is visible */
+    .input-container textarea,
+    .input-container input,
+    .multimodal-textbox-container textarea {
+        color: var(--foreground) !important;
+    }
+    
+    .input-container textarea::placeholder,
+    .input-container input::placeholder {
+        color: var(--muted-foreground) !important;
+        opacity: 0.7 !important;
     }
     
     /* Buttons */
@@ -797,168 +1483,37 @@ try:
         logger.error(f"Error loading Pokemon stats JavaScript: {e}")
         pokemon_stats_js = "console.error('Error loading Pokemon stats JavaScript');"
     
-    # Inject script into page head - this ensures it executes ONCE when page loads
-    # Extract just the essential functions from the JS file
+    # JavaScript to format dropdown text with triangle
+    dropdown_js = """
+    <script>
+    (function() {
+        function formatDropdown() {
+            document.querySelectorAll('.team-count-dropdown').forEach(dropdown => {
+                const button = dropdown.querySelector('button');
+                const select = dropdown.querySelector('select');
+                if (button && select && !button.textContent.includes('▾')) {
+                    button.textContent = select.value + ' Pokémon ▾';
+                    if (!select.hasAttribute('data-listener-added')) {
+                        select.setAttribute('data-listener-added', 'true');
+                        select.addEventListener('change', function() {
+                            button.textContent = this.value + ' Pokémon ▾';
+                        });
+                    }
+                }
+            });
+        }
+        setTimeout(formatDropdown, 500);
+        setInterval(formatDropdown, 1000);
+    })();
+    </script>
+    """
+    
+    # Inject external JavaScript file into page head
     head_content = f"""
     <script>
-    console.log('[Pokemon Stats] Loading functions in head...');
-    (function() {{
-        'use strict';
-        const POKEAPI_BASE_URL = 'https://pokeapi.co/api/v2';
-        const STAT_NAMES = {{
-            'hp': 'HP',
-            'attack': 'Attack',
-            'defense': 'Defense',
-            'special-attack': 'Sp. Atk',
-            'special-defense': 'Sp. Def',
-            'speed': 'Speed'
-        }};
-        
-        function fetchPokemon(nameToTry) {{
-            const url = `${{POKEAPI_BASE_URL}}/pokemon/${{nameToTry}}`;
-            console.log('[Pokemon Stats] Fetching:', url);
-            return fetch(url)
-                .then(response => {{
-                    if (!response.ok) {{
-                        throw new Error(`Pokemon not found: ${{response.status}}`);
-                    }}
-                    return response.json();
-                }})
-                .then(data => {{
-                    const name = data.species.name;
-                    const art = data.sprites.other['official-artwork']?.front_default || 
-                              data.sprites.front_default || 
-                              data.sprites.other?.dream_world?.front_default || '';
-                    const stats = data.stats;
-                    
-                    let statsHTML = '';
-                    if (art) {{
-                        statsHTML += `<div class="pokemon-stats-art"><img src="${{art}}" alt="${{name}}" /></div>`;
-                    }}
-                    statsHTML += '<ul class="pokemon-stats-list">';
-                    
-                    stats.forEach(stat => {{
-                        const statName = stat.stat.name;
-                        const statValue = stat.base_stat;
-                        const displayName = STAT_NAMES[statName] || statName;
-                        statsHTML += `
-                            <li class="pokemon-stat-item">
-                                <span class="pokemon-stat-name">${{displayName}}</span>
-                                <span class="pokemon-stat-value">${{statValue}}</span>
-                            </li>
-                        `;
-                    }});
-                    
-                    statsHTML += '</ul>';
-                    
-                    const bodyEl = document.getElementById('pokemon-stats-body');
-                    const titleEl = document.getElementById('pokemon-stats-title');
-                    
-                    if (bodyEl && titleEl) {{
-                        bodyEl.innerHTML = statsHTML;
-                        titleEl.textContent = name.charAt(0).toUpperCase() + name.slice(1).replace(/-/g, ' ');
-                    }}
-                }});
-        }}
-        
-        window.showPokemonStats = function(pokemonName, baseName) {{
-            console.log('[showPokemonStats] Called with:', pokemonName, baseName);
-            if (!pokemonName) return;
-            
-            let modal = document.getElementById('pokemon-stats-modal');
-            if (!modal) {{
-                modal = document.createElement('div');
-                modal.id = 'pokemon-stats-modal';
-                modal.className = 'pokemon-stats-modal';
-                modal.innerHTML = `
-                    <div class="pokemon-stats-content">
-                        <div class="pokemon-stats-header">
-                            <h2 class="pokemon-stats-title" id="pokemon-stats-title">Loading...</h2>
-                            <button class="pokemon-stats-close" id="pokemon-stats-close-btn">&times;</button>
-                        </div>
-                        <div id="pokemon-stats-body">
-                            <div class="pokemon-stats-loading">Loading stats...</div>
-                        </div>
-                    </div>
-                `;
-                document.body.appendChild(modal);
-                
-                modal.addEventListener('click', function(e) {{
-                    if (e.target === modal) {{
-                        window.closePokemonStats();
-                    }}
-                }});
-                
-                const closeBtn = document.getElementById('pokemon-stats-close-btn');
-                if (closeBtn) {{
-                    closeBtn.addEventListener('click', function(e) {{
-                        e.stopPropagation();
-                        window.closePokemonStats();
-                    }});
-                }}
-            }}
-            
-            modal.style.display = 'block';
-            const bodyEl = document.getElementById('pokemon-stats-body');
-            const titleEl = document.getElementById('pokemon-stats-title');
-            
-            if (bodyEl && titleEl) {{
-                bodyEl.innerHTML = '<div class="pokemon-stats-loading">Loading stats...</div>';
-                titleEl.textContent = pokemonName.charAt(0).toUpperCase() + pokemonName.slice(1).replace(/-/g, ' ');
-            }}
-            
-            fetchPokemon(pokemonName)
-                .catch(error => {{
-                    console.log('[Pokemon Stats] First attempt failed, trying base name:', baseName);
-                    if (baseName && baseName !== pokemonName) {{
-                        return fetchPokemon(baseName);
-                    }} else {{
-                        throw error;
-                    }}
-                }})
-                .catch(error => {{
-                    console.error('[Pokemon Stats] All attempts failed:', error);
-                    const bodyEl = document.getElementById('pokemon-stats-body');
-                    if (bodyEl) {{
-                        bodyEl.innerHTML = 
-                            '<div class="pokemon-stats-error">❌ Could not load stats for this Pokemon.<br>Note: Some mega evolutions and special forms may not be available in PokeAPI.</div>';
-                    }}
-                }});
-        }};
-        
-        window.closePokemonStats = function() {{
-            const modal = document.getElementById('pokemon-stats-modal');
-            if (modal) {{
-                modal.style.display = 'none';
-            }}
-        }};
-        
-        // Event delegation for sprite clicks
-        document.addEventListener('click', function(e) {{
-            const spriteDiv = e.target.closest('.pokemon-sprite-modern');
-            if (spriteDiv) {{
-                const pokemonName = spriteDiv.getAttribute('data-pokemon-name');
-                const baseName = spriteDiv.getAttribute('data-base-name');
-                if (pokemonName) {{
-                    console.log('[Click Handler] Sprite clicked:', pokemonName);
-                    e.preventDefault();
-                    e.stopPropagation();
-                    window.showPokemonStats(pokemonName, baseName);
-                }}
-            }}
-        }}, true);
-        
-        // Close on Escape key
-        document.addEventListener('keydown', function(e) {{
-            if (e.key === 'Escape') {{
-                window.closePokemonStats();
-            }}
-        }});
-        
-        console.log('[Pokemon Stats] ✓ Functions loaded in head!');
-        console.log('[Pokemon Stats] showPokemonStats type:', typeof window.showPokemonStats);
-    }})();
+    {pokemon_stats_js}
     </script>
+    {dropdown_js}
     """
     
     with gr.Blocks(theme=gr.themes.Soft(), css=custom_css, title="Pokémon Strategy Assistant", head=head_content) as demo:
@@ -985,7 +1540,17 @@ try:
             
             # Quick Action Buttons
             with gr.Row(elem_classes=["quick-actions-modern"]):
-                quick_team = gr.Button("🔍 Find Teams", elem_classes=["quick-btn-modern"], size="sm")
+                with gr.Column(scale=0, min_width=140, elem_classes=["quick-team-container"]):
+                    quick_team = gr.Button("🔍 Find Teams", elem_classes=["quick-btn-modern"], size="sm")
+                    team_pokemon_count = gr.Dropdown(
+                        choices=[2, 3, 4, 5, 6],
+                        value=2,
+                        label="",
+                        scale=0,
+                        container=False,
+                        show_label=False,
+                        elem_classes=["team-count-dropdown"]
+                    )
                 quick_strategy = gr.Button("⚔️ Strategy", elem_classes=["quick-btn-modern"], size="sm")
                 quick_compare = gr.Button("🔄 Compare", elem_classes=["quick-btn-modern"], size="sm")
         
@@ -1027,8 +1592,57 @@ try:
                     clear_btn = gr.Button("Clear", scale=1, variant="secondary", size="lg")
         
         # Quick action handlers
-        def quick_team_click():
-            return "Find teams with <pokemon name> in <generation> <format>"
+        def quick_team_click(num_pokemon):
+            """Generate team search template based on number of Pokemon selected."""
+            if num_pokemon == 2:
+                return "Find teams with <pokemon 1> and <pokemon 2> in <generation> <format>"
+            elif num_pokemon == 3:
+                return "Find teams with <pokemon 1>, <pokemon 2>, and <pokemon 3> in <generation> <format>"
+            elif num_pokemon == 4:
+                return "Find teams with <pokemon 1>, <pokemon 2>, <pokemon 3>, and <pokemon 4> in <generation> <format>"
+            elif num_pokemon == 5:
+                return "Find teams with <pokemon 1>, <pokemon 2>, <pokemon 3>, <pokemon 4>, and <pokemon 5> in <generation> <format>"
+            else:  # 6
+                return "Find teams with <pokemon 1>, <pokemon 2>, <pokemon 3>, <pokemon 4>, <pokemon 5>, and <pokemon 6> in <generation> <format>"
+        
+        # Update dropdown display text to show "{value} Pokémon"
+        def update_dropdown_display():
+            """JavaScript to update dropdown button text to show '{value} Pokémon' format."""
+            return """
+            <script>
+            (function() {
+                function updateTeamDropdown() {
+                    const dropdowns = document.querySelectorAll('.team-count-dropdown');
+                    dropdowns.forEach(dropdown => {
+                        const select = dropdown.querySelector('select');
+                        const wrap = dropdown.querySelector('.wrap');
+                        if (select && wrap) {
+                            const value = select.value;
+                            const button = wrap.querySelector('button');
+                            if (button) {
+                                button.textContent = value + ' Pokémon';
+                            }
+                            // Also update on change
+                            select.addEventListener('change', function() {
+                                const button = wrap.querySelector('button');
+                                if (button) {
+                                    button.textContent = this.value + ' Pokémon';
+                                }
+                            });
+                        }
+                    });
+                }
+                // Run on load
+                if (document.readyState === 'loading') {
+                    document.addEventListener('DOMContentLoaded', updateTeamDropdown);
+                } else {
+                    updateTeamDropdown();
+                }
+                // Also run after Gradio updates
+                setTimeout(updateTeamDropdown, 1000);
+            })();
+            </script>
+            """
         
         def quick_strategy_click():
             return "Strategy for <pokemon name> in <generation> <format>"
@@ -1036,7 +1650,7 @@ try:
         def quick_compare_click():
             return "Compare <pokemon name 1> and <pokemon name 2> in <generation> <format>"
         
-        quick_team.click(quick_team_click, outputs=query)
+        quick_team.click(quick_team_click, inputs=[team_pokemon_count], outputs=query)
         quick_strategy.click(quick_strategy_click, outputs=query)
         quick_compare.click(quick_compare_click, outputs=query)
         
@@ -1138,8 +1752,11 @@ try:
                             # Keep hyphens for forms (e.g., "Landorus-Therian" stays as "landorus-therian")
                         )
                     
-                    # Get the searched Pokémon (first one from query) - normalize it too
-                    searched_pokemon = normalize_species_name(pokemon_list[0]) if pokemon_list else None
+                    # Get ALL searched Pokémon from query (not just the first one)
+                    searched_pokemon_set = set()
+                    if pokemon_list:
+                        for pokemon_name in pokemon_list:
+                            searched_pokemon_set.add(normalize_species_name(pokemon_name))
                     
                     # Extract Pokémon names from the raw response object if available
                     pokemon_in_output = set()  # Use set to avoid duplicates
@@ -1188,10 +1805,11 @@ try:
                     
                     # Remove the searched Pokémon from teammates list
                     # Note: pokemon_in_output already contains lowercase strings
-                    teammates = [p for p in pokemon_in_output if p != searched_pokemon]
+                    teammates = [p for p in pokemon_in_output if p not in searched_pokemon_set]
                     
-                    # Show exactly 1 sprite for searched Pokémon (base form only)
-                    if searched_pokemon:
+                    # Show exactly 1 sprite for EACH searched Pokémon (base form only)
+                    # This ensures all Pokemon mentioned in the query are shown
+                    for searched_pokemon in searched_pokemon_set:
                         matching_filenames = [
                             filename for filename in ALL_FILENAMES
                             if filename.lower().startswith(searched_pokemon)
@@ -1204,8 +1822,9 @@ try:
                             ])
                     
                     # Show exactly 1 sprite for each teammate (each teammate gets 1 sprite, base form only)
-                    # Limit to 7 more to keep total under 8 (1 searched + 7 teammates = 8 max)
-                    for teammate in teammates[:7]:
+                    # Limit teammates to keep total reasonable (max 8 total sprites)
+                    max_teammates = max(0, 8 - len(searched_pokemon_set))
+                    for teammate in teammates[:max_teammates]:
                         # teammate is already lowercase from pokemon_in_output
                         matching_filenames = []
                         for filename in ALL_FILENAMES:

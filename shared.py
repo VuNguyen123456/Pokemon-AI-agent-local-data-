@@ -199,23 +199,68 @@ def format_strategy_markdown(output: str) -> str:
 def get_pokemon_sprite_urls(text: str, all_species: List[str], all_filenames: List[str], sprite_base_url: str, max_pokemon: int = 6) -> List[List[str]]:
     """Get Pokémon sprite URLs from text, returning a list of lists (one per Pokémon)."""
     try:
+        import re
         text_lower = text.lower()
         matched_species = []
         
         for species in all_species:
             name = species.lower()
-            if name in text_lower and name not in matched_species:
+            
+            # Check if this is a multi-word Pokemon (has space or hyphen)
+            has_separator = ' ' in name or '-' in name
+            
+            matches = False
+            
+            if has_separator:
+                # For multi-word Pokemon (like "great-tusk" or "great tusk"):
+                # Try matching with both space and hyphen variations
+                name_with_space = name.replace('-', ' ')
+                name_with_hyphen = name.replace(' ', '-')
+                
+                # Use word boundaries to ensure we match the whole phrase
+                # Escape special regex characters in the name
+                patterns = [
+                    r'\b' + re.escape(name) + r'\b',  # original format
+                    r'\b' + re.escape(name_with_space) + r'\b',  # with spaces
+                    r'\b' + re.escape(name_with_hyphen) + r'\b',  # with hyphens
+                ]
+                
+                for pattern in patterns:
+                    if re.search(pattern, text_lower):
+                        matches = True
+                        break
+            else:
+                # For single-word Pokemon, use word boundary to avoid substring matches
+                # e.g., "char" won't match "charizard", "pika" won't match "pikachu"
+                pattern = r'\b' + re.escape(name) + r'\b'
+                matches = bool(re.search(pattern, text_lower))
+            
+            if matches and name not in matched_species:
                 matched_species.append(name)
                 if len(matched_species) >= max_pokemon:
                     break
         
         result = []
         for matched_name in matched_species:
-            image_urls = [
-                f"{sprite_base_url}{filename}"
-                for filename in all_filenames
-                if filename.startswith(matched_name)
-            ]
+            # Find sprites - match filenames that start with the Pokemon name
+            image_urls = []
+            
+            for filename in all_filenames:
+                filename_lower = filename.lower().replace('.png', '')
+                # Check if filename starts with the matched name
+                if filename_lower.startswith(matched_name):
+                    image_urls.append(f"{sprite_base_url}{filename}")
+                elif ' ' in matched_name or '-' in matched_name:
+                    # For multi-word names, also check variations (space/hyphen)
+                    name_variations = [
+                        matched_name.replace('-', ' '),
+                        matched_name.replace(' ', '-'),
+                    ]
+                    for variation in name_variations:
+                        if filename_lower.startswith(variation):
+                            image_urls.append(f"{sprite_base_url}{filename}")
+                            break
+            
             result.append(image_urls)
         
         return result

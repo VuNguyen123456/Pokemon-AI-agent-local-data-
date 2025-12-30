@@ -130,19 +130,40 @@ def extract_species_tier_gen(user_input: str):
         tier = None
         gen = None
 
-        # 1. Match Pokémon name (title-case match against ALL_SPECIES)
-        if doc:
-            for token in doc:
-                candidate = token.text.title()
-                if candidate in ALL_SPECIES and candidate not in pokemon_list:
-                    pokemon_list.append(candidate)
-        else:
-            # Fallback: simple word matching
-            words = user_input.split()
-            for word in words:
-                candidate = word.title()
-                if candidate in ALL_SPECIES and candidate not in pokemon_list:
-                    pokemon_list.append(candidate)
+        # 1. Match Pokémon name using robust regex-based matching (same as get_pokemon_sprite_urls)
+        # This ensures we find all Pokemon mentioned, including multi-word ones
+        for species in ALL_SPECIES:
+            name = species.lower()
+            
+            # Check if this is a multi-word Pokemon (has space or hyphen)
+            has_separator = ' ' in name or '-' in name
+            
+            matches = False
+            
+            if has_separator:
+                # For multi-word Pokemon (like "great-tusk" or "great tusk"):
+                # Try matching with both space and hyphen variations
+                name_with_space = name.replace('-', ' ')
+                name_with_hyphen = name.replace(' ', '-')
+                
+                # Use word boundaries to ensure we match the whole phrase
+                patterns = [
+                    r'\b' + re.escape(name) + r'\b',  # original format
+                    r'\b' + re.escape(name_with_space) + r'\b',  # with spaces
+                    r'\b' + re.escape(name_with_hyphen) + r'\b',  # with hyphens
+                ]
+                
+                for pattern in patterns:
+                    if re.search(pattern, user_input):
+                        matches = True
+                        break
+            else:
+                # For single-word Pokemon, use word boundary to avoid substring matches
+                pattern = r'\b' + re.escape(name) + r'\b'
+                matches = bool(re.search(pattern, user_input))
+            
+            if matches and species not in pokemon_list:
+                pokemon_list.append(species)  # Keep original case from ALL_SPECIES
 
         # 2. Match tier (using aliases)
         for phrase in ALL_TIERS:

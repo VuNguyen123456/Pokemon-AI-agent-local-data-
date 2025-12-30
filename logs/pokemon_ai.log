@@ -590,3 +590,622 @@ AttributeError: 'HTML' object has no attribute 'load'
 2025-12-22 00:26:09,511 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
 2025-12-22 00:26:32,435 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2025-12-22 00:26:33,065 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 00:31:00,213 - tools - INFO - Loaded 636 Pokémon species
+2025-12-23 00:31:01,294 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-23 00:31:01,295 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-23 00:31:01,549 - shared - INFO - Starting Gradio application...
+2025-12-23 00:31:01,879 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-23 00:31:01,905 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-23 00:31:01,907 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-23 00:44:39,772 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 00:53:50,008 - tools - INFO - Loaded 636 Pokémon species
+2025-12-23 00:53:51,680 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-23 00:53:51,681 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-23 00:53:51,970 - shared - INFO - Starting Gradio application...
+2025-12-23 00:53:52,268 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-23 00:53:52,339 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-23 00:53:52,504 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-23 00:56:25,776 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 00:56:27,271 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 00:56:43,067 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 00:56:43,690 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 01:01:19,267 - tools - INFO - Loaded 636 Pokémon species
+2025-12-23 01:01:20,177 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-23 01:01:20,178 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-23 01:01:20,481 - shared - INFO - Starting Gradio application...
+2025-12-23 01:01:20,858 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-23 01:01:20,888 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-23 01:01:20,889 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-23 01:01:33,895 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 01:05:44,850 - tools - INFO - Loaded 636 Pokémon species
+2025-12-23 01:05:45,948 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-23 01:05:45,949 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-23 01:05:46,245 - shared - INFO - Starting Gradio application...
+2025-12-23 01:05:46,619 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-23 01:05:46,654 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-23 01:05:46,656 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-23 01:05:54,054 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 01:05:54,576 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 01:11:47,979 - tools - INFO - Loaded 636 Pokémon species
+2025-12-23 01:11:48,951 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-23 01:11:48,953 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-23 01:11:49,236 - shared - INFO - Starting Gradio application...
+2025-12-23 01:11:49,639 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-23 01:11:49,666 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-23 01:11:49,668 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-23 01:13:41,546 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 01:13:42,806 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 01:15:44,238 - tools - INFO - Loaded 636 Pokémon species
+2025-12-23 01:15:45,386 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-23 01:15:45,386 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-23 01:15:45,669 - shared - INFO - Starting Gradio application...
+2025-12-23 01:15:45,975 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-23 01:15:46,041 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-23 01:15:46,067 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-23 01:15:49,140 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 01:15:50,339 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 01:17:15,008 - tools - INFO - Loaded 636 Pokémon species
+2025-12-23 01:17:16,111 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-23 01:17:16,112 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-23 01:17:16,403 - shared - INFO - Starting Gradio application...
+2025-12-23 01:17:16,755 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-23 01:17:16,783 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-23 01:17:16,879 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-23 01:17:23,206 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 01:22:20,499 - tools - INFO - Loaded 636 Pokémon species
+2025-12-23 01:22:21,535 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-23 01:22:21,536 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-23 01:22:21,860 - shared - INFO - Starting Gradio application...
+2025-12-23 01:22:22,220 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-23 01:22:22,249 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-23 01:22:24,436 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-23 01:22:25,400 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 01:22:26,743 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 01:25:26,946 - tools - INFO - Loaded 636 Pokémon species
+2025-12-23 01:25:27,964 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-23 01:25:27,965 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-23 01:25:28,265 - shared - INFO - Starting Gradio application...
+2025-12-23 01:25:28,543 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-23 01:25:28,603 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-23 01:25:28,628 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-23 01:25:32,578 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 01:25:33,688 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 01:30:51,005 - tools - INFO - Loaded 636 Pokémon species
+2025-12-23 01:30:52,205 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-23 01:30:52,206 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-23 01:30:52,492 - shared - INFO - Starting Gradio application...
+2025-12-23 01:30:52,820 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-23 01:30:52,884 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-23 01:30:52,910 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-23 01:31:16,665 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 01:31:17,306 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 01:34:58,568 - tools - INFO - Loaded 636 Pokémon species
+2025-12-23 01:34:59,583 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-23 01:34:59,584 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-23 01:34:59,853 - shared - INFO - Starting Gradio application...
+2025-12-23 01:35:00,126 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-23 01:35:00,174 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-23 01:35:00,203 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-23 01:35:11,884 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 01:35:12,651 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 01:48:04,865 - tools - INFO - Loaded 636 Pokémon species
+2025-12-23 01:48:05,976 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-23 01:48:05,976 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-23 01:48:06,271 - shared - INFO - Starting Gradio application...
+2025-12-23 01:48:06,634 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-23 01:48:06,662 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-23 01:48:06,662 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-23 01:48:08,936 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 01:48:10,233 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 01:56:04,053 - tools - INFO - Loaded 636 Pokémon species
+2025-12-23 01:56:05,163 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-23 01:56:05,164 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-23 01:56:05,440 - shared - INFO - Starting Gradio application...
+2025-12-23 01:56:05,758 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-23 01:56:05,785 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-23 01:56:05,796 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-23 01:56:08,446 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 01:56:09,503 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 02:14:10,074 - tools - INFO - Loaded 636 Pokémon species
+2025-12-23 02:14:11,123 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-23 02:14:11,124 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-23 02:14:11,401 - shared - INFO - Starting Gradio application...
+2025-12-23 02:14:11,693 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-23 02:14:11,762 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-23 02:14:11,798 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-23 02:14:18,256 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 02:14:19,377 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 22:41:15,908 - tools - INFO - Loaded 636 Pokémon species
+2025-12-27 22:41:17,247 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-27 22:41:17,270 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-27 22:41:17,524 - shared - INFO - Starting Gradio application...
+2025-12-27 22:41:17,868 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-27 22:41:17,975 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-27 22:41:18,023 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-27 22:41:28,331 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 22:43:43,410 - tools - INFO - Loaded 636 Pokémon species
+2025-12-27 22:43:44,421 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-27 22:43:44,423 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-27 22:43:44,731 - shared - INFO - Starting Gradio application...
+2025-12-27 22:43:45,063 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-27 22:43:45,091 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-27 22:43:45,096 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-27 22:43:56,138 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 22:43:57,362 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 22:44:37,118 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 22:44:38,127 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 22:46:31,561 - tools - INFO - Loaded 636 Pokémon species
+2025-12-27 22:46:32,548 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-27 22:46:32,549 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-27 22:46:32,841 - shared - INFO - Starting Gradio application...
+2025-12-27 22:46:33,166 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-27 22:46:33,214 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-27 22:46:33,243 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-27 22:46:39,638 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 22:46:40,880 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 22:48:00,133 - tools - INFO - Loaded 636 Pokémon species
+2025-12-27 22:48:01,163 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-27 22:48:01,164 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-27 22:48:01,441 - shared - INFO - Starting Gradio application...
+2025-12-27 22:48:01,755 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-27 22:48:01,783 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-27 22:48:01,804 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-27 22:48:13,139 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 22:48:14,373 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 22:49:10,493 - tools - INFO - Loaded 636 Pokémon species
+2025-12-27 22:49:11,550 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-27 22:49:11,551 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-27 22:49:11,839 - shared - INFO - Starting Gradio application...
+2025-12-27 22:49:12,178 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-27 22:49:12,206 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-27 22:49:12,293 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-27 22:49:16,964 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 22:49:18,237 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 22:50:23,871 - tools - INFO - Loaded 636 Pokémon species
+2025-12-27 22:50:24,885 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-27 22:50:24,886 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-27 22:50:25,152 - shared - INFO - Starting Gradio application...
+2025-12-27 22:50:25,480 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-27 22:50:25,504 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-27 22:50:25,518 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-27 22:50:34,549 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 22:50:35,222 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 22:52:09,712 - tools - INFO - Loaded 636 Pokémon species
+2025-12-27 22:52:10,812 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-27 22:52:10,814 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-27 22:52:11,133 - shared - INFO - Starting Gradio application...
+2025-12-27 22:52:11,429 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-27 22:52:11,489 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-27 22:52:11,523 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-27 22:52:14,886 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 22:52:15,601 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 22:55:57,007 - tools - INFO - Loaded 636 Pokémon species
+2025-12-27 22:55:58,051 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-27 22:55:58,052 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-27 22:55:58,341 - shared - INFO - Starting Gradio application...
+2025-12-27 22:55:58,610 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-27 22:55:58,668 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-27 22:55:58,696 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-27 22:56:06,265 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 22:56:07,361 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:00:50,123 - tools - INFO - Loaded 636 Pokémon species
+2025-12-27 23:00:51,223 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-27 23:00:51,224 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-27 23:00:51,585 - shared - INFO - Starting Gradio application...
+2025-12-27 23:00:51,993 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-27 23:00:52,019 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-27 23:00:52,106 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-27 23:01:02,382 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:01:03,199 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:03:07,811 - tools - INFO - Loaded 636 Pokémon species
+2025-12-27 23:03:09,010 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-27 23:03:09,011 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-27 23:03:09,381 - shared - INFO - Starting Gradio application...
+2025-12-27 23:03:09,712 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-27 23:03:09,764 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-27 23:03:09,791 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-27 23:03:24,216 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:03:25,040 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:05:59,592 - tools - INFO - Loaded 636 Pokémon species
+2025-12-27 23:06:00,492 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-27 23:06:00,492 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-27 23:06:00,765 - shared - INFO - Starting Gradio application...
+2025-12-27 23:06:01,079 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-27 23:06:01,102 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-27 23:06:01,217 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-27 23:06:23,281 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:06:23,852 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:08:17,589 - tools - INFO - Loaded 636 Pokémon species
+2025-12-27 23:08:18,660 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-27 23:08:18,660 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-27 23:08:18,939 - shared - INFO - Starting Gradio application...
+2025-12-27 23:08:19,266 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-27 23:08:19,284 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-27 23:08:19,293 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-27 23:08:25,150 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:08:25,749 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:10:05,115 - tools - INFO - Loaded 636 Pokémon species
+2025-12-27 23:10:06,060 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-27 23:10:06,061 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-27 23:10:06,335 - shared - INFO - Starting Gradio application...
+2025-12-27 23:10:06,651 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-27 23:10:06,678 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-27 23:10:06,794 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-27 23:10:12,713 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:10:13,254 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:15:40,886 - tools - INFO - Loaded 636 Pokémon species
+2025-12-27 23:15:42,052 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-27 23:15:42,053 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-27 23:15:42,341 - shared - INFO - Starting Gradio application...
+2025-12-27 23:15:42,681 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-27 23:15:42,761 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-27 23:15:42,790 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-27 23:15:45,570 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:15:46,242 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:18:04,496 - tools - INFO - Loaded 636 Pokémon species
+2025-12-27 23:18:05,530 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-27 23:18:05,530 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-27 23:18:05,808 - shared - INFO - Starting Gradio application...
+2025-12-27 23:18:06,090 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-27 23:18:06,144 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-27 23:18:06,169 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-27 23:18:11,897 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:18:12,450 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:21:16,668 - tools - INFO - Loaded 636 Pokémon species
+2025-12-27 23:21:17,849 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-27 23:21:17,851 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-27 23:21:18,173 - shared - INFO - Starting Gradio application...
+2025-12-27 23:21:18,503 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-27 23:21:18,564 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-27 23:21:18,598 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-27 23:21:43,339 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:21:44,166 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:24:57,311 - tools - INFO - Loaded 636 Pokémon species
+2025-12-27 23:24:58,488 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-27 23:24:58,489 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-27 23:24:58,789 - shared - INFO - Starting Gradio application...
+2025-12-27 23:24:59,077 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-27 23:24:59,146 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-27 23:24:59,174 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-27 23:25:10,033 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:25:10,496 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:25:31,585 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:25:32,441 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:26:14,424 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:28:19,698 - tools - INFO - Loaded 636 Pokémon species
+2025-12-27 23:28:20,818 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-27 23:28:20,819 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-27 23:28:21,136 - shared - INFO - Starting Gradio application...
+2025-12-27 23:28:21,412 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-27 23:28:21,464 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-27 23:28:21,490 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-27 23:28:43,413 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:30:30,682 - tools - INFO - Loaded 636 Pokémon species
+2025-12-27 23:30:31,615 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-27 23:30:31,616 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-27 23:30:31,935 - shared - INFO - Starting Gradio application...
+2025-12-27 23:30:32,242 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-27 23:30:32,315 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-27 23:30:32,341 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-27 23:31:06,384 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:32:56,883 - tools - INFO - Loaded 636 Pokémon species
+2025-12-27 23:32:57,947 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-27 23:32:57,949 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-27 23:32:58,282 - shared - INFO - Starting Gradio application...
+2025-12-27 23:32:58,569 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-27 23:32:58,615 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-27 23:32:58,643 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-27 23:33:11,442 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:35:10,526 - tools - INFO - Loaded 636 Pokémon species
+2025-12-27 23:35:11,761 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-27 23:35:11,762 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-27 23:35:12,125 - shared - INFO - Starting Gradio application...
+2025-12-27 23:35:12,445 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-27 23:35:12,503 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-27 23:35:12,539 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-27 23:35:41,022 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:35:42,195 - tools - INFO - Found 3 teams for query: charizard
+2025-12-27 23:35:42,736 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:36:16,412 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:36:16,956 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:36:33,535 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:36:34,612 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:37:44,983 - tools - INFO - Loaded 636 Pokémon species
+2025-12-27 23:37:45,930 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-27 23:37:45,931 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-27 23:37:46,239 - shared - INFO - Starting Gradio application...
+2025-12-27 23:37:46,593 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-27 23:37:46,655 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-27 23:37:46,692 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-27 23:39:04,536 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:39:33,321 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:40:17,314 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:40:17,630 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:44:32,285 - tools - INFO - Loaded 636 Pokémon species
+2025-12-27 23:44:33,671 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-27 23:44:33,672 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-27 23:44:34,075 - shared - INFO - Starting Gradio application...
+2025-12-27 23:44:34,439 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-27 23:44:34,493 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-27 23:44:34,529 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-27 23:48:23,072 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:48:23,759 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:48:36,251 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:48:36,761 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:49:16,590 - tools - INFO - Loaded 636 Pokémon species
+2025-12-27 23:49:17,841 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-27 23:49:17,842 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-27 23:49:18,352 - shared - INFO - Starting Gradio application...
+2025-12-27 23:49:18,575 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-27 23:49:18,966 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-27 23:49:19,013 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-27 23:49:30,962 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:49:40,613 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:49:44,798 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:49:52,256 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:50:01,817 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:50:02,818 - primp - INFO - response: https://html.duckduckgo.com/html 200
+2025-12-27 23:50:03,124 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:50:09,412 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:50:09,851 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:50:18,801 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:50:23,321 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:50:27,123 - shared - INFO - Clearing memory due to topic shift. New Pokémon: ['Scizor']
+2025-12-27 23:50:27,123 - shared - INFO - Memory cleared
+2025-12-27 23:50:27,641 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:50:28,647 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:50:49,228 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:50:49,461 - tools - INFO - Found 3 teams for query: umbreon
+2025-12-27 23:50:50,457 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:51:12,146 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:51:12,228 - tools - INFO - Found 3 teams for query: Umbreon, Skarmory
+2025-12-27 23:51:12,891 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:55:12,205 - tools - INFO - Loaded 636 Pokémon species
+2025-12-27 23:55:13,528 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-27 23:55:13,529 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-27 23:55:13,848 - shared - INFO - Starting Gradio application...
+2025-12-27 23:55:14,146 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-27 23:55:14,210 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-27 23:55:14,237 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-27 23:55:35,460 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:56:14,826 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-27 23:56:15,006 - tools - INFO - Found 3 teams for query: umbreon, skarmory
+2025-12-27 23:56:15,449 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-28 00:00:21,605 - tools - INFO - Loaded 636 Pokémon species
+2025-12-28 00:00:23,375 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-28 00:00:23,376 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-28 00:00:23,759 - shared - INFO - Starting Gradio application...
+2025-12-28 00:00:24,130 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-28 00:00:24,228 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-28 00:00:24,478 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-28 00:06:15,216 - tools - INFO - Loaded 636 Pokémon species
+2025-12-28 00:06:16,198 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-28 00:06:16,199 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-28 00:06:16,467 - shared - INFO - Starting Gradio application...
+2025-12-28 00:06:16,835 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-28 00:06:16,859 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-28 00:06:16,953 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-28 00:08:42,118 - tools - INFO - Loaded 636 Pokémon species
+2025-12-28 00:08:43,035 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-28 00:08:43,036 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-28 00:08:43,294 - shared - INFO - Starting Gradio application...
+2025-12-28 00:08:43,595 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-28 00:08:43,620 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-28 00:08:43,739 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-28 00:13:52,366 - tools - INFO - Loaded 636 Pokémon species
+2025-12-28 00:13:53,552 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-28 00:13:53,553 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-28 00:13:53,832 - shared - INFO - Starting Gradio application...
+2025-12-28 00:13:54,191 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-28 00:13:54,208 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-28 00:13:54,221 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-28 00:15:03,899 - tools - INFO - Loaded 636 Pokémon species
+2025-12-28 00:15:04,967 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-28 00:15:04,967 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-28 00:15:05,259 - shared - INFO - Starting Gradio application...
+2025-12-28 00:15:05,587 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-28 00:15:05,630 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-28 00:15:05,718 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-28 00:15:52,290 - tools - INFO - Loaded 636 Pokémon species
+2025-12-28 00:15:53,315 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-28 00:15:53,316 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-28 00:15:53,588 - shared - INFO - Starting Gradio application...
+2025-12-28 00:15:53,849 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-28 00:15:53,904 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-28 00:15:53,929 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-28 00:18:55,826 - tools - INFO - Loaded 636 Pokémon species
+2025-12-28 00:18:57,344 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-28 00:18:57,344 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-28 00:18:57,780 - shared - INFO - Starting Gradio application...
+2025-12-28 00:18:58,303 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-28 00:18:58,344 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-28 00:18:58,837 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-28 00:27:14,926 - tools - INFO - Loaded 636 Pokémon species
+2025-12-28 00:27:15,935 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-28 00:27:15,935 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-28 00:27:16,205 - shared - INFO - Starting Gradio application...
+2025-12-28 00:27:16,534 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-28 00:27:16,564 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-28 00:27:16,572 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-28 00:32:13,686 - tools - INFO - Loaded 636 Pokémon species
+2025-12-28 00:32:15,538 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-28 00:32:15,539 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-28 00:32:15,903 - shared - INFO - Starting Gradio application...
+2025-12-28 00:32:16,217 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-28 00:32:16,286 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-28 00:32:16,316 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-28 00:42:23,621 - tools - INFO - Loaded 636 Pokémon species
+2025-12-28 00:42:24,776 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-28 00:42:24,777 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-28 00:42:25,092 - shared - INFO - Starting Gradio application...
+2025-12-28 00:42:25,453 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-28 00:42:25,481 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-28 00:42:25,483 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-28 00:43:36,073 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-28 00:51:07,646 - tools - INFO - Loaded 636 Pokémon species
+2025-12-28 00:51:08,756 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-28 00:51:08,757 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-28 00:51:09,051 - shared - INFO - Starting Gradio application...
+2025-12-28 00:51:09,452 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-28 00:51:09,483 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-28 00:51:09,488 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-28 00:51:48,620 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-28 00:51:48,759 - tools - INFO - No Pokémon found in query: 2 Pokémon
+2025-12-28 00:51:49,458 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-28 00:51:56,068 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-28 00:51:56,142 - tools - INFO - No Pokémon found in query: Pokemon Research Assistant
+2025-12-28 00:51:56,391 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-28 00:58:22,616 - tools - INFO - Loaded 636 Pokémon species
+2025-12-28 00:58:23,832 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-28 00:58:23,832 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-28 00:58:24,140 - shared - INFO - Starting Gradio application...
+2025-12-28 00:58:24,494 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-28 00:58:24,571 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-28 00:58:24,605 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-29 22:34:07,937 - tools - INFO - Loaded 636 Pokémon species
+2025-12-29 22:34:09,036 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-29 22:34:09,038 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-29 22:34:09,294 - shared - INFO - Starting Gradio application...
+2025-12-29 22:34:09,642 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-29 22:34:09,660 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-29 22:34:09,672 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-29 22:41:14,543 - tools - INFO - Loaded 636 Pokémon species
+2025-12-29 22:41:15,860 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-29 22:41:15,862 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-29 22:41:16,188 - shared - INFO - Starting Gradio application...
+2025-12-29 22:41:16,538 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-29 22:41:16,605 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-29 22:41:16,632 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-29 22:48:01,529 - tools - INFO - Loaded 636 Pokémon species
+2025-12-29 22:48:02,770 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-29 22:48:02,794 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-29 22:48:03,063 - shared - INFO - Starting Gradio application...
+2025-12-29 22:48:03,406 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-29 22:48:03,433 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-29 22:48:03,542 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-29 23:01:38,817 - tools - INFO - Loaded 636 Pokémon species
+2025-12-29 23:01:39,720 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-29 23:01:39,722 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-29 23:01:40,000 - shared - INFO - Starting Gradio application...
+2025-12-29 23:01:40,325 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-29 23:01:40,350 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-29 23:01:40,359 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-29 23:06:44,334 - tools - INFO - Loaded 636 Pokémon species
+2025-12-29 23:06:45,171 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-29 23:06:45,172 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-29 23:06:45,427 - shared - INFO - Starting Gradio application...
+2025-12-29 23:06:45,738 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-29 23:06:45,763 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-29 23:06:45,863 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-29 23:09:53,628 - tools - INFO - Loaded 636 Pokémon species
+2025-12-29 23:09:54,595 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-29 23:09:54,596 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-29 23:09:54,867 - shared - INFO - Starting Gradio application...
+2025-12-29 23:09:55,183 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-29 23:09:55,214 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-29 23:09:55,219 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-29 23:12:04,740 - tools - INFO - Loaded 636 Pokémon species
+2025-12-29 23:12:05,822 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-29 23:12:05,823 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-29 23:12:06,132 - shared - INFO - Starting Gradio application...
+2025-12-29 23:12:06,469 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-29 23:12:06,497 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-29 23:12:06,515 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-29 23:21:12,030 - tools - INFO - Loaded 636 Pokémon species
+2025-12-29 23:21:13,458 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-29 23:21:13,459 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-29 23:21:13,828 - shared - INFO - Starting Gradio application...
+2025-12-29 23:21:14,138 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-29 23:21:14,230 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-29 23:21:14,272 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-29 23:23:11,422 - tools - INFO - Loaded 636 Pokémon species
+2025-12-29 23:23:12,558 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-29 23:23:12,560 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-29 23:23:12,878 - shared - INFO - Starting Gradio application...
+2025-12-29 23:23:13,198 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-29 23:23:13,275 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-29 23:23:13,308 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-29 23:25:24,252 - tools - INFO - Loaded 636 Pokémon species
+2025-12-29 23:25:25,323 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-29 23:25:25,324 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-29 23:25:25,603 - shared - INFO - Starting Gradio application...
+2025-12-29 23:25:25,886 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-29 23:25:25,933 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-29 23:25:25,967 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-29 23:25:53,634 - tools - INFO - Loaded 636 Pokémon species
+2025-12-29 23:25:54,707 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-29 23:25:54,708 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-29 23:25:54,987 - shared - INFO - Starting Gradio application...
+2025-12-29 23:25:55,322 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-29 23:25:55,347 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-29 23:25:55,352 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-29 23:31:06,759 - tools - INFO - Loaded 636 Pokémon species
+2025-12-29 23:31:07,841 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-29 23:31:07,842 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-29 23:31:08,135 - shared - INFO - Starting Gradio application...
+2025-12-29 23:31:08,496 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-29 23:31:08,523 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-29 23:31:08,548 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-29 23:35:34,258 - tools - INFO - Loaded 636 Pokémon species
+2025-12-29 23:35:35,316 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-29 23:35:35,317 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-29 23:35:35,603 - shared - INFO - Starting Gradio application...
+2025-12-29 23:35:35,919 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-29 23:35:35,992 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-29 23:35:36,019 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-29 23:37:57,307 - tools - INFO - Loaded 636 Pokémon species
+2025-12-29 23:37:58,825 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-29 23:37:58,826 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-29 23:37:59,237 - shared - INFO - Starting Gradio application...
+2025-12-29 23:37:59,545 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-29 23:37:59,598 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-29 23:37:59,638 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-29 23:45:37,358 - tools - INFO - Loaded 636 Pokémon species
+2025-12-29 23:45:38,575 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-29 23:45:38,576 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-29 23:45:38,860 - shared - INFO - Starting Gradio application...
+2025-12-29 23:45:39,171 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-29 23:45:39,253 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-29 23:45:39,286 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-29 23:50:14,220 - tools - INFO - Loaded 636 Pokémon species
+2025-12-29 23:50:15,454 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-29 23:50:15,455 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-29 23:50:15,746 - shared - INFO - Starting Gradio application...
+2025-12-29 23:50:16,016 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-29 23:50:16,067 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-29 23:50:16,094 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-29 23:54:25,792 - tools - INFO - Loaded 636 Pokémon species
+2025-12-29 23:54:26,752 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-29 23:54:26,753 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-29 23:54:27,055 - shared - INFO - Starting Gradio application...
+2025-12-29 23:54:27,331 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-29 23:54:27,382 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-29 23:54:27,408 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-29 23:57:29,324 - tools - INFO - Loaded 636 Pokémon species
+2025-12-29 23:57:30,595 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-29 23:57:30,596 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-29 23:57:30,865 - shared - INFO - Starting Gradio application...
+2025-12-29 23:57:31,175 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-29 23:57:31,201 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-29 23:57:31,213 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-29 23:59:37,714 - tools - INFO - Loaded 636 Pokémon species
+2025-12-29 23:59:38,752 - shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2025-12-29 23:59:38,753 - shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2025-12-29 23:59:39,023 - shared - INFO - Starting Gradio application...
+2025-12-29 23:59:39,337 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-12-29 23:59:39,382 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-12-29 23:59:39,422 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-12-30 00:00:00,648 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-30 00:00:02,466 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-30 00:04:06,528 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-30 00:04:07,299 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-30 00:05:14,238 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-30 00:05:15,401 - tools - INFO - Found 3 teams for query: Umbreon, Skarmory
+2025-12-30 00:05:15,859 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-30 00:05:50,160 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-30 00:05:50,416 - tools - INFO - Found 1 teams for query: Umbreon, Skarmory, Snorlax
+2025-12-30 00:05:51,333 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-30 00:06:16,658 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-30 00:06:16,771 - tools - INFO - Found 1 teams for query: Umbreon Skarmory Raikou
+2025-12-30 00:06:17,096 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-30 00:07:20,841 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

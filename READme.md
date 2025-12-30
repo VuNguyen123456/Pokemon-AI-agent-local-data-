@@ -83,8 +83,53 @@ Built with **Gradio**, the assistant now includes an intuitive and visual interf
 - Responsive layout that adapts across screen sizes  
 
 **Example:**  
-`What’s the best set for Tyranitar in Gen3?`  
+`What's the best set for Tyranitar in Gen3?`  
 → You'll see `Tyranitar` and `Tyranitar-Mega` sprites above the chat, and a detailed markdown strategy below.
+
+---
+
+### 📊 7. Interactive Pokémon Stats Card
+Click on any Pokémon sprite to open a detailed stats card with comprehensive information:
+
+**Physical Attributes:**
+- 📏 **Height** (in meters)
+- ⚖️ **Weight** (in kilograms)
+- 🎨 **Type(s)** - Color-coded type badges (Fire, Water, Grass, etc.)
+- 📐 **Shape** - Physical body shape classification
+- 🎨 **Color** - Primary color classification
+- 🥚 **Egg Group(s)** - Breeding compatibility groups
+
+**Abilities:**
+- 💪 **All Abilities** - Including hidden abilities
+- 📝 **Ability Descriptions** - Hover over ability badges to see detailed descriptions
+- 🏷️ **Hidden Ability Indicator** - Clearly marked hidden abilities
+
+**Base Stats:**
+- ❤️ **HP** - Hit Points
+- ⚔️ **Attack** - Physical attack power
+- 🛡️ **Defense** - Physical defense
+- 🔮 **Sp. Atk** - Special attack power
+- 🛡️ **Sp. Def** - Special defense
+- ⚡ **Speed** - Speed stat
+- 📊 **Total** - Sum of all base stats
+
+**Visual Features:**
+- 🖼️ **Official Artwork** - High-quality official Pokémon artwork
+- 🌈 **Color-Coded Stat Bars** - Visual representation with dynamic colors:
+  - Red for stats below 70
+  - Yellow for stats 70-90
+  - Green for stats 90-100
+  - Bright green for stats 100-120
+  - Blue-teal for stats 120-130
+  - Deep blue-teal for stats 130+
+- 🎨 **Type-Based Background** - Gradient backgrounds matching Pokémon types
+- 🔴 **Mega Evolution Indicator** - Special "MEGA" badge for Mega forms
+- 🎯 **Animated Stat Bars** - Smooth animations when stats load
+
+**How to Use:**
+Simply click on any Pokémon sprite in the sidebar to view its complete stats card. The modal can be closed by clicking the X button, clicking outside the modal, or pressing the Escape key.
+
+**Data Source:** All Pokémon data is fetched from [PokeAPI](https://pokeapi.co/), providing accurate and up-to-date information.
 
 ---
 
@@ -109,7 +154,7 @@ Built with **Gradio**, the assistant now includes an intuitive and visual interf
 - 📦 Pydantic  
 - 🌐 BeautifulSoup4  
 - 🧹 Regex + Markdown formatting helpers  
-- 🖼️ Gradio (interactive UI)
+- 🖼️ Gradio (interactive UI with custom CSS styling)
 
 ---
 
@@ -151,4 +196,45 @@ This project uses data and assets from the following sources:
 **Note:** This project is not affiliated with Smogon University or Pokémon Showdown. All data and assets are used for educational and research purposes in accordance with their respective terms of use.
 
 ---
+
+## 📸 Screenshots
+
+### Main Interface
+![Pokémon Strategy Assistant Interface](https://github.com/user-attachments/assets/main-interface)
+
+The main interface features a clean, modern design with:
+- Quick action buttons for common queries
+- Sidebar showing detected Pokémon sprites
+- Main chat area for strategy discussions
+- Team search and comparison capabilities
+
+### Pokémon Stats Card
+![Pokémon Stats Card](https://github.com/user-attachments/assets/pokemon-stats-card)
+
+Interactive stats card showing comprehensive Pokémon information including:
+- Official artwork
+- Physical attributes (height, weight, type, shape, color, egg groups)
+- Abilities with descriptions
+- Color-coded base stats with animated progress bars
+
+### Team Search Results
+![Team Search Results](https://github.com/user-attachments/assets/team-search-results)
+
+Team search functionality displaying:
+- Complete team compositions
+- Individual Pokémon builds with moves, abilities, and EVs
+- Team strategies and synergies
+- Showdown export format
+
+### Comparison Feature
+![Pokémon Comparison](https://github.com/user-attachments/assets/pokemon-comparison)
+
+Side-by-side comparison of multiple Pokémon showing:
+- Movesets
+- Roles and strategies
+- Strengths and weaknesses
+- Usage recommendations
+
+---
+
 
