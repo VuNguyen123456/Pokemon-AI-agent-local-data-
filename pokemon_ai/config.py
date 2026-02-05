@@ -7,7 +7,8 @@ from pathlib import Path
 from typing import Optional
 
 # Base directory - can be overridden with environment variable
-BASE_DIR = Path(os.getenv("POKEMON_AI_BASE_DIR", os.path.dirname(os.path.abspath(__file__))))
+# Go up one level from pokemon_ai package to project root
+BASE_DIR = Path(os.getenv("POKEMON_AI_BASE_DIR", os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
 # Data directories
 SMOGON_BASE_DIR = BASE_DIR / "smogon"

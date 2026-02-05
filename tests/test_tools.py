@@ -1,10 +1,14 @@
 import os
+import sys
 import pprint
 import ast
-from tools import TeamSearchInput, AllTeamSearchResult, TeamSearchResult
 import re
 
-from tools import (
+# Add the parent directory to the path so we can import from root
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from pokemon_ai import TeamSearchInput, AllTeamSearchResult, TeamSearchResult
+from pokemon_ai import (
     clean_smogon_tool,
     team_search_tool,
     save_tool,

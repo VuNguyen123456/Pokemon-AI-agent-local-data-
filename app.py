@@ -5,22 +5,16 @@ import re
 import os
 from pathlib import Path
 from dotenv import load_dotenv
-from config import SPRITE_BASE_URL
-
-# Import shared utilities
-from shared import (
+from pokemon_ai import (
+    SPRITE_BASE_URL,
     logger, SmartMemoryManager, select_prompt, create_agent_executor,
     format_agent_response, format_strategy_markdown, get_pokemon_sprite_urls,
-    fix_markdown_headers_spacing
+    fix_markdown_headers_spacing,
+    normalize_pokemon_name_for_api,
+    ddgo_tool, save_tool, clean_smogon_tool, team_search_tool, ALL_SPECIES, extract_species_tier_gen,
+    TeamSearchResult, AllTeamSearchResult, TeamPokemon,
+    general_prompt, strat_prompt_single, strat_prompt_team, strat_prompt_multi, format_strategy_team_output, format_multiple_teams_output, ALL_FILENAMES
 )
-
-# Import Pokemon API utilities
-from pokeapi_utils import normalize_pokemon_name_for_api
-
-# Import tools and models
-from tools import ddgo_tool, save_tool, clean_smogon_tool, team_search_tool, ALL_SPECIES, extract_species_tier_gen
-from models import TeamSearchResult, AllTeamSearchResult, TeamPokemon 
-from utils import general_prompt, strat_prompt_single, strat_prompt_team, strat_prompt_multi, format_strategy_team_output, format_multiple_teams_output, ALL_FILENAMES
 
 load_dotenv()
 
@@ -31,7 +25,7 @@ memory_manager = SmartMemoryManager()
 
 try:
     from langchain_openai import ChatOpenAI
-    from config import DEFAULT_MODEL, DEFAULT_TEMPERATURE
+    from pokemon_ai import DEFAULT_MODEL, DEFAULT_TEMPERATURE
     llm = ChatOpenAI(model=DEFAULT_MODEL, temperature=DEFAULT_TEMPERATURE)
     logger.info(f"Initialized LLM with model: {DEFAULT_MODEL}")
 except Exception as e:
@@ -1543,8 +1537,8 @@ try:
                 with gr.Column(scale=0, min_width=140, elem_classes=["quick-team-container"]):
                     quick_team = gr.Button("🔍 Find Teams", elem_classes=["quick-btn-modern"], size="sm")
                     team_pokemon_count = gr.Dropdown(
-                        choices=[2, 3, 4, 5, 6],
-                        value=2,
+                        choices=[1, 2, 3, 4, 5, 6],
+                        value=1,
                         label="",
                         scale=0,
                         container=False,
@@ -1594,7 +1588,9 @@ try:
         # Quick action handlers
         def quick_team_click(num_pokemon):
             """Generate team search template based on number of Pokemon selected."""
-            if num_pokemon == 2:
+            if num_pokemon == 1:
+                return "Find teams with <pokemon 1> in <generation> <format>"
+            elif num_pokemon == 2:
                 return "Find teams with <pokemon 1> and <pokemon 2> in <generation> <format>"
             elif num_pokemon == 3:
                 return "Find teams with <pokemon 1>, <pokemon 2>, and <pokemon 3> in <generation> <format>"

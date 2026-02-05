@@ -4,20 +4,18 @@ Tests both normal Pokemon and multi-word Pokemon like "Great Tusk".
 
 To run this test:
 1. Activate your virtual environment
-2. Run: python test_pokemon_matching.py
+2. Run from project root: python tests/test_pokemon_matching.py
+   OR from tests directory: python test_pokemon_matching.py
 """
 import re
 import sys
 import os
 
-# Add the current directory to the path
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+# Add the parent directory to the path so we can import from root
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 try:
-    from tools import ALL_SPECIES
-    from utils import ALL_FILENAMES
-    from shared import get_pokemon_sprite_urls
-    from config import SPRITE_BASE_URL
+    from pokemon_ai import ALL_SPECIES, ALL_FILENAMES, get_pokemon_sprite_urls, SPRITE_BASE_URL
 except ImportError as e:
     print(f"Error importing modules: {e}")
     print("\nMake sure you:")

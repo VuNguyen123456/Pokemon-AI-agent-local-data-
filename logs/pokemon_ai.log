@@ -1297,3 +1297,73 @@ openai.BadRequestError: Error code: 400 - {'error': {'message': "This model's ma
 2025-12-30 00:37:07,205 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
 2025-12-30 00:37:07,254 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
 2025-12-30 00:37:07,279 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-02-05 13:52:12,184 - pokemon_ai.tools - INFO - Loaded 636 Pokémon species
+2026-02-05 13:53:07,455 - pokemon_ai.tools - INFO - Loaded 636 Pokémon species
+2026-02-05 13:53:08,793 - pokemon_ai.shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2026-02-05 13:53:30,156 - pokemon_ai.tools - INFO - Loaded 636 Pokémon species
+2026-02-05 13:53:31,182 - pokemon_ai.shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2026-02-05 13:53:31,183 - pokemon_ai.shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2026-02-05 13:53:31,476 - pokemon_ai.shared - INFO - Starting Gradio application...
+2026-02-05 13:53:31,881 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-02-05 13:53:31,979 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-02-05 13:53:32,022 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-02-05 13:56:57,866 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-05 13:56:58,080 - pokemon_ai.tools - INFO - Found 3 teams for query: Charizard
+2026-02-05 13:56:59,072 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-05 13:57:02,657 - pokemon_ai.shared - ERROR - Error formatting response: No module named 'models'
+Traceback (most recent call last):
+  File "C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\pokemon_ai\shared.py", line 149, in format_agent_response
+    from models import AllTeamSearchResult
+ModuleNotFoundError: No module named 'models'
+2026-02-05 13:59:09,051 - pokemon_ai.tools - INFO - Loaded 636 Pokémon species
+2026-02-05 13:59:10,061 - pokemon_ai.shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2026-02-05 13:59:10,062 - pokemon_ai.shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2026-02-05 13:59:10,393 - pokemon_ai.shared - INFO - Starting Gradio application...
+2026-02-05 13:59:10,715 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-02-05 13:59:10,768 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-02-05 13:59:10,810 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-02-05 13:59:24,286 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-05 13:59:24,878 - pokemon_ai.tools - INFO - Found 3 teams for query: Charizard
+2026-02-05 13:59:25,291 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-05 13:59:29,720 - pokemon_ai.shared - ERROR - Error formatting response: No module named 'models'
+Traceback (most recent call last):
+  File "C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\pokemon_ai\shared.py", line 149, in format_agent_response
+    from models import AllTeamSearchResult
+ModuleNotFoundError: No module named 'models'
+2026-02-05 14:00:05,380 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-05 14:00:06,326 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-05 14:00:10,397 - pokemon_ai.shared - ERROR - Error formatting response: No module named 'models'
+Traceback (most recent call last):
+  File "C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\pokemon_ai\shared.py", line 149, in format_agent_response
+    from .models import AllTeamSearchResult
+ModuleNotFoundError: No module named 'models'
+2026-02-05 14:00:52,275 - pokemon_ai.tools - INFO - Loaded 636 Pokémon species
+2026-02-05 14:00:53,513 - pokemon_ai.shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2026-02-05 14:00:53,514 - pokemon_ai.shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2026-02-05 14:00:53,830 - pokemon_ai.shared - INFO - Starting Gradio application...
+2026-02-05 14:00:54,122 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-02-05 14:00:54,193 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-02-05 14:00:54,214 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-02-05 14:01:00,042 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-05 14:01:00,279 - pokemon_ai.tools - INFO - Found 3 teams for query: Charizard
+2026-02-05 14:01:00,834 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-05 14:01:33,869 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-05 14:01:34,681 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-05 14:01:51,964 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-05 14:01:53,275 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-05 14:02:15,712 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-05 14:03:05,755 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-05 14:03:06,056 - pokemon_ai.tools - INFO - Found 3 teams for query: Umbreon
+2026-02-05 14:03:06,687 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-05 14:06:41,157 - pokemon_ai.tools - INFO - Loaded 636 Pokémon species
+2026-02-05 14:06:42,125 - pokemon_ai.shared - INFO - Initialized LLM with model: gpt-3.5-turbo
+2026-02-05 14:06:42,127 - pokemon_ai.shared - INFO - Loaded Pokemon stats JavaScript from C:\Users\VuNguyen\OneDrive\Documents\GMU\AI agent\static\pokemon_stats.js
+2026-02-05 14:06:42,392 - pokemon_ai.shared - INFO - Starting Gradio application...
+2026-02-05 14:06:42,728 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-02-05 14:06:42,755 - httpx - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-02-05 14:06:42,850 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-02-05 14:06:54,525 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-05 14:06:54,745 - pokemon_ai.tools - INFO - Found 3 teams for query: umbreon
+2026-02-05 14:06:55,248 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-05 14:07:36,843 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-05 14:07:37,770 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

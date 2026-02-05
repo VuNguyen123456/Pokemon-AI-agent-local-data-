@@ -2,22 +2,20 @@ import sys
 import re
 from dotenv import load_dotenv
 
-# Import shared utilities
-from shared import (
+# Import from pokemon_ai package
+from pokemon_ai import (
     logger, SmartMemoryManager, select_prompt, create_agent_executor,
-    format_agent_response, fix_markdown_headers_spacing
+    format_agent_response, fix_markdown_headers_spacing,
+    ddgo_tool, save_tool, clean_smogon_tool, team_search_tool, extract_species_tier_gen,
+    TeamSearchResult, AllTeamSearchResult, TeamPokemon,
+    general_prompt, strat_prompt_single, strat_prompt_team, strat_prompt_multi, format_strategy_team_output, format_multiple_teams_output
 )
-
-# Import tools and models
-from tools import ddgo_tool, save_tool, clean_smogon_tool, team_search_tool, extract_species_tier_gen
-from models import TeamSearchResult, AllTeamSearchResult, TeamPokemon 
-from utils import general_prompt, strat_prompt_single, strat_prompt_team, strat_prompt_multi, format_strategy_team_output, format_multiple_teams_output
 
 load_dotenv()
 
 try:
     from langchain_openai import ChatOpenAI
-    from config import DEFAULT_MODEL, DEFAULT_TEMPERATURE
+    from pokemon_ai import DEFAULT_MODEL, DEFAULT_TEMPERATURE
     llm = ChatOpenAI(model=DEFAULT_MODEL, temperature=DEFAULT_TEMPERATURE)
     logger.info(f"Initialized LLM with model: {DEFAULT_MODEL}")
 except Exception as e:

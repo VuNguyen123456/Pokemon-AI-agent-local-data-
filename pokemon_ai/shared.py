@@ -8,7 +8,7 @@ from typing import List, Optional, Set, Tuple
 from langchain.memory import ConversationBufferMemory
 from langchain.agents import create_tool_calling_agent, AgentExecutor
 from langchain_openai import ChatOpenAI
-from config import DEFAULT_MODEL, DEFAULT_TEMPERATURE, LOG_LEVEL, LOG_FILE
+from .config import DEFAULT_MODEL, DEFAULT_TEMPERATURE, LOG_LEVEL, LOG_FILE
 
 # Configure logging once for the entire application
 def setup_logging():
@@ -146,7 +146,7 @@ def format_agent_response(response, fix_markdown_func, format_multiple_teams_fun
     Returns: (formatted_output, is_team_output, raw_team_result)
     """
     try:
-        from models import AllTeamSearchResult
+        from .models import AllTeamSearchResult
         
         # Extract output from response
         if isinstance(response, dict) and 'output' in response:

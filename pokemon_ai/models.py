@@ -10,6 +10,8 @@ class TeamPokemon(BaseModel):
     ivs: Optional[Dict[str, int]] = None
     nature: Optional[str] = None
     moves: Optional[List[str]] = []
+    level: Optional[int] = None
+    tera_type: Optional[str] = None
 
 
 class TeamSearchResult(BaseModel):

@@ -9,12 +9,12 @@ from langchain_community.tools import DuckDuckGoSearchRun
 import spacy
 from pydantic import BaseModel, Field
 from bs4 import BeautifulSoup
-from models import AllTeamSearchResult, TeamSearchResult, TeamPokemon
-from config import (
+from .models import AllTeamSearchResult, TeamSearchResult, TeamPokemon
+from .config import (
     DATA_DIR, ANALYSES_DIR, DEFAULT_ANALYSIS_FILE, OUTPUT_DIR, DEFAULT_OUTPUT_FILE,
     get_analysis_file_path, validate_paths
 )
-from shared import fix_markdown_headers_spacing
+from .shared import fix_markdown_headers_spacing
 
 # Set up logging
 logger = logging.getLogger(__name__)
@@ -331,7 +331,9 @@ def search_teams(*, query: str, sample_size: int = 3) -> AllTeamSearchResult:
                                 evs=p.get("evs"),
                                 ivs=p.get("ivs"),
                                 nature=p.get("nature"),
-                                moves=p.get("moves") or []
+                                moves=p.get("moves") or [],
+                                level=p.get("level"),
+                                tera_type=p.get("tera_type")
                             ))
                         except Exception as e:
                             logger.warning(f"Error creating TeamPokemon: {e}")
@@ -523,6 +525,7 @@ def save_to_txt(data: str, filename: Optional[str] = None):
         return f"❌ Error saving file: {str(e)}"
 
 def create_pokemon_showdown_export(team_data: list) -> str:
+    """Create a properly formatted Pokemon Showdown export string."""
     lines = []
 
     for mon in team_data:
@@ -532,28 +535,71 @@ def create_pokemon_showdown_export(team_data: list) -> str:
         tera_type = mon.get("tera_type", "")
         nature = mon.get("nature", "")
         evs = mon.get("evs", {})
+        ivs = mon.get("ivs", {})
         moves = mon.get("moves", [])
+        gender = mon.get("gender", "")
+        level = mon.get("level", None)
 
-        # First line: "Pokemon @ Item"
-        lines.append(f"{name} @ {item}" if item else name)
+        # First line: "Pokemon @ Item" or just "Pokemon"
+        if item:
+            lines.append(f"{name} @ {item}")
+        else:
+            lines.append(name)
 
         # Ability
         if ability:
             lines.append(f"Ability: {ability}")
 
-        # EVs
+        # Level (only if not 100)
+        if level and level != 100:
+            lines.append(f"Level: {level}")
+
+        # EVs - format with proper stat names
         if evs:
-            ev_parts = [f"{val} {stat}" for stat, val in evs.items() if val > 0]
+            ev_parts = []
+            for stat, val in evs.items():
+                if val > 0:
+                    # Map stat names to Showdown format
+                    stat_map = {
+                        'hp': 'HP', 'atk': 'Atk', 'attack': 'Atk',
+                        'def': 'Def', 'defense': 'Def',
+                        'spa': 'SpA', 'spatk': 'SpA', 'special-attack': 'SpA',
+                        'spd': 'SpD', 'spdef': 'SpD', 'special-defense': 'SpD',
+                        'spe': 'Spe', 'speed': 'Spe'
+                    }
+                    stat_name = stat_map.get(stat.lower(), stat.capitalize())
+                    ev_parts.append(f"{val} {stat_name}")
             if ev_parts:
                 lines.append(f"EVs: {' / '.join(ev_parts)}")
 
-        # Tera Type
-        if tera_type:
-            lines.append(f"Tera Type: {tera_type}")
+        # IVs - only show if not 31 (perfect)
+        if ivs:
+            iv_parts = []
+            for stat, val in ivs.items():
+                if val != 31:  # Only show non-perfect IVs
+                    stat_map = {
+                        'hp': 'HP', 'atk': 'Atk', 'attack': 'Atk',
+                        'def': 'Def', 'defense': 'Def',
+                        'spa': 'SpA', 'spatk': 'SpA', 'special-attack': 'SpA',
+                        'spd': 'SpD', 'spdef': 'SpD', 'special-defense': 'SpD',
+                        'spe': 'Spe', 'speed': 'Spe'
+                    }
+                    stat_name = stat_map.get(stat.lower(), stat.capitalize())
+                    iv_parts.append(f"{val} {stat_name}")
+            if iv_parts:
+                lines.append(f"IVs: {' / '.join(iv_parts)}")
+
+        # Gender
+        if gender:
+            lines.append(f"Gender: {gender}")
 
         # Nature
         if nature:
             lines.append(f"{nature} Nature")
+
+        # Tera Type (Gen 9+)
+        if tera_type:
+            lines.append(f"Tera Type: {tera_type}")
 
         # Moves
         for move in moves:

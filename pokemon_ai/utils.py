@@ -2,8 +2,8 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import PydanticOutputParser
 from typing import List
 import re
-from shared import fix_markdown_headers_spacing
-from models import TeamSearchResult, AllTeamSearchResult, TeamPokemon  
+from .shared import fix_markdown_headers_spacing
+from .models import TeamSearchResult, AllTeamSearchResult, TeamPokemon  
 
 suffixes = [
     # Your provided suffixes:
@@ -273,20 +273,90 @@ def format_strategy_team_output(resp: TeamSearchResult) -> str:
     output = [f"🔍 **Team Name:** {resp.team_name}\n👤 **Author:** {resp.author}\n"]
 
     for pokemon in resp.team:
-        output.append(f"---\n**{pokemon.species}**")
+        # Handle species - could be string, enum, or object
+        species_name = str(pokemon.species)
+        if hasattr(pokemon.species, 'value'):
+            species_name = pokemon.species.value
+        elif hasattr(pokemon.species, 'name'):
+            species_name = pokemon.species.name
+        
+        output.append(f"---\n**{species_name}**")
+        
+        # Level (if not 100 or if specified)
+        if pokemon.level and pokemon.level != 100:
+            output.append(f"- **Level:** {pokemon.level}")
+        
+        # Gender
+        if pokemon.gender:
+            output.append(f"- **Gender:** {pokemon.gender}")
+        
+        # Item
         if pokemon.item:
             output.append(f"- **Item:** {pokemon.item}")
+        
+        # Ability
         if pokemon.ability:
             output.append(f"- **Ability:** {pokemon.ability}")
+        
+        # Nature
         if pokemon.nature:
             output.append(f"- **Nature:** {pokemon.nature}")
+        
+        # EVs - format properly (capitalize stat names)
         if pokemon.evs:
-            evs_str = " / ".join(f"{v} {k}" for k, v in pokemon.evs.items())
-            output.append(f"- **EVs:** {evs_str}")
+            ev_parts = []
+            for stat, val in pokemon.evs.items():
+                if val > 0:
+                    # Capitalize stat name properly
+                    stat_capitalized = stat.capitalize()
+                    if stat.lower() == 'hp':
+                        stat_capitalized = 'HP'
+                    elif stat.lower() in ['atk', 'attack']:
+                        stat_capitalized = 'Atk'
+                    elif stat.lower() in ['def', 'defense']:
+                        stat_capitalized = 'Def'
+                    elif stat.lower() in ['spa', 'spatk', 'special-attack']:
+                        stat_capitalized = 'SpA'
+                    elif stat.lower() in ['spd', 'spdef', 'special-defense']:
+                        stat_capitalized = 'SpD'
+                    elif stat.lower() in ['spe', 'speed']:
+                        stat_capitalized = 'Spe'
+                    ev_parts.append(f"{val} {stat_capitalized}")
+            if ev_parts:
+                output.append(f"- **EVs:** {' / '.join(ev_parts)}")
+        
+        # IVs - format properly (only show if not 31)
         if pokemon.ivs:
-            ivs_str = " / ".join(f"{v} {k}" for k, v in pokemon.ivs.items())
-            output.append(f"- **IVs:** {ivs_str}")
-        output.append(f"- **Moves:** {', '.join(pokemon.moves)}")
+            iv_parts = []
+            for stat, val in pokemon.ivs.items():
+                if val != 31:  # Only show IVs that aren't perfect
+                    stat_capitalized = stat.capitalize()
+                    if stat.lower() == 'hp':
+                        stat_capitalized = 'HP'
+                    elif stat.lower() in ['atk', 'attack']:
+                        stat_capitalized = 'Atk'
+                    elif stat.lower() in ['def', 'defense']:
+                        stat_capitalized = 'Def'
+                    elif stat.lower() in ['spa', 'spatk', 'special-attack']:
+                        stat_capitalized = 'SpA'
+                    elif stat.lower() in ['spd', 'spdef', 'special-defense']:
+                        stat_capitalized = 'SpD'
+                    elif stat.lower() in ['spe', 'speed']:
+                        stat_capitalized = 'Spe'
+                    iv_parts.append(f"{val} {stat_capitalized}")
+            if iv_parts:
+                output.append(f"- **IVs:** {' / '.join(iv_parts)}")
+        
+        # Tera Type (Gen 9+)
+        if pokemon.tera_type:
+            output.append(f"- **Tera Type:** {pokemon.tera_type}")
+        
+        # Moves
+        moves = pokemon.moves if pokemon.moves else []
+        if moves:
+            output.append(f"- **Moves:** {', '.join(str(move) for move in moves)}")
+        else:
+            output.append(f"- **Moves:** None")
 
     if resp.pokemonShowdownExport:
         output.append("\n📋 **Showdown Export**:\n```\n" + resp.pokemonShowdownExport + "\n```")
@@ -295,11 +365,20 @@ def format_strategy_team_output(resp: TeamSearchResult) -> str:
 
 def format_multiple_teams_output(teams: List[TeamSearchResult]) -> str:
     outputs = []
+    if not teams:
+        return "No teams found."
+    
     for i, team in enumerate(teams, 1):
-        outputs.append(f"### Team #{i}\n")
-        outputs.append(format_strategy_team_output(team))
-        outputs.append("\n" + "-"*30 + "\n")
+        try:
+            outputs.append(f"### Team #{i}\n")
+            outputs.append(format_strategy_team_output(team))
+            outputs.append("\n" + "-"*30 + "\n")
+        except Exception as e:
+            import logging
+            logger = logging.getLogger(__name__)
+            logger.error(f"Error formatting team #{i}: {e}", exc_info=True)
+            outputs.append(f"### Team #{i}\n❌ Error formatting this team.\n\n" + "-"*30 + "\n")
+    
     return "\n".join(outputs)
 
-# fix_markdown_headers_spacing moved to shared.py to avoid duplication
-from shared import fix_markdown_headers_spacing
+# fix_markdown_headers_spacing is imported from .shared at the top of this file
