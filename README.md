@@ -5,6 +5,17 @@ A smart conversational assistant built with LangChain and ChatGPT-4o Mini, capab
 This project is designed for both casual and competitive players who want quick, high-quality strategic insights.
 
 Data for this are taken from: https://github.com/pkmn/smogon/tree/main
+
+---
+
+## 🎥 Demo Video
+
+Watch a quick demonstration of the Pokémon AI Agent in action:
+
+<div style="position: relative; padding-bottom: 47.08333333333333%; height: 0;"><iframe src="https://www.loom.com/embed/2ef5973cc35f471fa612b460c0660d94" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+[Watch on Loom](https://www.loom.com/share/2ef5973cc35f471fa612b460c0660d94)
+
 ---
 
 ## 🚀 Features
@@ -155,6 +166,115 @@ Simply click on any Pokémon sprite in the sidebar to view its complete stats ca
 - 🌐 BeautifulSoup4  
 - 🧹 Regex + Markdown formatting helpers  
 - 🖼️ Gradio (interactive UI with custom CSS styling)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Before you begin, ensure you have the following installed:
+- **Python 3.10 or higher** ([Download Python](https://www.python.org/downloads/))
+- **Git** ([Download Git](https://git-scm.com/downloads))
+- **OpenAI API Key** ([Get your API key here](https://platform.openai.com/api-keys))
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/VuNguyen123456/Pokemon-AI-agent-local-data-.git
+   cd Pokemon-AI-agent-local-data-
+   ```
+
+2. **Create a virtual environment** (recommended)
+   
+   **Windows:**
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate
+   ```
+   
+   **Mac/Linux:**
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Install spaCy language model** (required for text processing)
+   ```bash
+   python -m spacy download en_core_web_sm
+   ```
+
+5. **Set up your OpenAI API key**
+   
+   Create a `.env` file in the project root directory:
+   ```bash
+   # Windows
+   echo OPENAI_API_KEY=your_api_key_here > .env
+   
+   # Mac/Linux
+   echo "OPENAI_API_KEY=your_api_key_here" > .env
+   ```
+   
+   Or manually create a `.env` file with the following content:
+   ```
+   OPENAI_API_KEY=your_api_key_here
+   ```
+   
+   **⚠️ Important:** Replace `your_api_key_here` with your actual OpenAI API key. Never commit your `.env` file to version control!
+
+   **Optional:** You can also configure additional settings in `.env`:
+   ```
+   OPENAI_API_KEY=your_api_key_here
+   OPENAI_MODEL=gpt-4o-mini
+   OPENAI_TEMPERATURE=0.7
+   LOG_LEVEL=INFO
+   ```
+
+### Running the Application
+
+#### Web Interface (Gradio)
+
+Launch the interactive web interface:
+```bash
+python app.py
+```
+
+The application will start and you can access it at:
+- **Local URL:** http://127.0.0.1:7860
+- The URL will be displayed in your terminal
+
+#### Command Line Interface
+
+For a terminal-based interface:
+```bash
+python main.py
+```
+
+Type your queries directly in the terminal. Type `quit` or `exit` to stop.
+
+### Troubleshooting
+
+**Issue: Module not found errors**
+- Make sure you've activated your virtual environment
+- Run `pip install -r requirements.txt` again
+
+**Issue: OpenAI API errors**
+- Verify your API key is correct in the `.env` file
+- Check that you have credits available in your OpenAI account
+- Ensure the `.env` file is in the project root directory
+
+**Issue: spaCy model not found**
+- Run: `python -m spacy download en_core_web_sm`
+
+**Issue: Data files not found**
+- The `smogon/data/` directory should contain JSON team files
+- If missing, you may need to download the Smogon data separately
 
 ---
 
