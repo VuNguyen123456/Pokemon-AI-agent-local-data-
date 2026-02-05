@@ -12,9 +12,9 @@ Data for this are taken from: https://github.com/pkmn/smogon/tree/main
 
 Watch a quick demonstration of the Pokémon AI Agent in action:
 
-<div style="position: relative; padding-bottom: 47.08333333333333%; height: 0;"><iframe src="https://www.loom.com/embed/2ef5973cc35f471fa612b460c0660d94" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+[Watch Demo on Loom](https://www.loom.com/share/2ef5973cc35f471fa612b460c0660d94)
 
-[Watch on Loom](https://www.loom.com/share/2ef5973cc35f471fa612b460c0660d94)
+**Note:** In the demo video, a Pokémon name was misspelled which prevented it from showing up in the search results. The video was cut off due to time limits, but the system behaves correctly as designed - it will return appropriate results when Pokémon names are spelled correctly.
 
 ---
 
